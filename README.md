@@ -49,3 +49,35 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
  &emsp; &emsp;  x += 3;   // x = x+3; 를 축약한 표현
   </li>
 </ul>
+
+## 5주차 실습 - 조건문 1
+### [연산자2](https://github.com/baek-study/C-Language/blob/main/week5_operator2.c)
+<ul>
+  <li>관계연산자 : ==, !=, >=, <=, >, <  </li>
+  <li>논리연산자 : &&(and), ||(or), !(not) </li>
+</ul>
+
+### [조건문1](https://github.com/baek-study/C-Language/blob/main/week5_if.c)
+<ul>
+  <li>단순 if : if( ) {   } </li>
+  <li>if~else : if( ) {   } <br>
+   &emsp; &emsp; &emsp; &emsp; else {   } </li>
+</ul>
+
+## 6주차 실습 - 조건문 2
+### [조건문2](https://github.com/baek-study/C-Language/blob/main/week6_multiif.c)
+<ul>
+  <li>중첩 if : if 안에 if <br>
+   &emsp; &emsp; if( ) {
+    &emsp; &emsp;&emsp; &emsp; if( ) { } else { } 
+    &emsp; &emsp;&emsp; &emsp; }
+  </li>
+  <li>연속 if : if ~ else if ~ else <br>
+   &emsp; &emsp; if( ) {   } 
+   &emsp; &emsp; else if( ) {   } 
+   &emsp; &emsp;  else {   } 
+  </li>
+  <li>switch~case 문 : 여러조건, 정수와 문자만! <br>
+   &emsp; &emsp; switch(num) { case 0: break; case 1: break; default: break; } 
+  </li>
+</ul>
