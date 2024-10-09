@@ -38,26 +38,26 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 </ul>
 
 ## 4주차 실습 - 연산자
-### [상수&연산자](https://github.com/baek-study/C-Language/blob/main/week4_operator.c)
+### [상수&연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/week4_operator.c)
 <ul>
   <li>상수선언 : #define 전처리기, const 키워드 <br>
     &emsp; &emsp; ex) #define MAX 100  또는 const int MAX = 100 
   </li>
   <li>산술 연산자 : +, -, *, /, % (나머지) // 정수/정수 = 정수 </li>
   <li>증감 연산자: x++( x 값 1 증가) --x (x값 1 감소)</li>
-  <li>복합 연산자: +=, -=, *=, /=, %= 등 <br>
+  <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
  &emsp; &emsp;  x += 3;   // x = x+3; 를 축약한 표현
   </li>
 </ul>
 
 ## 5주차 실습 - 조건문 1
-### [연산자2](https://github.com/baek-study/C-Language/blob/main/week5_operator2.c)
+### [연산자-관계/논리](https://github.com/baek-study/C-Language/blob/main/week5_operator2.c)
 <ul>
   <li>관계연산자 : ==, !=, >=, <=, >, <  </li>
   <li>논리연산자 : &&(and), ||(or), !(not) </li>
 </ul>
 
-### [조건문1](https://github.com/baek-study/C-Language/blob/main/week5_if.c)
+### [조건문1-if/if~else](https://github.com/baek-study/C-Language/blob/main/week5_if.c)
 <ul>
   <li>단순 if : if( ) {   } </li>
   <li>if~else : if( ) {   } <br>
@@ -65,7 +65,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 </ul>
 
 ## 6주차 실습 - 조건문 2
-### [조건문2](https://github.com/baek-study/C-Language/blob/main/week6_multiif.c)
+### [조건문2-다중if](https://github.com/baek-study/C-Language/blob/main/week6_multiIf.c)
 <ul>
   <li>중첩 if : if 안에 if <br>
    &emsp; &emsp; if( ) {
@@ -76,8 +76,5 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
    &emsp; &emsp; if( ) {   } 
    &emsp; &emsp; else if( ) {   } 
    &emsp; &emsp;  else {   } 
-  </li>
-  <li>switch~case 문 : 여러조건, 정수와 문자만! <br>
-   &emsp; &emsp; switch(num) { case 0: break; case 1: break; default: break; } 
   </li>
 </ul>
