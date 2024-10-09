@@ -3,8 +3,9 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ## 1주차
 C 언어 - 고급언어로 현대 언어의 기반이 되는 언어.
+첫 C 프로그램 : hello.world(https://github.com/baek-study/C-Language//blob/main/week1_hello.c)
 
-## [2주차 실습](https://github.com/baek-study/C-Language//blob/main/week2.c)
+## [2주차 실습]
 프로그램 기본 구조 
 <ul>
   <li>주석-한줄(//), 여러줄(/* */)</li>
