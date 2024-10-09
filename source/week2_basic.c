@@ -1,38 +1,38 @@
-//1. ÁÖ¼®
+//1. ì£¼ì„
 /* 
-	°­  ÁÂ : Á¦ 2 °­ 
-    ÆÄÀÏ¸í: week2_basic.c
-	¼³  ¸í: c ÇÁ·Î±×·¥ ±âº» ±¸¼º ÇÐ½À
-	ÀÛ¼ºÀÚ: mju
+	ê°•  ì¢Œ : ì œ 2 ê°• 
+        íŒŒì¼ëª…: week2_basic.c
+	ì„¤  ëª…: c í”„ë¡œê·¸ëž¨ ê¸°ë³¸ êµ¬ì„± í•™ìŠµ
+	ìž‘ì„±ìž: mju
 */
 
-//2. ÀüÃ³¸®±â
+//2. ì „ì²˜ë¦¬ê¸°
 #include<stdio.h> 
 
 
-//3. mainÇÔ¼ö
+//3. mainí•¨ìˆ˜
 int main() 
 { 
-	//Ç¥ÁØÃâ·ÂÇÔ¼ö printf() - ¹®ÀÚ¿­ Ãâ·Â 
+	//í‘œì¤€ì¶œë ¥í•¨ìˆ˜ printf() - ë¬¸ìžì—´ ì¶œë ¥ 
 	printf("Hello, World\n");
 	
-	//Ãâ·ÂÁ¦¾î \n : ÇÑÁÙ ¶ç¿ì±â 
+	//ì¶œë ¥ì œì–´ \n : í•œì¤„ ë„ìš°ê¸° 
 	printf("123\n");
 	printf("456789\n");
 	printf("123\n4567889\n");
 
-	//Ãâ·ÂÁ¦¾î  \t : ÀÏÁ¤ °£°Ý ¶ç¿ì±â 
-	printf("tapÅ° »ç¿ë \t ÀÏÁ¤ÇÑ °£°Ý\n");
-	printf("ÄÄÇ»ÅÍ¸¦ \"»ç¶û\" ÇÕ´Ï´Ù\n");
+	//ì¶œë ¥ì œì–´  \t : ì¼ì • ê°„ê²© ë„ìš°ê¸° 
+	printf("tapí‚¤ ì‚¬ìš© \t ì¼ì •í•œ ê°„ê²©\n");
+	printf("ì»´í“¨í„°ë¥¼ \"ì‚¬ëž‘\" í•©ë‹ˆë‹¤\n");
 	
-	//Çü½ÄÁöÁ¤ÀÚ %d : Á¤¼ö, %f : ½Ç¼ö 
-	printf("Á¤¼ö : %d", 100); 
-	printf("½Ç¼ö : %f", 3.14);
+	//í˜•ì‹ì§€ì •ìž %d : ì •ìˆ˜, %f : ì‹¤ìˆ˜ 
+	printf("ì •ìˆ˜ : %d", 100); 
+	printf("ì‹¤ìˆ˜ : %f", 3.14);
 
 	return 0;
 }
 
-//4. ÀÏ¹ÝÇÔ¼ö- ÀÔ·Â/Ãâ·Â ¾ø´Â ÇÔ¼ö
+//4. ì¼ë°˜í•¨ìˆ˜- ìž…ë ¥/ì¶œë ¥ ì—†ëŠ” í•¨ìˆ˜
 void doExam()
 {
 	
