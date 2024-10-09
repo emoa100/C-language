@@ -20,11 +20,11 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ## 3주차 실습 - 변수
 ### [변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
 <ul>
-  <li>변수 선언 :  int number; char ch; double pi; float f;<br>
+  <li>변수 선언 :  int number;&emsp; char ch;&emsp; double pi;&emsp; float f;<br>
    &emsp; &emsp; int(정수), char(문자), double/float(실수) 
   </li>
-  <li>변수 값 저장 : number = 10, ch = 'a'; pi= 3.14; </li>
-  <li>변수 초기화 : int number =10; char ch = 'a';</li>
+  <li>변수 값 저장 : number = 10;&emsp; ch = 'a'; &emsp;pi= 3.14; </li>
+  <li>변수 초기화 : int number =10;&emsp; char ch = 'a';&emsp; double pi=3.14;</li>
 </ul>
 
 ### [표준출력함수 printf()](https://github.com/baek-study/C-Language/blob/main/source/week3_printf.c)
