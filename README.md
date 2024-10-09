@@ -3,12 +3,12 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ## 1주차 실습
 ### [첫 프로그램! hello, world](https://github.com/baek-study/C-Language/blob/main/source/week1_hello.c)
-// 첫 프로그램: Hello World <br> 
+// C 프로그램 : Hello World <br> 
 #include <stdio.h><br>
 int main() <br>
 {<br>
-  printf("Hello, World");<br>
-  return 0;<br>
+  &emsp;printf("Hello, World");<br>
+  &emsp;return 0;<br>
 }<br>
 <br>
 
