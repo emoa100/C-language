@@ -18,7 +18,7 @@ int main() <br>
   <li>주석: 한줄(//), 여러줄(/* */)</li>
   <li>전처리기: include 헤더 파일</li>
   <li>함수: 시작합수 main(), 출력함수 printf() <br>
-  &emsp; \n(한줄띄우기), \t(탭띄우기), </li>
+  &emsp; \n(한줄띄우기), \t(탭띄우기) </li>
 </ul>
 
 <br>
@@ -26,8 +26,8 @@ int main() <br>
 ## 3주차 실습 - 변수
 ### [변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
 <ul>
-  <li>변수 선언 :  int number;&ensp; char ch;&ensp; double pi;&ensp; float f;<br>
-   &emsp; &emsp; int(정수), char(문자), double/float(실수) 
+  <li>변수 선언 :  int num;&ensp; char ch;&ensp; double pi;&ensp; <br>
+   &emsp; &emsp; int(정수), char(문자), double(실수) 
   </li>
   <li>변수 값 저장 : number = 10;&ensp; ch = 'a'; &ensp;pi= 3.14; </li>
   <li>변수 초기화 : int number =10;&ensp; char ch = 'a';&ensp; double pi=3.14;</li>
