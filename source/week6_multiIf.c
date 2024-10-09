@@ -1,113 +1,112 @@
 /*
-	°­  ÁÂ : Á¦ 6 °­ 
-    ÆÄÀÏ¸í : week6_multiIf.c
-    ¼³  ¸í : ÁßÃ¸if, ¿¬¼Óif(if~else if~else), switch-case ¹® ¿¬½À  
-    ÀÛ¼ºÀÚ : mhc, 24-10-08
+    ê°•  ì¢Œ : ì œ 6 ê°• 
+    íŒŒì¼ëª… : week6_multiIf.c
+    ì„¤  ëª… : ì¤‘ì²©if, ì—°ì†if(if~else if~else), switch-case ë¬¸ ì—°ìŠµ  
+    ì‘ì„±ì : mju
 */
 
 #include<stdio.h>
 
-void doExam1(); // ÁßÃ¸ if ¿¬½À 
-void doExam2(); // ¿¬¼Ó if  ¿¬½À
-void doExam3(); // switch-case¹® ¿¬½À  
+void doExam1(); // ì¤‘ì²© if ì—°ìŠµ 
+void doExam2(); // ì—°ì† if  ì—°ìŠµ
+void doExam3(); // switch-caseë¬¸ ì—°ìŠµ  
 
 int main() 
 {
 	return 0;
 }
 
-// ÁßÃ¸ if ¿¬½À - if ¾È¿¡ if ±¸¹®
-// ¿ÜºÎ if : ¼ºÀûÀ» ÀÔ·Â¹Ş¾Æ 80 ÀÌ»óÀÎÁö ±×·¸Áö ¾ÊÀºÁö
-//   if³» if   :80ÀÌ»óÀÎ °æ¿ì - 90 ÀÌ»óÀÎÁö ±×·¸Áö ¾ÊÀºÁö
-//   else³» if : 80¹Ì¸¸ÀÎ °æ¿ì -  70ÀÌ»óÀÎÁö ±×·¸Áö ¾ÊÀºÁö 
+// ì¤‘ì²© if ì—°ìŠµ - if ì•ˆì— if êµ¬ë¬¸
+// ì™¸ë¶€ if : ì„±ì ì„ ì…ë ¥ë°›ì•„ 80 ì´ìƒì¸ì§€ ê·¸ë ‡ì§€ ì•Šì€ì§€
+//   ifë‚´ if   :80ì´ìƒì¸ ê²½ìš° - 90 ì´ìƒì¸ì§€ ê·¸ë ‡ì§€ ì•Šì€ì§€
+//   elseë‚´ if : 80ë¯¸ë§Œì¸ ê²½ìš° -  70ì´ìƒì¸ì§€ ê·¸ë ‡ì§€ ì•Šì€ì§€ 
 void doExam1() 
 {
-    //1.º¯¼ö ¼±¾ğ
+    //1.ë³€ìˆ˜ ì„ ì–¸
     int score;
     
-	//2.¾È³»¸Ş½ÃÁö & ÀÔ·Â
-    printf("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+    //2.ì•ˆë‚´ë©”ì‹œì§€ & ì…ë ¥
+    printf("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
     scanf("%d", &score);
     
-	//3.¿ÜºÎ if - score > 80 + ³»ºÎ if
+    //3.ì™¸ë¶€ if - score > 80 + ë‚´ë¶€ if
     if (score >= 80) 
 	{
         if (score >= 90) 
 		{	
-            printf("%d´Â AÀÔ´Ï´Ù\n", score);
+            printf("%dëŠ” Aì…ë‹ˆë‹¤\n", score);
         }
         else 
 		{
-            printf("%d´Â BÀÔ´Ï´Ù\n", score);
+            printf("%dëŠ” Bì…ë‹ˆë‹¤\n", score);
         }
     }
     else 
 	{
         if (score >= 70) 
 		{
-            printf("%d´Â CÀÔ´Ï´Ù\n", score);
+            printf("%dëŠ” Cì…ë‹ˆë‹¤\n", score);
         }
         else 
 		{	
-            printf("%d´Â D ¶Ç´Â FÀÔ´Ï´Ù\n", score);
+            printf("%dëŠ” D ë˜ëŠ” Fì…ë‹ˆë‹¤\n", score);
         }
     }
 }
 
-
-//¿¬¼Ó if  ¿¬½À - ¼ºÀû ÇÁ·Î±×·¥
-// ¼ºÀûÀ» ÀÔ·Â¹Ş¾Æ 90 ÀÌ»óÀÌ¸é A, ±×·¸Áö ¾Ê°í 80 ÀÌ»óÀÌ¸é B, ±×·¸Áö ¾Ê°í 70 ÀÌ»óÀÌ¸é C , ±×·¸Áö ¾Ê°í 60 ÀÌ»óÀÌ¸é D, ±×·¸Áö ¾ÊÀ¸¸é F 
+//ì—°ì† if  ì—°ìŠµ - ì„±ì  í”„ë¡œê·¸ë¨
+// ì„±ì ì„ ì…ë ¥ë°›ì•„ 90 ì´ìƒì´ë©´ A, ê·¸ë ‡ì§€ ì•Šê³  80 ì´ìƒì´ë©´ B, ê·¸ë ‡ì§€ ì•Šê³  70 ì´ìƒì´ë©´ C , ê·¸ë ‡ì§€ ì•Šê³  60 ì´ìƒì´ë©´ D, ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ F 
 void doExam2() {
-    //1.º¯¼ö ¼±¾ğ
+    //1.ë³€ìˆ˜ ì„ ì–¸
     int score;
     
-    //2.¾È³»¸Ş½ÃÁö & ÀÔ·Â
-    printf("Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+    //2.ì•ˆë‚´ë©”ì‹œì§€ & ì…ë ¥
+    printf("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
     scanf("%d", &score);
     
-    //3.¿¬¼Ó if
+    //3.ì—°ì† if
     if (score >= 90) 
-	{
-        printf("%d´Â AÇĞÁ¡ÀÔ´Ï´Ù.\n", score);
+    {
+        printf("%dëŠ” Aí•™ì ì…ë‹ˆë‹¤.\n", score);
     }
     else if (score >= 80) 
-	{
-        printf("%d´Â BÇĞÁ¡ÀÔ´Ï´Ù.\n", score);
+    {
+        printf("%dëŠ” Bí•™ì ì…ë‹ˆë‹¤.\n", score);
     }
     else if (score >= 70) 
-	{
-        printf("%d´Â CÇĞÁ¡ÀÔ´Ï´Ù.\n", score);
+    {
+        printf("%dëŠ” Cí•™ì ì…ë‹ˆë‹¤.\n", score);
     }
     else if (score >= 60) 
-	{
-	    printf("%d´Â DÇĞÁ¡ÀÔ´Ï´Ù.\n", score);
+    {
+	    printf("%dëŠ” Dí•™ì ì…ë‹ˆë‹¤.\n", score);
     }
-    else {
-        printf("%d´Â FÇĞÁ¡ÀÔ´Ï´Ù.\n", score);
+    else 
+    {
+        printf("%dëŠ” Fí•™ì ì…ë‹ˆë‹¤.\n", score);
     }
 }
 
-//switch case¹® ¿¬½À
+//switch caseë¬¸ ì—°ìŠµ
 void doExam3() 
 {
-    //1.º¯¼ö ¼±¾ğ
+    //1.ë³€ìˆ˜ ì„ ì–¸
     int number = 1;
     
     //2.switch ~case
     switch (number)
     {
 	    case 0:
-	        printf("¾øÀ½\n");
+	        printf("ì—†ìŒ\n");
 	        break;
 	    case 1:
-	        printf("ÇÏ³ª\n");
+	        printf("í•˜ë‚˜\n");
 	        break;
 	    case 2:
-	        printf("µÑ\n");
+	        printf("ë‘˜\n");
 	        break;
 	    default:
-	        printf("¸¹À½\n");
+	        printf("ë§ìŒ\n");
 	        break;
     }
 }
-
