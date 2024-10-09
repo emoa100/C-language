@@ -46,10 +46,10 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <br>
 
 ## 4주차 실습 - 연산자
-### [상수](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
+### [기호상수](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
-  <li>상수선언 : #define 전처리기 이용 &ensp; ex) #define MAX 100   </li>
-  <li>상수선언 :  const 키워드 &ensp; ex) const int MAX = 100;  </li>
+  <li>기호상수선언 : #define 전처리기 이용 &ensp; ex) #define MAX 100   </li>
+  <li>기호상수선언 :  const 키워드 &ensp; ex) const int MAX = 100;  </li>
 </ul>
 
 
