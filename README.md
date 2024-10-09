@@ -37,7 +37,7 @@ int main() <br>
 <ul>
   <li>형식지정자:  %d(정수), %c(문자), %f(실수)  </li>
   <li> printf("%d, %c, %f \n", num,ch,pi);<br>
-  &emsp;=> 형식지정자와 변수 갯수/자료형 일치</li>
+  &ensp;=> 형식지정자와 변수 갯수/자료형 일치</li>
   <li>필드폭(자릿수): %10d (10칸차지) </li>
   <li>정밀도: %.3f (소수점 3자리까지) </li>
 </ul>
@@ -46,7 +46,7 @@ int main() <br>
 <ul>
  <li>형식지정자 :  %d(정수), %c(문자), %lf(double), %f(float) </li>
  <li> scanf("%d", &num);&ensp; //정수 입력 <br>
-    &emsp; scanf("%lf", &pi); &ensp;..실수 입력</li>
+    &emsp; scanf("%lf", &pi); &ensp;//실수 입력</li>
   <li> 변수 앞에 주소연산자 & 필수!!</li>
   <li> double인 경우 형식지정자는 %lf 사용</li>
 </ul>
@@ -56,8 +56,8 @@ int main() <br>
 ## 4주차 실습 - 연산자
 ### [기호상수](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
-  <li>기호상수선언 : #define 전처리기 이용 &ensp; ex) #define MAX 100   </li>
-  <li>기호상수선언 :  const 키워드 &ensp; ex) const int MAX = 100;  </li>
+  <li>기호상수선언 : #define 전처리기 이용 <br>&ensp; ex) #define MAX 100   </li>
+  <li>기호상수선언 :  const 키워드<br> &ensp; ex) const int MAX = 100;  </li>
 </ul>
 
 
