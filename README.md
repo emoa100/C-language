@@ -27,7 +27,7 @@ int main() <br>
 ### [변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
 <ul>
   <li>변수 선언 :  int num;&ensp; char ch;&ensp; double pi;&ensp; <br>
-   &emsp;  int(정수), char(문자), double(실수) 
+   &emsp;=>  int(정수), char(문자), double(실수) 
   </li>
   <li>변수 값 저장 : num=10;&ensp; ch='a'; &ensp;pi=3.14; </li>
   <li>변수 초기화 : int num=10;&ensp; char ch='a';&ensp; double pi=3.14;</li>
