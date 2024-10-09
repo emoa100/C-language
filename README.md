@@ -2,12 +2,12 @@
 C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지 입니다. 
 
 ## 1주차 실습
-### [첫 프로그램! hello.world](https://github.com/baek-study/C-Language/blob/main/week1_hello.c)
+### [첫 프로그램! hello.world](https://github.com/baek-study/C-Language/blob/main/source/week1_hello.c)
 
 <br>
 
 ## 2주차 실습 - 기본구조 
-### [프로그램 기본 구조](https://github.com/baek-study/C-Language/blob/main/week2_basic.c)
+### [프로그램 기본 구조](https://github.com/baek-study/C-Language/blob/main/source/week2_basic.c)
 <ul>
   <li>주석-한줄(//), 여러줄(/* */)</li>
   <li>전처리기-include 헤더 파일</li>
@@ -18,14 +18,14 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <br>
 
 ## 3주차 실습 - 변수
-### [변수](https://github.com/baek-study/C-Language/blob/main/week3_variable.c)
+### [변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
 <ul>
   <li>변수 선언 :  int number; char ch; double pi; </li>
   <li>변수 값 저장 : number = 10, ch = 'a'; pi= 3.14; </li>
   <li>변수 초기화 : int number =10; char ch = 'a';</li>
 </ul>
 
-### [표준출력함수 printf()](https://github.com/baek-study/C-Language/blob/main/week3_printf.c)
+### [표준출력함수 printf()](https://github.com/baek-study/C-Language/blob/main/source/week3_printf.c)
 <ul>
   <li>형식지정자 :  %d(정수), %c(문자), %f(실수)  </li>
  <li> 기본 포맷 : printf("%d, %c, %f \n", number,ch,pi); //형식지정자 와 변수 1:1 매핑 - 갯수, 자료형 일치 
@@ -34,7 +34,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   <li>정밀도 : 소숫점 자릿수 : %.3f(소수점 3자리까지) </li>
 </ul>
 
-### [표준입력함수 scanf()](https://github.com/baek-study/C-Language/blob/main/week3_scanf.c)
+### [표준입력함수 scanf()](https://github.com/baek-study/C-Language/blob/main/source/week3_scanf.c)
 <ul>
  <li>형식지정자 :  %d(정수), %c(문자), %f(실수-float), %lf(실수-double) </li>
  <li> 기본 포맷 : scanf("%d", &number); // 주소 연산자 &를 꼭 써줘야함!!  <br>
@@ -44,7 +44,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <br>
 
 ## 4주차 실습 - 연산자
-### [상수](https://github.com/baek-study/C-Language/blob/main/week4_constant.c)
+### [상수](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
   <li>상수선언 : #define 전처리기 이용  <br>
     &emsp; &emsp; ex) #define MAX 100   </li>
@@ -53,7 +53,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 </ul>
 
 
-### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/week4_operator.c)
+### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
   <li>상수선언 : #define 전처리기, const 키워드 <br>
     &emsp; &emsp; ex) #define MAX 100  또는 const int MAX = 100 
@@ -68,13 +68,13 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <br>
 
 ## 5주차 실습 - 조건문 1
-### [연산자-관계/논리](https://github.com/baek-study/C-Language/blob/main/week5_operator2.c)
+### [연산자-관계/논리](https://github.com/baek-study/C-Language/blob/main/source/week5_operator2.c)
 <ul>
   <li>관계연산자 : ==, !=, >=, <=, >, <  </li>
   <li>논리연산자 : &&(and), ||(or), !(not) </li>
 </ul>
 
-### [조건문-if/if~else](https://github.com/baek-study/C-Language/blob/main/week5_if.c)
+### [조건문-if/if~else](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
   <li>단순 if : if( ) {   } </li>
   <li>if~else : if( ) {   } <br>
@@ -84,16 +84,16 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <br>
 
 ## 6주차 실습 - 조건문 2
-### [조건문-다중if](https://github.com/baek-study/C-Language/blob/main/week6_multiIf.c)
+### [조건문-다중if](https://github.com/baek-study/C-Language/blob/main/source/week6_multiIf.c)
 <ul>
   <li>중첩 if : if 안에 if <br>
-   &emsp; &emsp; if( ) {
-    &emsp; &emsp;&emsp; &emsp; if( ) { } else { } 
+   &emsp; &emsp; if( ) {<br>
+    &emsp; &emsp;&emsp; &emsp; if( ) { } else { } <br>
     &emsp; &emsp;&emsp; &emsp; }
   </li>
   <li>연속 if : if ~ else if ~ else <br>
-   &emsp; &emsp; if( ) {   } 
-   &emsp; &emsp; else if( ) {   } 
+   &emsp; &emsp; if( ) {   } <br>
+   &emsp; &emsp; else if( ) {   } <br>
    &emsp; &emsp;  else {   } 
   </li>
 </ul>
