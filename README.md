@@ -17,7 +17,7 @@ int main() <br>
 <ul>
   <li>주석: 한줄(//), 여러줄(/* */)</li>
   <li>전처리기: include 헤더 파일</li>
-  <li>함수: 시작합수 main(), 출력함수 print() <br>
+  <li>함수: 시작합수 main(), 출력함수 printf() <br>
   &emsp; \n(한줄), \t(탭), %d(정수), %f(실수)</li>
 </ul>
 
