@@ -45,10 +45,9 @@ int main() <br>
 ### [표준입력함수 scanf()](https://github.com/baek-study/C-Language/blob/main/source/week3_scanf.c)
 <ul>
  <li>형식지정자 :  %d(정수), %c(문자), %lf(double), %f(float) </li>
- <li> scanf("%d", &num);&ensp; //정수 입력 <br>
-    &emsp; scanf("%lf", &pi); &ensp;//실수 입력</li>
-  <li> 변수 앞에 주소연산자 & 필수!!</li>
-  <li> double인 경우 형식지정자는 %lf 사용</li>
+ <li> scanf("%d %c %lf", &num, &ch &pi) ;<br>
+  &ensp; 변수 앞에 주소연산자 & 필수!!;<br>
+  &ensp; double인 경우 형식지정자는 %lf 사용</li>
 </ul>
 
 <br>
@@ -63,10 +62,12 @@ int main() <br>
 
 ### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
-  <li>산술 연산자 : +, -, *, /, % (나머지) &ensp;// 정수/정수 = 정수 </li>
-  <li>증감 연산자: x++( x 값 1 증가) x-- (x값 1 감소)</li>
+  <li>산술 연산자 : +, -, *, /, % (나머지) &ensp;<br>
+  &ensp; => 정수/정수=정수 &ensp; 5/3 = 0 </li>
+  <li>증감 연산자: x++, ++x( x 값 1 증가) <br>
+  &ensp; x--, --x (x값 1 감소)</li>
   <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
- &emsp; &emsp;  x += 3;   // x = x+3; 를 축약한 표현
+ &emsp;   x += 3;   // x = x+3; 를 축약한 표현
   </li>
 </ul>
 
