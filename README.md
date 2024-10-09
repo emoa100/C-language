@@ -4,6 +4,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ## 1주차 실습
 ### [첫 프로그램! hello.world](https://github.com/baek-study/C-Language/blob/main/week1_hello.c)
 
+<br>
+
 ## 2주차 실습 - 기본구조 
 ### [프로그램 기본 구조](https://github.com/baek-study/C-Language/blob/main/week2_basic.c)
 <ul>
@@ -12,6 +14,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   <li>함수-시작합수 main()<br>
     &emsp; &emsp; 출력함수 print()-\n(한줄띄우기), \t(일정칸띄우기), %d(정수), %f(실수)</li>
 </ul>
+
+<br>
 
 ## 3주차 실습 - 변수
 ### [변수](https://github.com/baek-study/C-Language/blob/main/week3_variable.c)
@@ -37,6 +41,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     &emsp; &emsp; &emsp;scanf("%lf", &pi); // 변수가 double인 경우 형식지정자는 lf(long float)로 써야함 </li>
 </ul>
 
+<br>
+
 ## 4주차 실습 - 연산자
 ### [상수](https://github.com/baek-study/C-Language/blob/main/week4_constant.c)
 <ul>
@@ -45,6 +51,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   <li>상수선언 :  const 키워드 <br>
     &emsp; &emsp;  const int MAX = 100;  </li>
 </ul>
+
 
 ### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/week4_operator.c)
 <ul>
@@ -57,6 +64,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
  &emsp; &emsp;  x += 3;   // x = x+3; 를 축약한 표현
   </li>
 </ul>
+
+<br>
 
 ## 5주차 실습 - 조건문 1
 ### [연산자-관계/논리](https://github.com/baek-study/C-Language/blob/main/week5_operator2.c)
@@ -71,6 +80,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   <li>if~else : if( ) {   } <br>
    &emsp; &emsp; &emsp; &emsp; else {   } </li>
 </ul>
+
+<br>
 
 ## 6주차 실습 - 조건문 2
 ### [조건문-다중if](https://github.com/baek-study/C-Language/blob/main/week6_multiIf.c)
