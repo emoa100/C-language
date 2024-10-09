@@ -36,20 +36,21 @@ int main() <br>
 ### [표준출력함수 printf()](https://github.com/baek-study/C-Language/blob/main/source/week3_printf.c)
 <ul>
   <li>형식지정자:  %d(정수), %c(문자), %f(실수)  </li>
- <li> 기본 포맷: printf("%d, %c, %f \n", num,ch,pi); &ensp;<br>
-   //형식지정자와 변수 1:1 매핑-갯수, 자료형 일치 
+ <li> 기본 포맷: 형식지정자와 변수 1:1 매핑<<br>
+   printf("%d, %c, %f \n", num,ch,pi); 
   </li>
-  <li>필드폭: 전체 자릿수: %10d(10자리수로) </li>
-  <li>정밀도: 소숫점 자리: %.3f(소수점 3자리까지) </li>
+  <li> 주의:  형식지정자와 변수 갯수/자료형 일치</li>
+  <li>필드폭:  %10d(정수 10자리수로) </li>
+  <li>정밀도:  %.3f(소수점 3자리까지) </li>
 </ul>
 
 ### [표준입력함수 scanf()](https://github.com/baek-study/C-Language/blob/main/source/week3_scanf.c)
 <ul>
  <li>형식지정자 :  %d(정수), %c(문자), %lf(double), %f(float) </li>
- <li> 기본 포맷 : scanf("%d", &num);&ensp; //정수 입력 <br>
-    &emsp; &emsp; &emsp;&ensp;scanf("%lf", &pi); &ensp;..실수 입력</li>
-  <li> 주의1 :  변수 앞에 꼭 &를 사용 - 주소에 배달<br><li> 
-  <li> 주의2:  double인 경우 형식지정자는 %lf
+ <li> 기본 포맷 : 변수 앞에 꼭 &를 사용<br>
+    &emsp; scanf("%d", &num);&ensp; //정수 입력 <br>
+    &emsp;  &emsp;&ensp;scanf("%lf", &pi); &ensp;..실수 입력</li>
+  <li> 주의:  double인 경우 형식지정자는 %lf 사용</li>
 </ul>
 
 <br>
