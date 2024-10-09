@@ -27,7 +27,7 @@ int main() <br>
 ### [변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
 <ul>
   <li>변수 선언 :  int num;&ensp; char ch;&ensp; double pi;&ensp; <br>
-   &emsp; &emsp; int(정수), char(문자), double(실수) 
+   &emsp;  int(정수), char(문자), double(실수) 
   </li>
   <li>변수 값 저장 : num=10;&ensp; ch='a'; &ensp;pi=3.14; </li>
   <li>변수 초기화 : int num=10;&ensp; char ch='a';&ensp; double pi=3.14;</li>
@@ -46,14 +46,14 @@ int main() <br>
 <ul>
  <li>형식지정자 :  %d(정수), %c(문자), %lf(double), %f(float) </li>
  <li> scanf("%d %c %lf", &num, &ch &pi) ;<br>
-  &ensp; 변수 앞에 주소연산자 & 필수!!;<br>
-  &ensp; double인 경우 형식지정자는 %lf 사용</li>
+  &ensp; =>변수 앞에 주소연산자 & 필수!!<br>
+  &ensp; =>double 변수에 형식지정자는 %lf 사용</li>
 </ul>
 
 <br>
 
 ## 4주차 실습 - 연산자
-### [기호상수](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
+### [기호상수- define/const](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
   <li>기호상수선언 : #define 전처리기 이용 <br>&ensp; ex) #define MAX 100   </li>
   <li>기호상수선언 :  const 키워드<br> &ensp; ex) const int MAX = 100;  </li>
@@ -63,11 +63,11 @@ int main() <br>
 ### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
   <li>산술 연산자 : +, -, *, /, % (나머지) &ensp;<br>
-  &ensp; => 정수/정수=정수 &ensp; 5/3 = 0 </li>
+  &ensp; => 정수/정수=정수, &ensp; 5/3 = 1 </li>
   <li>증감 연산자: x++, ++x( x 값 1 증가) <br>
   &ensp; x--, --x (x값 1 감소)</li>
   <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
- &emsp;   x += 3;   // x = x+3; 를 축약한 표현
+ &emsp;=>   x += 3;   // x = x+3; 를 축약한 표현
   </li>
 </ul>
 
