@@ -7,8 +7,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 #include <stdio.h><br>
 int main() <br>
 {<br>
-  &emsp;printf("Hello, World");<br>
-  &emsp;return 0;<br>
+  &emsp;&emsp;printf("Hello, World");<br>
+  &emsp;&emsp;return 0;<br>
 }<br>
 <br>
 
@@ -36,7 +36,7 @@ int main() <br>
 ### [표준출력함수 printf()](https://github.com/baek-study/C-Language/blob/main/source/week3_printf.c)
 <ul>
   <li>형식지정자 :  %d(정수), %c(문자), %f(실수)  </li>
- <li> 기본 포맷 : printf("%d, %c, %f \n", number,ch,pi); //형식지정자 와 변수 1:1 매핑 - 갯수, 자료형 일치 
+ <li> 기본 포맷 : printf("%d, %c, %f \n", number,ch,pi); &ensp;//형식지정자 와 변수 1:1 매핑 - 갯수, 자료형 일치 
   </li>
   <li>필드폭 : 전체 자릿수 : %10d(10자리수로) </li>
   <li>정밀도 : 소숫점 자릿수 : %.3f(소수점 3자리까지) </li>
@@ -61,7 +61,7 @@ int main() <br>
 
 ### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
-  <li>산술 연산자 : +, -, *, /, % (나머지) // 정수/정수 = 정수 </li>
+  <li>산술 연산자 : +, -, *, /, % (나머지) &ensp;// 정수/정수 = 정수 </li>
   <li>증감 연산자: x++( x 값 1 증가) x-- (x값 1 감소)</li>
   <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
  &emsp; &emsp;  x += 3;   // x = x+3; 를 축약한 표현
@@ -79,9 +79,9 @@ int main() <br>
 
 ### [조건문-if/if~else](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
-  <li>단순 if : if(조건) { &emsp;  } </li>
-  <li>if~else : if(조건) { &emsp;  } <br>
-   &emsp; &emsp; &emsp;  else {&emsp;   } </li>
+  <li>단순 if : <b>if</b>(조건) { &emsp;  } </li>
+  <li>if~else : <b>if</b>(조건) { &emsp;  } <br>
+   &emsp; &emsp; &emsp;  <b>else</b> {&emsp;   } </li>
 </ul>
 
 <br>
@@ -94,8 +94,8 @@ int main() <br>
     &emsp; &emsp; <b>else</b> {  if(조건) { } else { }  } 
   </li>
   <li>연속 if : if ~ else if ~ else <br>
-   &emsp; &emsp; if(조건) { &emsp;  } <br>
-   &emsp; &emsp; else if(조건) { &emsp;  } <br>
-   &emsp; &emsp;  else { &emsp;  } 
+   &emsp; &emsp; <b>if</b>(조건) { &emsp;  } <br>
+   &emsp; &emsp; <b>else if</b>(조건) { &emsp;  } <br>
+   &emsp; &emsp; <b> else</b> { &emsp;  } 
   </li>
 </ul>
