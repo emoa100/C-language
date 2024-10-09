@@ -56,7 +56,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
   <li>산술 연산자 : +, -, *, /, % (나머지) // 정수/정수 = 정수 </li>
-  <li>증감 연산자: x++( x 값 1 증가) --x (x값 1 감소)</li>
+  <li>증감 연산자: x++( x 값 1 증가) x-- (x값 1 감소)</li>
   <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
  &emsp; &emsp;  x += 3;   // x = x+3; 를 축약한 표현
   </li>
@@ -85,7 +85,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <ul>
   <li>중첩 if : if 안에 if <br>
    &emsp; &emsp; <b>if</b>(조건) {  if(조건) { } else { }  } <br>
-    &emsp; &emsp; <b>else</b>b> {  if(조건) { } else { }  } 
+    &emsp; &emsp; <b>else</b> {  if(조건) { } else { }  } 
   </li>
   <li>연속 if : if ~ else if ~ else <br>
    &emsp; &emsp; if(조건) { &emsp;  } <br>
