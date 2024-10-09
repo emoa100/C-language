@@ -38,9 +38,9 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ### [표준입력함수 scanf()](https://github.com/baek-study/C-Language/blob/main/source/week3_scanf.c)
 <ul>
- <li>형식지정자 :  %d(정수), %c(문자), %f(실수-float), %lf(실수-double) </li>
- <li> 기본 포맷 : scanf("%d", &number); // 주소 연산자 &를 꼭 써줘야함!!  <br>
-    &emsp; &emsp; &emsp;scanf("%lf", &pi); // 변수가 double인 경우 형식지정자는 lf(long float)로 써야함 </li>
+ <li>형식지정자 :  %d(정수), %c(문자), %f(실수 float), %lf(실수 double) </li>
+ <li> 기본 포맷 : scanf("%d", &number);&ensp; // 주소 연산자 &를 꼭 써줘야함!!  <br>
+    &emsp; &emsp; &emsp;&ensp;scanf("%lf", &pi); &ensp;// 변수가 double인 경우 형식지정자는 lf(long float)로 써야함 </li>
 </ul>
 
 <br>
@@ -48,16 +48,13 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ## 4주차 실습 - 연산자
 ### [상수](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
-  <li>상수선언 : #define 전처리기 이용  ex) #define MAX 100   </li>
-  <li>상수선언 :  const 키워드 ex) const int MAX = 100;  </li>
+  <li>상수선언 : #define 전처리기 이용 &ensp; ex) #define MAX 100   </li>
+  <li>상수선언 :  const 키워드 &ensp; ex) const int MAX = 100;  </li>
 </ul>
 
 
 ### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
-  <li>상수선언 : #define 전처리기, const 키워드 <br>
-    &emsp; &emsp; ex) #define MAX 100  또는 const int MAX = 100 
-  </li>
   <li>산술 연산자 : +, -, *, /, % (나머지) // 정수/정수 = 정수 </li>
   <li>증감 연산자: x++( x 값 1 증가) --x (x값 1 감소)</li>
   <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
@@ -76,9 +73,9 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ### [조건문-if/if~else](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
-  <li>단순 if : if( ) {   } </li>
-  <li>if~else : if( ) {   } <br>
-   &emsp; &emsp; &emsp; &emsp; else {   } </li>
+  <li>단순 if : if(조건) { &emsp;  } </li>
+  <li>if~else : if(조건) { &emsp;  } <br>
+   &emsp; &emsp; &emsp;  else {&emsp;   } </li>
 </ul>
 
 <br>
@@ -87,13 +84,12 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ### [조건문-다중if](https://github.com/baek-study/C-Language/blob/main/source/week6_multiIf.c)
 <ul>
   <li>중첩 if : if 안에 if <br>
-   &emsp; &emsp; if( ) {<br>
-    &emsp; &emsp;&emsp; &emsp; if( ) { } else { } <br>
-    &emsp; &emsp;&emsp; &emsp; }
+   &emsp; &emsp; <b>if</b>(조건) {  if(조건) { } else { }  } <br>
+    &emsp; &emsp; <b>else</b>b> {  if(조건) { } else { }  } 
   </li>
   <li>연속 if : if ~ else if ~ else <br>
-   &emsp; &emsp; if( ) {   } <br>
-   &emsp; &emsp; else if( ) {   } <br>
-   &emsp; &emsp;  else {   } 
+   &emsp; &emsp; if(조건) { &emsp;  } <br>
+   &emsp; &emsp; else if(조건) { &emsp;  } <br>
+   &emsp; &emsp;  else { &emsp;  } 
   </li>
 </ul>
