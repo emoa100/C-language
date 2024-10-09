@@ -1,15 +1,15 @@
 /* 
-	°­  ÁÂ: Á¦ 1 °­ 
-    ÆÄÀÏ¸í: week1_hello.c
-	¼³  ¸í: ¹«Á¶°Ç µû¶óÇÏ´Â hello world Ãâ·Â! 
-	ÀÛ¼ºÀÚ: mju
+	ê°•  ì¢Œ: ì œ 1 ê°• 
+        íŒŒì¼ëª…: week1_hello.c
+	ì„¤  ëª…: ë¬´ì¡°ê±´ ë”°ë¼í•˜ëŠ” hello world ì¶œë ¥! 
+	ì‘ì„±ì: mju
 */
 
 #include<stdio.h>
 
 int main() 
 {
-	//hello, world È­¸é Ãâ 
+	//hello, world í™”ë©´ ì¶œ 
 	printf("hello, world");
 	return 0;
 }
