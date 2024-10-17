@@ -118,9 +118,9 @@ int main() <br>
 ### [조건연산자&형변환](https://github.com/baek-study/C-Language/blob/main/source/week7_condOperator.c)
 <ul>
   <li>조건연산자 : 조건?참문자:거짓문장<br>
-   ex)absValue = a>0 ? a : -a ; </li>
+   ex) absValue = a>0 ? a : -a ; </li>
    <li>형변환 : 캐스트 연산자 (int), (float) <br>
-   ex)int i = (int)1.12;  </li>
+   ex) int i = (int)1.12;  </li>
 
 </ul>
 
