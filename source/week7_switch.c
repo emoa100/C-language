@@ -1,54 +1,54 @@
 /*
-	ÆÄÀÏ¸í: week7_switch.c
-	¼³  ¸í: Á¶°Ç¹® switch ¿¬½À & ¿¬¼Ó if ¿Í »ó°ü °ü°è 
-	ÀÛ¼ºÀÚ: mji
+	íŒŒì¼ëª…: week7_switch.c
+	ì„¤  ëª…: ì¡°ê±´ë¬¸ switch ì—°ìŠµ & ì—°ì† if ì™€ ìƒê´€ ê´€ê³„ 
+	ì‘ì„±ì: mju
 */
 
 #include <stdio.h>
 
-//switch~case ¹®  
+//switch~case ë¬¸  
 void doExam1()
 {
-	//1. º¯¼ö ¼±¾ğ - Á¤¼ö number
+	//1. ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ number
 	int number;
 	 
-	//2. º¯¼ö °ª ¼³Á¤ = 1
+	//2. ë³€ìˆ˜ ê°’ ì„¤ì • = 1
 	number = 5;
 	
-	//3. switch case ¹®
+	//3. switch case ë¬¸
 	switch(number)
 	{
 		case 0:
-			printf("¾øÀ½\n");
+			printf("ì—†ìŒ\n");
 			break;
 		case 1:
-			printf("ÇÏ³ª\n"); 
+			printf("í•˜ë‚˜\n"); 
 			break;
 		case 2:
 		case 3:	
-			printf("µÎ ¼­³Ê°³ \n");
+			printf("ë‘ ì„œë„ˆê°œ \n");
 			break;
 		default:
-			printf("¸¹À½\n");
+			printf("ë§ìŒ\n");
 			break;	
 	}
 }
 
-// switch ~ case ¹® - ÇĞÁ¡ÇÁ·Î±×·¥ 
+// switch ~ case ë¬¸ - í•™ì í”„ë¡œê·¸ë¨ 
 void doExam2()
 {
-	//1. º¯¼ö ¼±¾ğ - Á¤¼ö :,score, iscore, ¹®ÀÚ : grade
+	//1. ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ :,score, iscore, ë¬¸ì : grade
 	int score, iscore;
 	char grade; 
-	//2. º¯¼ö °è»ê score -> iscore·Î
+	//2. ë³€ìˆ˜ ê³„ì‚° score -> iscoreë¡œ
 	score = 100;
-	iscore = score/10;    // Á¤¼ö/Á¤¼ö -> Á¤¼ö 
-	//3. switch ~ case¹®
+	iscore = score/10;    // ì •ìˆ˜/ì •ìˆ˜ -> ì •ìˆ˜ 
+	//3. switch ~ caseë¬¸
 	switch(iscore)
 	{
 		case 10: 
 		case 9:
-			grade = 'A'; //¹®ÀÚ´Â  ' ' ÀÛÀº µû¿ÈÇ¥.. X " " X 
+			grade = 'A'; //ë¬¸ìëŠ”  ' ' ì‘ì€ ë”°ì˜´í‘œ.. X " " X 
 			break;
 		case 8:
 			grade = 'B';
@@ -63,16 +63,16 @@ void doExam2()
 			grade = 'F';
 			break;
 	} 
-	printf("Á¡¼ö %d ´Â %c ÇĞÁ¡ ÀÔ´Ï´Ù.\n", score, grade);
+	printf("ì ìˆ˜ %d ëŠ” %c í•™ì  ì…ë‹ˆë‹¤.\n", score, grade);
 	
 } 
-//switch case ¿¬½À - ´ŞÀÇ ³¯Â¥ Ãâ·ÂÇÏ±â 
+//switch case ì—°ìŠµ - ë‹¬ì˜ ë‚ ì§œ ì¶œë ¥í•˜ê¸° 
 void doExam3()
 {
-	//1. º¯¼ö ¼±¾ğ - ´Ş, ÀÏ month, days - Á¤¼ö
+	//1. ë³€ìˆ˜ ì„ ì–¸ - ë‹¬, ì¼ month, days - ì •ìˆ˜
 	int month, days, year;
-	//2. ÀÔ·Â¸Ş½ÃÁö & ÀÔ·Â - ´ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä .
-	printf("´ŞÀ» ÀÔ·ÂÇÏ½Ã¿À : ");
+	//2. ì…ë ¥ë©”ì‹œì§€ & ì…ë ¥ - ë‹¬ì„ ì…ë ¥í•˜ì„¸ìš” .
+	printf("ë‹¬ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%d %d", &month, &year); 
 	//3. switch -case 
 	switch(month)
@@ -90,25 +90,7 @@ void doExam3()
 			days = 30;
 			break;	
 	}
-	printf("%d¿ùÀº %dÀÏ·Î µÇ¾îÀÖ½À´Ï´Ù. \n", month, days);
-}
-
-//Á¶°Ç ¿¬»êÀÚ  - À¯ÀÏÇÑ 3Ç× ¿¬»êÀÚ -  Á¶°Ç? Âü:°ÅÁş 
-void doExam4()
-{
-	//1.º¯¼ö ¼±¾ğ - abs_value, max_value, x, y 
-	//x y ¿¡ °ª ÀúÀå 
-	int abs_value, max_value, x, y;
-	x=5; 
-	y=3;
-	//2. Á¶°Ç ¿¬»êÀÚ  
-	//Àı´ë°ª
-	abs_value = x>0 ? x : -x ;
-	max_value = x>y ? x : y ;
-	
-	int age = 65; 
-	// age 60 Å©¸é ½Ç¹ö .. ÀÛÀ¸¸é ±×¸°  Ãâ·Â
-	age>60 ? printf("½Ç¹ö\n") : printf("±×¸° \n"); 
+	printf("%dì›”ì€ %dì¼ë¡œ ë˜ì–´ìˆìŠµë‹ˆë‹¤. \n", month, days);
 }
 
 int main()
