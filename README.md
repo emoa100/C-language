@@ -102,3 +102,22 @@ int main() <br>
    &emsp; &emsp; <b> else</b> { &emsp;  } 
   </li>
 </ul>
+
+<br>
+
+## 7주차 실습 - 조건문 & 반복문 
+### [조건문-switch](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
+<ul>
+  <li>switch~case 문 : 여러 조건에서 선택 <br>
+   &emsp; &emsp; <b>switch</b>(변수) { <br>
+   &emsp; &emsp; &emsp; <b>case 0 :</b>문장들; break; <br>
+   &emsp; &emsp; &emsp; <b>default:</b>문장들; break;  } 
+  </li>
+</ul>
+
+### [반복문-while](https://github.com/baek-study/C-Language/blob/main/source/week7_while.c)
+<ul>
+  <li>while : 초기값, 반복조건(끝), 증감 <br>
+   &emsp; &emsp; int i=0; <b>while</b>(i<5) {  문장들; i++;  } <br>
+  </li>
+</ul>
