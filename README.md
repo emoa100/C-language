@@ -19,9 +19,9 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   </li>
 </ul>
 
-<br>
-
 <hr width="500px", size="10px">
+
+<br>
 
 ## 1주차 실습
 ### [첫 프로그램! hello, world](https://github.com/baek-study/C-Language/blob/main/source/week1_hello.c)
