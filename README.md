@@ -126,7 +126,26 @@ int main() <br>
 
 ### [반복문-while](https://github.com/baek-study/C-Language/blob/main/source/week7_while.c)
 <ul>
-  <li>while : 초기값, 반복조건(끝), 증감 <br>
+  <li>while : 조건반복(ex. 비밀번호맞을때까지) <br>
+   &emsp; &emsp;- 초기값, 반복조건(끝), 증감 <br>
    &emsp; &emsp; int i=0; <b>while</b>(i<5) {  문장들; i++;  } <br>
+  </li>
+</ul>
+
+<br>
+
+## 9주차 실습 - 반복문 
+### [반복문-for](https://github.com/baek-study/C-Language/blob/main/source/week9_for.c)
+<ul>
+  <li>for 문 : 횟수반복(ex.10번) <br>
+   &emsp; &emsp;- 초기값, 반복조건(끝), 증감 <br>
+   &emsp; &emsp; int i=0; <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
+  </li>
+</ul>
+
+<ul>
+  <li>중첩 for 문 : for 안에 for 문 <br>
+   &emsp; &emsp; <b>for</b>(i=2 ; i<9 ; i++) {  <br>
+   &emsp; &emsp; &emsp; &emsp;  <b>for</b>(j=1 ; j<10 ; j++) {  문장들; } } <br>
   </li>
 </ul>
