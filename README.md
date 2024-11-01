@@ -1,5 +1,7 @@
 # C-Language
 C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지 입니다. 
+변수 - 연산자 - 조건문(if, switch) - 반복문(while, for) - 함수 - 배열 - 포인터
+<br>
 
 ## 9주차 실습 - 반복문 
 ### [반복문-for](https://github.com/baek-study/C-Language/blob/main/source/week9_for.c)
