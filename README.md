@@ -8,7 +8,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <ul>
   <li>for 문 : 횟수반복(ex.10번) <br>
    &emsp; &emsp;- 초기값, 반복조건(끝), 증감 <br>
-   &emsp; &emsp; int i=0; <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
+   &emsp; &emsp; <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
   </li>
 </ul>
 
