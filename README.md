@@ -21,7 +21,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
      
 <br>
 
-<hr width="500px", size="10px", color = "green">
+<hr width="500px", size="10px", color = "blue">
 
 <br>
 
