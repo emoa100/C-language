@@ -1,74 +1,74 @@
 /*
-   ÆÄÀÏ¸í: week9_for.c
-   ¼³  ¸í: ¹Ýº¹¹® - for ¹®(È½¼ö¹Ýº¹), ÁßÃ¸ for ¹®  
-   ÀÛ¼ºÀÚ: mju  
+   íŒŒì¼ëª…: week9_for.c
+   ì„¤  ëª…: ë°˜ë³µë¬¸ - for ë¬¸(íšŸìˆ˜ë°˜ë³µ), ì¤‘ì²© for ë¬¸  
+   ìž‘ì„±ìž: mju  
 */ 
 
 #include <stdio.h>
  
-// È½¼ö ¹Ýº¹: for - 5¹ø hello Ãâ·Â
+// íšŸìˆ˜ ë°˜ë³µ: for - 5ë²ˆ hello ì¶œë ¥
 void doExam1()
 {
-	//1. º¯¼ö ¼±¾ð - i - Á¤¼ö 
+	//1. ë³€ìˆ˜ ì„ ì–¸ - i - ì •ìˆ˜ 
 	int i;
 	
-	//2. for - ÃÊ±â°ª;¹Ýº¹Á¶°Ç;Áõ°¨ - i - 0~4(5¹ø) 
+	//2. for - ì´ˆê¸°ê°’;ë°˜ë³µì¡°ê±´;ì¦ê° - i - 0~4(5ë²ˆ) 
 	for(i=0 ; i<5 ; i++)
 	{
-		printf("hello world!\n");   //3. Ãâ·Â  
+		printf("hello world!\n");   //3. ì¶œë ¥  
 	}
 }
 
-// È½¼ö ¹Ýº¹: for - 1~10 ±îÁö ÇÕÃâ·Â
+// íšŸìˆ˜ ë°˜ë³µ: for - 1~10 ê¹Œì§€ í•©ì¶œë ¥
 void doExam2()
 {
-	//1. º¯¼ö ¼±¾ð - i, sum - Á¤¼ö
+	//1. ë³€ìˆ˜ ì„ ì–¸ - i, sum - ì •ìˆ˜
 	int i, sum;
 	 
-	//2. º¯¼ö ÃÊ±âÈ­ 
+	//2. ë³€ìˆ˜ ì´ˆê¸°í™” 
 	sum = 0;
 	
-	//3. for - ÃÊ±â°ª ; ¹Ýº¹Á¶°Ç ; Áõ°¨ - i = 1~10±îÁö 
+	//3. for - ì´ˆê¸°ê°’ ; ë°˜ë³µì¡°ê±´ ; ì¦ê° - i = 1~10ê¹Œì§€ 
 	for(i=1 ; i<=10 ; i++)      //i<11
 	{
-		sum = sum + i;          //4. ÇÕ °è»ê  
+		sum = sum + i;          //4. í•© ê³„ì‚°  
 	 } 
-	printf("ÇÕÀº %d\n", sum);   //5. ÇÕ Ãâ·Â  
+	printf("í•©ì€ %d\n", sum);       //5. í•© ì¶œë ¥  
 }
 
-//ÁßÃ¸  for ±¸¹® - * Ç¥ Á÷»ç°¢ÇüÀ¸·Î Ãâ·Â  
+//ì¤‘ì²©  for êµ¬ë¬¸ - * í‘œ ì§ì‚¬ê°í˜•ìœ¼ë¡œ ì¶œë ¥  
 void doExam3()
 { 
-	//1. º¯¼ö ¼±¾ð - Á¤¼ö i, j
+	//1. ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ i, j
 	int i, j;
 	 
-	//2. ÁßÃ¸ for
-	//2.1 ¿ÜºÎ for - ÃÊ±â°ª ; ¹Ýº¹Á¶°Ç ; Áõ°¨ - i - 0~4 
+	//2. ì¤‘ì²© for
+	//2.1 ì™¸ë¶€ for - ì´ˆê¸°ê°’ ; ë°˜ë³µì¡°ê±´ ; ì¦ê° - i - 0~4 
 	for(i=0 ; i<5 ; i++)
 	{
-		//2.2 ³»ºÎ for - ÃÊ±â°ª ; ¹Ýº¹Á¶°Ç ; Áõ°¨ - j - 0~9 
+		//2.2 ë‚´ë¶€ for - ì´ˆê¸°ê°’ ; ë°˜ë³µì¡°ê±´ ; ì¦ê° - j - 0~9 
 		for(j=0 ; j<10 ; j++)
 		{
-			printf("*");    //3. º° Ãâ·Â  
+			printf("*");    //3. ë³„ ì¶œë ¥  
 		}
-		printf("\n");        //´ÙÀ½ ÁÙ Ãâ·Â  
+		printf("\n");           //4. ë‹¤ìŒ ì¤„ ì¶œë ¥  
 	} 
 }
 
-//ÁßÃ¸ for - ±¸±¸´Ü Ãâ·Â  
+//ì¤‘ì²© for - êµ¬êµ¬ë‹¨ ì¶œë ¥  
 void doExam4()
 { 
-	//1. º¯¼ö ¼±¾ð - Á¤¼ö dan, gob
+	//1. ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ dan, gob
 	int dan, gob;
 	 
-	//2. ÁßÃ¸ for
-	//2.1 ¿ÜºÎ for - ÃÊ±â°ª ; ¹Ýº¹Á¶°Ç ; Áõ°¨ - dan- 2~9 ´Ü  
+	//2. ì¤‘ì²© for
+	//2.1 ì™¸ë¶€ for - ì´ˆê¸°ê°’ ; ë°˜ë³µì¡°ê±´ ; ì¦ê° - dan- 2~9 ë‹¨  
 	for(dan=0 ; dan<5 ; dan++)
 	{
-		//2.2 ³»ºÎ for - ÃÊ±â°ª ; ¹Ýº¹Á¶°Ç ; Áõ°¨ - gob - 1~9 °ö  
+		//2.2 ë‚´ë¶€ for - ì´ˆê¸°ê°’ ; ë°˜ë³µì¡°ê±´ ; ì¦ê° - gob - 1~9 ê³±  
 		for(gob=0 ; gob<10 ; gob++)
 		{
-			printf("%d * %d = %d \n", dan, gob, dan*gob);    //3.±¸±¸´Ü Ãâ·Â  
+			printf("%d * %d = %d \n", dan, gob, dan*gob);    //3. êµ¬êµ¬ë‹¨ ì¶œë ¥  
 		}
 		
 	} 
