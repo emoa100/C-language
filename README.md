@@ -176,6 +176,22 @@ int main() <br>
 
 <br>
 
+## 10주차 실습 -  함수 
+### [보조제어문](https://github.com/baek-study/C-Language/blob/main/source/week10_subControl.c)
+<ul>
+  <li>무한루프 : 무한히 반복 <br>
+   &emsp;  <b>while</b>(1) {   <br>
+   &emsp; &emsp;  if(조건) break; // 반복을 중단  <br>
+   &emsp; &emsp;  if(조건) continue; // 다음 반복을 시작  <br>    
+  </li>
+  <li>break : 제어를 벗어나기 위해 사용 </li>
+  <li>continue : 현재 반복을 중간하고 다음 반복을 시작 </li>
+</ul>
+
+
+
+<br>
+
 
 
 
