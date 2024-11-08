@@ -16,14 +16,12 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ### [보조제어문](https://github.com/baek-study/C-Language/blob/main/source/week10_subControl.c)
 <ul>
-  <li>무한루프 : 무한히 반복 <br>
-   &emsp;  <b>while</b>(1) {   <br>
-   &emsp; &emsp;  if(조건) break; // 반복을 중단  <br>
-   &emsp; &emsp;  if(조건) continue; // 다음 반복을 시작  <br>    
+  <li>무한루프 & 보조 제어문 <br>
+   &emsp;  <b>while</b>(1) { // 무한루프  <br>
+   &emsp; &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
+   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작  <br>    
    &emsp; }  <br>
   </li>
-  <li>break : 제어를 벗어나기 위해 사용 </li>
-  <li>continue : 현재 반복을 중간하고 다음 반복을 시작 </li>
 </ul>
 
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
@@ -208,14 +206,13 @@ int main() <br>
 
 ### [보조제어문](https://github.com/baek-study/C-Language/blob/main/source/week10_subControl.c)
 <ul>
-  <li>무한루프 : 무한히 반복 <br>
-   &emsp;  <b>while</b>(1) {   <br>
-   &emsp; &emsp;  if(조건) break; // 반복을 중단  <br>
-   &emsp; &emsp;  if(조건) continue; // 다음 반복을 시작  <br>    
+  <li>무한루프 & 보조 제어문 <br>
+   &emsp;  <b>while</b>(1) { // 무한루프  <br>
+   &emsp; &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
+   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작  <br>    
    &emsp; }  <br>
   </li>
-  <li>break : 제어를 벗어나기 위해 사용 </li>
-  <li>continue : 현재 반복을 중간하고 다음 반복을 시작 </li>
+
 </ul>
 
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
