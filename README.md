@@ -3,22 +3,41 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 핵심 : 변수 - 연산자 - 조건문(if, switch) - 반복문(while, for) - 함수 - 배열 - 포인터
 <br>
 
-## 9주차 실습 - 반복문 
-### [반복문-for](https://github.com/baek-study/C-Language/blob/main/source/week9_for.c)
+## 10주차 실습 -  함수 
+
+### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_doWhile.c)
 <ul>
-  <li>for 문 : 횟수반복(ex.10번) <br>
-   &emsp; &emsp;- 초기값, 반복조건(끝), 증감 <br>
-   &emsp; &emsp; <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
+  <li>do~while : 명령문 무조건 한번 실행 <br>
+   &emsp;  <b>do</b> {   <br>
+   &emsp; &emsp;  문장들  <br>
+   &emsp; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
+### [보조제어문](https://github.com/baek-study/C-Language/blob/main/source/week10_subControl.c)
 <ul>
-  <li>중첩 for 문 : for 안에 for 문 <br>
-   &emsp; &emsp; <b>for</b>(i=2 ; i<9 ; i++) {  <br>
-   &emsp; &emsp; &emsp; &emsp;  <b>for</b>(j=1 ; j<10 ; j++) {  문장들; } } <br>
+  <li>무한루프 : 무한히 반복 <br>
+   &emsp;  <b>while</b>(1) {   <br>
+   &emsp; &emsp;  if(조건) break; // 반복을 중단  <br>
+   &emsp; &emsp;  if(조건) continue; // 다음 반복을 시작  <br>    
+   &emsp; }  <br>
   </li>
+  <li>break : 제어를 벗어나기 위해 사용 </li>
+  <li>continue : 현재 반복을 중간하고 다음 반복을 시작 </li>
 </ul>
-     
+
+### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
+<ul>
+  <li>함수 정의 : 이름을 가지고 입력을 받아 특정 작업을 실행하고 결과를 반환 <br>
+   &emsp;  <b>int max(int x, int y)</b>(1) {   <br>
+   &emsp; &emsp;  if(x>y) return x;  <br>
+   &emsp; &emsp;  else return y;  <br>    
+   &emsp; }  <br>  
+  </li>
+  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행  </li>
+  <li>result = max(10, 20); </li>
+</ul>
+
 <br>
 
 <hr width="500px", size="10px">
@@ -183,7 +202,7 @@ int main() <br>
   <li>do~while : 명령문 무조건 한번 실행 <br>
    &emsp;  <b>do</b> {   <br>
    &emsp; &emsp;  문장들  <br>
-   &emsp; }while(조건);  <br>    
+   &emsp; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
@@ -193,6 +212,7 @@ int main() <br>
    &emsp;  <b>while</b>(1) {   <br>
    &emsp; &emsp;  if(조건) break; // 반복을 중단  <br>
    &emsp; &emsp;  if(조건) continue; // 다음 반복을 시작  <br>    
+   &emsp; }  <br>
   </li>
   <li>break : 제어를 벗어나기 위해 사용 </li>
   <li>continue : 현재 반복을 중간하고 다음 반복을 시작 </li>
@@ -200,13 +220,14 @@ int main() <br>
 
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
 <ul>
-  <li>무한루프 : 무한히 반복 <br>
-   &emsp;  <b>while</b>(1) {   <br>
-   &emsp; &emsp;  if(조건) break; // 반복을 중단  <br>
-   &emsp; &emsp;  if(조건) continue; // 다음 반복을 시작  <br>    
+  <li>함수 정의 : 이름을 가지고 입력을 받아 특정 작업을 실행하고 결과를 반환 <br>
+   &emsp;  <b>int max(int x, int y)</b>(1) {   <br>
+   &emsp; &emsp;  if(x>y) return x;  <br>
+   &emsp; &emsp;  else return y;  <br>    
+   &emsp; }  <br>  
   </li>
-  <li>break : 제어를 벗어나기 위해 사용 </li>
-  <li>continue : 현재 반복을 중간하고 다음 반복을 시작 </li>
+  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행  </li>
+  <li>result = max(10, 20); </li>
 </ul>
 
 <br>
