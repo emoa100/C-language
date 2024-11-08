@@ -34,8 +34,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
    &emsp; &emsp;  else return y;  <br>    
    &emsp; }  <br>  
   </li>
-  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행  </li>
-  <li>result = max(10, 20); </li>
+  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행   <br>
+   &emsp; result = max(10, 20); </li>
 </ul>
 
 <br>
@@ -226,8 +226,8 @@ int main() <br>
    &emsp; &emsp;  else return y;  <br>    
    &emsp; }  <br>  
   </li>
-  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행  </li>
-  <li>result = max(10, 20); </li>
+  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행   <br>
+   &emsp; result = max(10, 20); </li>
 </ul>
 
 <br>
