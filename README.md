@@ -9,8 +9,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <ul>
   <li>do~while : 명령문 무조건 한번 실행 <br>
    &emsp;  <b>do</b> {   <br>
-   &emsp; &emsp;  문장들  <br>
-   &emsp; }<b>while(조건);</b>  <br>    
+   &emsp; &emsp;  문장들; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
@@ -19,21 +18,20 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   <li>무한루프 & 보조 제어문 <br>
    &emsp;  <b>while</b>(1) { // 무한루프  <br>
    &emsp; &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
-   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작  <br>    
-   &emsp; }  <br>
+   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
   </li>
+
 </ul>
 
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
 <ul>
-  <li>함수 정의 : 이름을 가지고 입력을 받아 특정 작업을 실행하고 결과를 반환 <br>
+  <li>함수 정의  <br>
    &emsp;  <b>int max(int x, int y)</b>(1) {   <br>
    &emsp; &emsp;  if(x>y) return x;  <br>
-   &emsp; &emsp;  else return y;  <br>    
-   &emsp; }  <br>  
+   &emsp; &emsp;  else return y; }  <br>  
   </li>
-  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행   <br>
-   &emsp; result = max(10, 20); </li>
+  <li>함수 호출 <br>
+    result = max(10, 20); </li>
 </ul>
 
 <br>
@@ -199,8 +197,7 @@ int main() <br>
 <ul>
   <li>do~while : 명령문 무조건 한번 실행 <br>
    &emsp;  <b>do</b> {   <br>
-   &emsp; &emsp;  문장들  <br>
-   &emsp; }<b>while(조건);</b>  <br>    
+   &emsp; &emsp;  문장들; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
@@ -209,22 +206,20 @@ int main() <br>
   <li>무한루프 & 보조 제어문 <br>
    &emsp;  <b>while</b>(1) { // 무한루프  <br>
    &emsp; &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
-   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작  <br>    
-   &emsp; }  <br>
+   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
   </li>
 
 </ul>
 
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
 <ul>
-  <li>함수 정의 : 이름을 가지고 입력을 받아 특정 작업을 실행하고 결과를 반환 <br>
+  <li>함수 정의  <br>
    &emsp;  <b>int max(int x, int y)</b>(1) {   <br>
    &emsp; &emsp;  if(x>y) return x;  <br>
-   &emsp; &emsp;  else return y;  <br>    
-   &emsp; }  <br>  
+   &emsp; &emsp;  else return y; }  <br>  
   </li>
-  <li>함수 호출 : 함수 이름 쓰는 것으로 함수 내용을 실행   <br>
-   &emsp; result = max(10, 20); </li>
+  <li>함수 호출 <br>
+    result = max(10, 20); </li>
 </ul>
 
 <br>
