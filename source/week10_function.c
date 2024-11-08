@@ -1,26 +1,26 @@
 /*
-	ÆÄÀÏ¸í : functionExam.c
-	¼³  ¸í : ÇÔ¼ö Á¤ÀÇ, ÇÔ¼ö È£Ãâ, ¸Å°³º¯¼ö(ÀÔ·Â), ¹İÈ¯°ª(return, °á°ú) 
-	ÀÛ¼ºÀÚ : mju 
+	íŒŒì¼ëª… : week10_function.c
+	ì„¤  ëª… : í•¨ìˆ˜ ì •ì˜, í•¨ìˆ˜ í˜¸ì¶œ, ë§¤ê°œë³€ìˆ˜(ì…ë ¥), ë°˜í™˜ê°’(return, ê²°ê³¼) 
+	ì‘ì„±ì : mju 
 */
 
 # include <stdio.h>
 
-//ÇÔ¼ö Á¤ÀÇ - ¸®ÅÏÀÌ ¾ø´Â ÇÔ¼ö Á¤ÀÇ 
+//í•¨ìˆ˜ ì •ì˜ - ë¦¬í„´ì´ ì—†ëŠ” í•¨ìˆ˜ ì •ì˜ 
 void print_stars()
 {
-	//1. º¯¼ö ¼±¾ğ
+	//1. ë³€ìˆ˜ ì„ ì–¸
 	int i; 
-	//2. for i = 0 ~ 30±îÁö
+	//2. for i = 0 ~ 30ê¹Œì§€
 	for(i=0; i<30; i++)
 	{
-		// 3. Ãâ·Â *
+		// 3. ì¶œë ¥ *
 		printf("*");
 	}
 	printf("\n");
 }
 
-//ÇÔ¼ö È£Ãâ  - ¸®ÅÏÀÌ ¾ø´Â ÇÔ¼ö È£Ãâ  
+//í•¨ìˆ˜ í˜¸ì¶œ  - ë¦¬í„´ì´ ì—†ëŠ” í•¨ìˆ˜ í˜¸ì¶œ  
 void doExam1()
 {
 	print_stars();
@@ -28,7 +28,7 @@ void doExam1()
 	print_stars();
 } 
 
-//ÇÔ¼öÁ¤ÀÇ - ¸Å°³º¯¼ö¿Í ¹İÈ¯°ªÀÌ ÀÖ´Â ÇÔ¼ö Á¤ÀÇ
+//í•¨ìˆ˜ì •ì˜ - ë§¤ê°œë³€ìˆ˜ì™€ ë°˜í™˜ê°’ì´ ìˆëŠ” í•¨ìˆ˜ ì •ì˜
 int max( int x, int y)
 {
 	if(x>y)
@@ -37,21 +37,21 @@ int max( int x, int y)
 		return y;
 }
 
-// ÇÔ¼öÁ¤ÀÇ - µÎ ¸Å°³ º¯¼öÀÇ ÇÕÀ» ±¸ÇØ¼­ ¸®ÅÏÇÏ´Â ÇÔ¼ö Á¤ÀÇ  
+// í•¨ìˆ˜ì •ì˜ - ë‘ ë§¤ê°œ ë³€ìˆ˜ì˜ í•©ì„ êµ¬í•´ì„œ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜ ì •ì˜  
 int sum( int x , int y)
 {
 	int sumValue = x+y;
 	return sumValue;
 	//return x+y;
 }
-// ÇÔ¼öÁ¤ÀÇ - ÇÑ ¸Å°³º¯¼ö¸¦ ¹Ş¾Æ¼­ ±×°Í¿¡ 1À» ´õÇÏ´Â ÇÔ¼ö
+// í•¨ìˆ˜ì •ì˜ - í•œ ë§¤ê°œë³€ìˆ˜ë¥¼ ë°›ì•„ì„œ ê·¸ê²ƒì— 1ì„ ë”í•˜ëŠ” í•¨ìˆ˜
 int increase(int x)
 {
 	int result;
 	result = x+1;
 	return result;
 }
-// ÇÑ ¸Å°³º¯¼ö¸¦ ¹Ş¾Æ¼­ ±×°Í¿¡ 1À» »©´Â ÇÔ¼ö decrease
+// í•œ ë§¤ê°œë³€ìˆ˜ë¥¼ ë°›ì•„ì„œ ê·¸ê²ƒì— 1ì„ ë¹¼ëŠ” í•¨ìˆ˜ decrease
 int decrease(int x)
 {
 	int result;
@@ -59,31 +59,31 @@ int decrease(int x)
 	return result;
 }
 
-//ÇÔ¼ö È£Ãâ - ¸Å°³º¯¼ö¿Í ¹İÈ¯°ªÀÌ ÀÖ´Â ÇÔ¼ö¸¦ È£Ãâ
+//í•¨ìˆ˜ í˜¸ì¶œ - ë§¤ê°œë³€ìˆ˜ì™€ ë°˜í™˜ê°’ì´ ìˆëŠ” í•¨ìˆ˜ë¥¼ í˜¸ì¶œ
 void doExam2()
 {
 	int larger;
 	
 	int first, second;
-	//»ç¿ëÀÚ ÀÔ·Â -  
-	printf("µÎÁ¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	//ì‚¬ìš©ì ì…ë ¥ -  
+	printf("ë‘ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%d %d", &first, &second);
 	
-	// max °ªÀ» ±¸ÇÔ 
+	// max ê°’ì„ êµ¬í•¨ 
 	larger = max(first, second);
-	printf("(%d, %d)Áß¿¡ Å«°ªÀº %d ÀÔ´Ï´Ù. \n",first ,second , larger);
+	printf("(%d, %d)ì¤‘ì— í°ê°’ì€ %d ì…ë‹ˆë‹¤. \n",first ,second , larger);
 
 	int result1, result2, result3;
-	//sum  È£Ãâ - result1 
+	//sum  í˜¸ì¶œ - result1 
 	result1 = sum(first, second);
-	//increase È£Ãâ - result2
+	//increase í˜¸ì¶œ - result2
 	result2 = increase(first);
-	//decrease È£Ãâ - result3 
+	//decrease í˜¸ì¶œ - result3 
 	result3 = decrease(first);
 	
-	printf("(%d, %d)ÀÇ ÇÕÀº  %d ÀÔ´Ï´Ù. \n",first ,second , result1);
-	printf("(%d)ÀÇ 1Áõ°¡°ªÀº  %d ÀÔ´Ï´Ù. \n",first , result2);
-	printf("(%d)ÀÇ 1°¨¼Ò°ªÀº  %d ÀÔ´Ï´Ù. \n",first , result3);
+	printf("(%d, %d)ì˜ í•©ì€  %d ì…ë‹ˆë‹¤. \n",first ,second , result1);
+	printf("(%d)ì˜ 1ì¦ê°€ê°’ì€  %d ì…ë‹ˆë‹¤. \n",first , result2);
+	printf("(%d)ì˜ 1ê°ì†Œê°’ì€  %d ì…ë‹ˆë‹¤. \n",first , result3);
 }
  
  int main()
