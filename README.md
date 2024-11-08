@@ -8,8 +8,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_doWhile.c)
 <ul>
   <li>do~while : 명령문 무조건 한번 실행 <br>
-   &emsp;  <b>do</b> {   <br>
-   &emsp; &emsp;  문장들; }<b>while(조건);</b>  <br>    
+   &emsp;  <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
@@ -196,8 +195,7 @@ int main() <br>
 ### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_doWhile.c)
 <ul>
   <li>do~while : 명령문 무조건 한번 실행 <br>
-   &emsp;  <b>do</b> {   <br>
-   &emsp; &emsp;  문장들; }<b>while(조건);</b>  <br>    
+   &emsp;  <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
