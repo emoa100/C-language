@@ -1,44 +1,44 @@
 /*
-   ÆÄÀÏ¸í: subControl.c
-   ¼³  ¸í: ¹«ÇÑ·çÇÁ, º¸Á¶Á¦¾î¹®(break, continue), ¹Ýº¹¹®(do ~ while) 
-   ÀÌ  ¸§: mju 
+   íŒŒì¼ëª…: week10_dowhile.c
+   ì„¤  ëª…: ë°˜ë³µë¬¸(do ~ while) 
+   ì´  ë¦„: mju 
 */
 
-//ÀüÃ³¸®±â
+//ì „ì²˜ë¦¬ê¸°
 # include<stdio.h>
 
-// ¹Ýº¹¹® - do ~ while ¿¬½À 
+// ë°˜ë³µë¬¸ - do ~ while ì—°ìŠµ 
 void doExam1()
 {
-	//1.º¯¼ö ¼±¾ð - Á¤¼ö i
+	//1.ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ i
 	int i; 
 	
-	//2. ¹Ýº¹¹®: do ~ while 
+	//2. ë°˜ë³µë¬¸: do ~ while 
 	i = 0;  
 	do     
 	{
-		//3. ¸Þ´º Ãâ·Â
-		printf("1-»õ·Î¸¸µé±â\n"); 
-		printf("2-ÆÄÀÏ¿­±â\n");
-		printf("3-ÆÄÀÏ´Ý±â \n");
+		//3. ë©”ë‰´ ì¶œë ¥
+		printf("1-ìƒˆë¡œë§Œë“¤ê¸°\n"); 
+		printf("2-íŒŒì¼ì—´ê¸°\n");
+		printf("3-íŒŒì¼ë‹«ê¸° \n");
 		
-		printf("ÇÏ³ª¸¦ ¼±ÅÃÇÏ½Ã¿À : ");
-		//4. ¸Þ´º ÀÔ·Â 
+		printf("í•˜ë‚˜ë¥¼ ì„ íƒí•˜ì‹œì˜¤ : ");
+		//4. ë©”ë‰´ ìž…ë ¥ 
 		scanf("%d", &i);
-	}while(i<0 || i>3); // Á¶ 
+	}while(i<0 || i>3); // ì¡° 
 	
-	printf("¼±ÅÃµÈ ¸Þ´º : %d \n", i);
+	printf("ì„ íƒëœ ë©”ë‰´ : %d \n", i);
 	
-	// ¹«ÇÑ·çÇÁ ¹öÀü
+	// ë¬´í•œë£¨í”„ ë²„ì „
 	while(1)
 	{
-		//3. ¸Þ´º Ãâ·Â
-		printf("1-»õ·Î¸¸µé±â\n"); 
-		printf("2-ÆÄÀÏ¿­±â\n");
-		printf("3-ÆÄÀÏ´Ý±â \n");
+		//3. ë©”ë‰´ ì¶œë ¥
+		printf("1-ìƒˆë¡œë§Œë“¤ê¸°\n"); 
+		printf("2-íŒŒì¼ì—´ê¸°\n");
+		printf("3-íŒŒì¼ë‹«ê¸° \n");
 		
-		printf("ÇÏ³ª¸¦ ¼±ÅÃÇÏ½Ã¿À : ");
-		//4. ¸Þ´º ÀÔ·Â 
+		printf("í•˜ë‚˜ë¥¼ ì„ íƒí•˜ì‹œì˜¤ : ");
+		//4. ë©”ë‰´ ìž…ë ¥ 
 		scanf("%d", &i);
 		
 		if(i>=1 && i<=3)     
@@ -47,31 +47,31 @@ void doExam1()
 	
 }
 
-// ¹Ýº¹¹® - while ¿¬½À 
+// ë°˜ë³µë¬¸ - while ì—°ìŠµ 
 void doExam2()
 {
-	//1.º¯¼ö ¼±¾ð - Á¤¼ö i 
+	//1.ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ i 
 	int i; 
-	//2. Á¶°Ç¹Ýº¹ - while
+	//2. ì¡°ê±´ë°˜ë³µ - while
 
-	i=0;         //2.1 ÃÊ±â°ª  i - 0
-	while(i<0)   //2.2 ¹Ýº¹Á¶°Ç  - 5¹ø 
+	i=0;         //2.1 ì´ˆê¸°ê°’  i - 0
+	while(i<0)   //2.2 ë°˜ë³µì¡°ê±´  - 5ë²ˆ 
 	{	
-	    //3. hello world Ãâ·Â 
+	    //3. hello world ì¶œë ¥ 
 		printf("hello world");
-	    i++;     //2.3 Áõ°¨ 	 - 1¾¿ Áõ°¡
+	    i++;     //2.3 ì¦ê° 	 - 1ì”© ì¦ê°€
 	}
 }
 
-// ¹Ýº¹¹® - for ¿¬½À 
+// ë°˜ë³µë¬¸ - for ì—°ìŠµ 
 void doExam3()
 {
-	//1.º¯¼ö ¼±¾ð - Á¤¼ö i
+	//1.ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ i
 	int i;
-	//2. È½¼ö ¹Ýº¹ - for -  ÃÊ±â°ª;¹Ýº¹Á¶°Ç;Áõ°¨ - 0¿¡¼­ 5¹ø ¹Ýº¹ 
+	//2. íšŸìˆ˜ ë°˜ë³µ - for -  ì´ˆê¸°ê°’;ë°˜ë³µì¡°ê±´;ì¦ê° - 0ì—ì„œ 5ë²ˆ ë°˜ë³µ 
 	for(i=0; i<5; i++ )
 	{
-	    //3. hello world Ãâ·Â
+	    //3. hello world ì¶œë ¥
 	    printf("hello world");
 	}
 }
