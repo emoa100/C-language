@@ -3,24 +3,66 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 핵심 : 변수 - 연산자 - 조건문(if, switch) - 반복문(while, for) - 함수 - 배열 - 포인터
 <br>
 
-## 10주차 실습 -  함수 
+## 11주차 실습 -  함수2 
 
-### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_dowhile.c)
+### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
 <ul>
-  <li>do~while : 명령문 무조건 한번 실행 <br>
-   &emsp;  <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
+  <li>매개변수:함수에서 값을 전달받는 변수 <br>
+    &emsp; (함수정의) max(<b>int x, int y</b>)  
+  </li>
+  <li>인수:함수에 실제로 전달되는 값   <br>
+    &emsp; (함수호출)  max(<b>10, 20</b>)
+  </li>
+  <li>매개변수와 인수 개수 일치/타입일치 <br>
+   &emsp;  int max(int x, int y) - max(10, 20)<br>
+   &emsp;  void doExam(char ch) - doExam('a')  
   </li>
 </ul>
 
-### [보조제어문](https://github.com/baek-study/C-Language/blob/main/source/week10_subControl.c)
+
+### [반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
 <ul>
-  <li>무한루프 & 보조 제어문 <br>
-   &emsp;  <b>while</b>(1) { // 무한루프  <br>
-   &emsp; &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
-   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
+  <li>반환값:함수 수행 결과로 돌려주는 값  <br>
+   &emsp;  (함수정의) return x 
+  </li>
+  <li>결과대입변수:함수 호출후 결과 대입   <br>
+    &emsp;  (함수호출)  <b>value</b> = max(10, 20)
+  </li>
+  <li>함수정의시 반환 자료형, 반환값, 반환값 대입변수가 일치 <br> 
+    &emsp;<b>int</b> doExam1() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = doExam1();<br>
+    &emsp;<b>char</b> doExam2() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = doExam2();<br>
+    &emsp;<b>double</b> doExam3() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = doExam3(); <br>
+  </li>
+</ul>
+
+### [함수원형](https://github.com/baek-study/C-Language/blob/main/source/week11_prototyping.c)
+<ul>
+  <li>컴파일러에게 함수를 미리 알리는 것
+  </li>
+  <li>함수헤더 + 세미콜론 <br>
+   &emsp; int max(int x, int y);
+  </li>
+</ul>
+
+### [라이브러리](https://github.com/baek-study/C-Language/blob/main/source/week11_library.c)
+<ul>
+  <li> 컴파일러에서 제공하는 함수<br>
+ &emsp; 표준입출력(stdio.h), 표준유틸리티(stdlib.h), 수학(math.h), 시간(time.h), 문자열(string.h)등</li> 
+  <li>난수발생: rand(), srand(time(NULL))<br>
+   &emsp; - rand() : 난수 생성, rand()%6 + 1<br>
+   &emsp; - srand(정수) : 기준점변경, srand(100) <br>   
+   &emsp; - tme(NULL) : 현재시간 초 단위 반환(90/1/1 이후)<br>  
+   &emsp; - (unsigned)tme(NULL) : 시간은 0 이상<br> 
   </li>
 
+  <li>수학함수:math.h를 사용 </li>
+  &emsp; - floor(실수)/ceil(실수) : 내림/올림 함수 <br>
+  &emsp; - sqrt(실수)/pow(실수, 실수 : 제곱근/지수승 함수 <br>
+  &emsp; - sin(실수) : 사인 함수 - 라디안 값이 입력 <br>
+  </li>
 </ul>
+
+<br>
 
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
 <ul>
@@ -217,7 +259,7 @@ int main() <br>
    &emsp; &emsp;  else return y; }  <br>  
   </li>
   <li>함수 호출 <br>
-    result = max(10, 20); </li>
+    int value = max(10, 20); </li>
 </ul>
 
 <br>
@@ -239,12 +281,12 @@ int main() <br>
 </ul>
 
 
-### [반환값](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
+### [반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
 <ul>
   <li>반환값:함수 수행 결과로 돌려주는 값  <br>
    &emsp;  (함수정의) return x 
   </li>
-  <li>반환값 대입변수:함수 호출후 결과 대입   <br>
+  <li>결과대입변수:함수 호출후 결과 대입   <br>
     &emsp;  (함수호출)  <b>value</b> = max(10, 20)
   </li>
   <li>함수정의시 반환 자료형, 반환값, 반환값 대입변수가 일치 <br> 
@@ -265,11 +307,8 @@ int main() <br>
 
 ### [라이브러리](https://github.com/baek-study/C-Language/blob/main/source/week11_library.c)
 <ul>
-  <li> 컴파일러에서 제공하는 함수</li>
-  <li>표준입출력(stdio.h), 표준유틸리티(stdlib.h), 수학(math.h), 시간(time.h), 문자열(string.h)등</li> 
-</ul>
-
-<ul>
+  <li> 컴파일러에서 제공하는 함수<br>
+ &emsp; 표준입출력(stdio.h), 표준유틸리티(stdlib.h), 수학(math.h), 시간(time.h), 문자열(string.h)등</li> 
   <li>난수발생: rand(), srand(time(NULL))<br>
    &emsp; - rand() : 난수 생성, rand()%6 + 1<br>
    &emsp; - srand(정수) : 기준점변경, srand(100) <br>   
