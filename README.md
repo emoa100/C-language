@@ -37,10 +37,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 </ul>
 
 ### [함수정의&호출연습=매개변수&인수+반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_all.c)
-<ul>
-  <li>[함수정의&호출연습=매개변수&인수+반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_all.c)  </li>
-  <li>[함수호출연습](https://github.com/baek-study/C-Language/blob/main/source/week11_function_callExam.c): ---- 인곳 채우기  </li>
-</ul>
+<br>[함수정의&호출연습=매개변수&인수+반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_all.c)
+
 
 ### [함수원형](https://github.com/baek-study/C-Language/blob/main/source/week11_function_prototyping.c)
 <ul>
