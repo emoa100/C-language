@@ -68,23 +68,6 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <br>
 
 
-### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
-<ul>
-  <li>함수 정의  <br>
-   &emsp;  <b>int max(int x, int y)</b> {   <br>
-   &emsp; &emsp;  if(x>y) return x;  <br>
-   &emsp; &emsp;  else return y; }  <br>  
-  </li>
-  <li>함수 호출 <br>
-    result = max(10, 20); </li>
-</ul>
-
-<br>
-
-<hr width="500px", size="10px">
-
-<br>
-
 
 ## 1주차 실습
 ### [첫 프로그램! hello, world](https://github.com/baek-study/C-Language/blob/main/source/week1_hello.c)
