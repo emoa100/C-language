@@ -227,14 +227,14 @@ int main() <br>
 ### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
 <ul>
   <li>매개변수:함수에서 값을 전달받는 변수 <br>
-    &emsp; &emsp; ex) (함수정의) max(<b>int x, int y</b>)  
+    &emsp; (함수정의) max(<b>int x, int y</b>)  
   </li>
   <li>인수:함수에 실제로 전달되는 값   <br>
-    &emsp; &emsp;  ex) (함수호출)  max(<b>10, 20</b>)
+    &emsp; (함수호출)  max(<b>10, 20</b>)
   </li>
   <li>매개변수와 인수 개수 일치/타입일치 <br>
-   &emsp;  ex) int max(int x, int y) - max(10, 20)<br>
-   &emsp;  ex) void doExam(char ch) - doExam('a')  
+   &emsp;  int max(int x, int y) - max(10, 20)<br>
+   &emsp;  void doExam(char ch) - doExam('a')  
   </li>
 </ul>
 
@@ -242,18 +242,15 @@ int main() <br>
 ### [반환값](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
 <ul>
   <li>반환값:함수 수행 결과로 돌려주는 값  <br>
-   &emsp;  ex) (함수정의) return x 
+   &emsp;  (함수정의) return x 
   </li>
   <li>반환값 대입변수:함수 호출후 결과 대입   <br>
-    &emsp;  ex) (함수호출)  <b>value</b> = max(10, 20)
+    &emsp;  (함수호출)  <b>value</b> = max(10, 20)
   </li>
   <li>함수정의시 반환 자료형, 반환값, 반환값 대입변수가 일치 <br> 
-    &emsp;<b>int</b> doExam1() { <b>int</b> result; 문장들; return <b>result</b>;} <br>
-    &emsp;&emsp;<b>int</b> value1 = doExam1();<br>
-    &emsp;<b>char</b> doExam2() { <b>char</b> result; 문장들; return <b>result</b>;}<br>
-    &emsp;&emsp;<b>char</b> value2 = doExam2();<br>
-    &emsp;<b>double</b> doExam3() { <b>double</b> result; 문장들; return <b>result</b>;}<br>
-    &emsp;&emsp;<b>double</b> value3 = doExam3(); <br>
+    &emsp;<b>int</b> doExam1() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = doExam1();<br>
+    &emsp;<b>char</b> doExam2() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = doExam2();<br>
+    &emsp;<b>double</b> doExam3() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = doExam3(); <br>
   </li>
 </ul>
 
@@ -276,14 +273,14 @@ int main() <br>
   <li>난수발생: rand(), srand(time(NULL))<br>
    &emsp; - rand() : 난수 생성, rand()%6 + 1<br>
    &emsp; - srand(정수) : 기준점변경, srand(100) <br>   
-   &emsp; - tme(NULL) : 현재시간 반환, 90/1/1 이후 초 단위 반환<br>  
+   &emsp; - tme(NULL) : 현재시간 초 단위 반환(90/1/1 이후)<br>  
    &emsp; - (unsigned)tme(NULL) : 시간은 0 이상<br> 
   </li>
 
   <li>수학함수:math.h를 사용 </li>
-  &emsp; floor(실수)/ceil(실수) : 내림/올림 함수 <br>
-  &emsp; sqrt(실수)/pow(실수, 실수 : 제곱근/지수승 함수 <br>
-  &emsp; sin(실수) : 사인 함수 - 라디안 값이 입력 <br>
+  &emsp; - floor(실수)/ceil(실수) : 내림/올림 함수 <br>
+  &emsp; - sqrt(실수)/pow(실수, 실수 : 제곱근/지수승 함수 <br>
+  &emsp; - sin(실수) : 사인 함수 - 라디안 값이 입력 <br>
   </li>
 </ul>
 
