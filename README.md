@@ -28,7 +28,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   <li>결과대입변수:함수 호출후 결과 대입   <br>
     &emsp;  (함수호출)  <b>value</b> = max(10, 20)
   </li>
-  <li>함수정의시 반환 자료형, 반환값, 반환값 대입변수가 일치 <br> 
+  <li>반환 자료형, 반환값, 결과대입변수가 일치 <br> 
     &emsp;<b>int</b> doExam1() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = doExam1();<br>
     &emsp;<b>char</b> doExam2() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = doExam2();<br>
     &emsp;<b>double</b> doExam3() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = doExam3(); <br>
@@ -289,7 +289,7 @@ int main() <br>
   <li>결과대입변수:함수 호출후 결과 대입   <br>
     &emsp;  (함수호출)  <b>value</b> = max(10, 20)
   </li>
-  <li>함수정의시 반환 자료형, 반환값, 반환값 대입변수가 일치 <br> 
+  <li>반환 자료형, 반환값, 결과대입변수가 일치 <br> 
     &emsp;<b>int</b> doExam1() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = doExam1();<br>
     &emsp;<b>char</b> doExam2() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = doExam2();<br>
     &emsp;<b>double</b> doExam3() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = doExam3(); <br>
