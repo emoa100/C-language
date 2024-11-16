@@ -5,7 +5,9 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ## 11주차 실습 -  함수2 
 
-### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
+## 11주차 실습 -  함수2 
+
+### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function_parameter.c)
 <ul>
   <li>매개변수:함수에서 값을 전달받는 변수 <br>
     &emsp; (함수정의) max(<b>int x, int y</b>)  
@@ -15,12 +17,13 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   </li>
   <li>매개변수와 인수 개수 일치/타입일치 <br>
    &emsp;  int max(int x, int y) - max(10, 20)<br>
-   &emsp;  void doExam(char ch) - doExam('a')  
+   &emsp;  double get_area(int radius) - get_area(10)<br>
+   &emsp;  print print_ch(char ch) - print_ch('a')
   </li>
 </ul>
 
 
-### [반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function2.c)
+### [반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_return.c)
 <ul>
   <li>반환값:함수 수행 결과로 돌려주는 값  <br>
    &emsp;  (함수정의) return x 
@@ -29,13 +32,15 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     &emsp;  (함수호출)  <b>value</b> = max(10, 20)
   </li>
   <li>반환 자료형, 반환값, 결과대입변수가 일치 <br> 
-    &emsp;<b>int</b> doExam1() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = doExam1();<br>
-    &emsp;<b>char</b> doExam2() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = doExam2();<br>
-    &emsp;<b>double</b> doExam3() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = doExam3(); <br>
+    &emsp;<b>int</b> max() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = max();<br>
+    &emsp;<b>double</b> get_area() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = get_area(); <br>
+    &emsp;<b>char</b> get_ch() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = get_ch();<br>
   </li>
 </ul>
 
-### [함수원형](https://github.com/baek-study/C-Language/blob/main/source/week11_prototyping.c)
+### [함수정의&호출연습=매개변수&인수+반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_all.c)
+
+### [함수원형](https://github.com/baek-study/C-Language/blob/main/source/week11_function_prototyping.c)
 <ul>
   <li>컴파일러에게 함수를 미리 알리는 것
   </li>
@@ -63,6 +68,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 </ul>
 
 <br>
+
 
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
 <ul>
@@ -297,11 +303,7 @@ int main() <br>
   </li>
 </ul>
 
-### [함수정의&호출연습](https://github.com/baek-study/C-Language/blob/main/source/week11_function_all.c)
-<ul>
-  <li> 함수정의시 - 매개변수, 반환값(반환자료형, 반환값) 주의</li>
-  <li>함수호출시 - 인수, (반환되는)결과대입변수 주의 </li>
-</ul>
+### [함수정의&호출연습=매개변수&인수+반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_all.c)
 
 ### [함수원형](https://github.com/baek-study/C-Language/blob/main/source/week11_function_prototyping.c)
 <ul>
