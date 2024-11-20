@@ -7,13 +7,9 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
-  <li>변수범위:지역변수, 전역변수<br>
-    &emsp; - 변수선언: 지역(블록/함수 안), 전역(함수 외)<br>
-    &emsp; - 변수사용: 지역(해당 블록 내), 전역(프로그램 전체)
-  </li>
-  <li>변수생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
-    &emsp; - 선언위치: 지역(임시), 전역(영구) <br>
-    &emsp; - 저장유형지정자: auto(임시), static(영구)
+  <li>변수속성: 이름, 자료형, 값 + 범위, 생존기간 <br>
+    &emsp; - 변수범위:지역(블록/함수 안), 전역(함수 외)<br>
+    &emsp; - 생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
   </li>
   <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
     &emsp; - 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
@@ -21,10 +17,11 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   </li>
   <li>전역변수: 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
    &emsp; <b>int globla_x</b>; void sub() { }<br>  
-   &emsp;  <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
+   &emsp; <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
   </li>
-   <li>static(정적)변수: 프로그램 실행 동안 계속 유지  <br>
-     &emsp;<b>static</b> int count = 0; 
+   <li>static(정적)변수: 영구 생존<br>
+     &emsp;<b>static</b> int count = 0;<br>
+     &emsp;-저장유형지정자: static(영구), auto(임시, 기존 지역변수) 
   </li>
 
 </ul>
@@ -301,13 +298,9 @@ int main() <br>
 
 ## 12주차 실습 -  변수범위&배열
 <ul>
-  <li>변수범위:지역변수, 전역변수<br>
-    &emsp; - 변수선언: 지역(블록/함수 안), 전역(함수 외)<br>
-    &emsp; - 변수사용: 지역(해당 블록 내), 전역(프로그램 전체)
-  </li>
-  <li>변수생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
-    &emsp; - 선언위치: 지역(임시), 전역(영구) <br>
-    &emsp; - 저장유형지정자: auto(임시), static(영구)
+  <li>변수속성: 이름, 자료형, 값 + 범위, 생존기간 <br>
+    &emsp; - 변수범위:지역(블록/함수 안), 전역(함수 외)<br>
+    &emsp; - 생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
   </li>
   <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
     &emsp; - 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
@@ -315,12 +308,12 @@ int main() <br>
   </li>
   <li>전역변수: 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
    &emsp; <b>int globla_x</b>; void sub() { }<br>  
-   &emsp;  <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
+   &emsp; <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
   </li>
-   <li>static(정적)변수: 프로그램 실행 동안 계속 유지  <br>
-     &emsp;<b>static</b> int count = 0; 
+   <li>static(정적)변수: 영구 생존<br>
+     &emsp;<b>static</b> int count = 0;<br>
+     &emsp;-저장유형지정자: static(영구), auto(임시, 기존 지역변수) 
   </li>
-
 </ul>
 
 
