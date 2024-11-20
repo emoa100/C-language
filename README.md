@@ -319,10 +319,10 @@ int main() <br>
 
 ### [배열](https://github.com/baek-study/C-Language/blob/main/source/week12_array.c)
 <ul>
-  <li>배열: 같은 자료형을 여러개 저장, 연속된 공간 
+  <li>개념: 같은 자료형을 여러개를 연속된 공간에 저장 
   </li>
-  <li>배열선언: int scores[5]; // 대괄호안에 갯수
-    &emsp; 인덱스: 각원소 구분하는 일련번호, 0부터 시작
+  <li>배열선언: int scores[5]; // 대괄호안에 갯수<br>
+    &emsp; - 인덱스: 각원소 구분하는 일련번호, 0부터 시작
   </li>
   <li>원소접근: scores[3]; //배열이름[인덱스]
   </li>
