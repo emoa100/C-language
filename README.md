@@ -8,19 +8,20 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
   <li>변수범위:지역변수, 전역변수<br>
-    &emsp; - 선언: 지역(블록/함수 안), 전역(함수 외)<br>
-    &emsp; - 사용: 지역(해당 블록 내), 전역(프로그램 전체)
+    &emsp; - 변수선언: 지역(블록/함수 안), 전역(함수 외)<br>
+    &emsp; - 변수사용: 지역(해당 블록 내), 전역(프로그램 전체)
   </li>
   <li>변수생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
-    &emsp; - 변수선언위치: 지역(임시), 전역(영구) <br>
+    &emsp; - 선언위치: 지역(임시), 전역(영구) <br>
     &emsp; - 저장유형지정자: auto(임시), static(영구)
   </li>
-  <li>지역변수: 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
-   &emsp;  void sub() {int local_x; }<br>
+  <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
+    &emsp; - 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
+   &emsp;  void sub() {int <b>local_x;</b>}<br>
   </li>
   <li>전역변수: 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
-   &emsp;  int globla_x; void sub() { }<br>  
-   &emsp;  int temp=5; void sub() {int temp=3; printf("%d",temp}//3 }<br>  
+   &emsp; <b>int globla_x</b>; void sub() { }<br>  
+   &emsp;  <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
   </li>
    <li>static(정적)변수: 프로그램 실행 동안 계속 유지  <br>
      &emsp;<b>static</b> int count = 0; 
@@ -299,25 +300,27 @@ int main() <br>
 <br>
 
 ## 12주차 실습 -  변수범위&배열
-
-### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
-  <li>변수범위:지역변수, 전역변수   <br>
-    &emsp; -선언: 지역(블록/함수 안), 전역(함수 외)<br>
-    &emsp; -사용: 지역(해당 블록 내), 전역(프로그램 전체)
+  <li>변수범위:지역변수, 전역변수<br>
+    &emsp; - 변수선언: 지역(블록/함수 안), 전역(함수 외)<br>
+    &emsp; - 변수사용: 지역(해당 블록 내), 전역(프로그램 전체)
   </li>
-  <li>지역변수: 자동으로 초기화 되지 않음   <br>
-   &emsp;  void sub() {int local_x; }<br>
-   &emsp; - 함수 매개변수도 지역변수  
+  <li>변수생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
+    &emsp; - 선언위치: 지역(임시), 전역(영구) <br>
+    &emsp; - 저장유형지정자: auto(임시), static(영구)
   </li>
-  <li>전역변수: 자동으로 0으로 초기화  <br>
-   &emsp;  int globla_x; void sub() { }<br>  
-   &emsp; - 우선순위: 전역 변수 < 지역변수  <br>
+  <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
+    &emsp; - 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
+   &emsp;  void sub() {int <b>local_x;</b>}<br>
   </li>
-   <li>생존기간:임시(블록내), 영구(실행동안계속) <br>
-     &emsp;-static(정적)변수: 영구생존, 지역/전역 가능
-     &emsp;&emsp;<b>static</b> int count = 0; 
+  <li>전역변수: 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
+   &emsp; <b>int globla_x</b>; void sub() { }<br>  
+   &emsp;  <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
   </li>
+   <li>static(정적)변수: 프로그램 실행 동안 계속 유지  <br>
+     &emsp;<b>static</b> int count = 0; 
+  </li>
+
 </ul>
 
 
@@ -339,11 +342,3 @@ int main() <br>
 ### [함수연습](https://github.com/baek-study/C-Language/blob/main/source/week12_functionExam.c)
 
 <br>
-
-
-
-
-
-
-
-
