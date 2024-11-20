@@ -12,14 +12,14 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     &emsp; - 생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
   </li>
   <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
+    &emsp;  void sub() {int <b>local_x;</b>}<br>
     &emsp; - 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
-   &emsp;  void sub() {int <b>local_x;</b>}<br>
   </li>
-  <li>전역변수: 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
-   &emsp; <b>int globla_x</b>; void sub() { }<br>  
-   &emsp; <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
+  <li>전역변수: 함수외 선언, 프로그램 전체에 사용 <br>
+    &emsp; <b>int globla_x</b>; void sub() { }<br>  
+    &emsp; - 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
   </li>
-   <li>static(정적)변수: 영구 생존<br>
+  <li>static(정적)변수: 영구 생존<br>
      &emsp;<b>static</b> int count = 0;<br>
      &emsp;-저장유형지정자: static(영구), auto(임시, 기존 지역변수) 
   </li>
@@ -303,14 +303,14 @@ int main() <br>
     &emsp; - 생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
   </li>
   <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
+    &emsp;  void sub() {int <b>local_x;</b>}<br>
     &emsp; - 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
-   &emsp;  void sub() {int <b>local_x;</b>}<br>
   </li>
-  <li>전역변수: 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
-   &emsp; <b>int globla_x</b>; void sub() { }<br>  
-   &emsp; <b>int temp=5;</b> void sub() {<b>int temp=3;</b> printf("%d",temp}//3 }<br>  
+  <li>전역변수: 함수외 선언, 프로그램 전체에 사용 <br>
+    &emsp; <b>int globla_x</b>; void sub() { }<br>  
+    &emsp; - 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
   </li>
-   <li>static(정적)변수: 영구 생존<br>
+  <li>static(정적)변수: 영구 생존<br>
      &emsp;<b>static</b> int count = 0;<br>
      &emsp;-저장유형지정자: static(영구), auto(임시, 기존 지역변수) 
   </li>
