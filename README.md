@@ -3,70 +3,45 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 핵심 : 변수 - 연산자 - 조건문(if, switch) - 반복문(while, for) - 함수 - 배열 - 포인터
 <br>
 
-## 11주차 실습 -  함수2 
+## 12주차 실습 -  변수범위&배열
 
-### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function_parameter.c)
+### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
-  <li>매개변수:함수에서 값을 전달받는 변수 <br>
-    &emsp; (함수정의) max(<b>int x, int y</b>)  
+  <li>변수범위:지역변수, 전역변수   <br>
+    &emsp; -선언: 지역(블록/함수 안), 전역(함수 외)<br>
+    &emsp; -사용: 지역(해당 블록 내), 전역(프로그램 전체)
   </li>
-  <li>인수:함수에 실제로 전달되는 값   <br>
-    &emsp; (함수호출)  max(<b>10, 20</b>)
+  <li>지역변수: 자동으로 초기화 되지 않음   <br>
+   &emsp;  void sub() {int local_x; }<br>
+   &emsp; - 함수 매개변수도 지역변수  
   </li>
-  <li>매개변수와 인수 개수 일치/타입일치 <br>
-   &emsp;  int max(int x, int y) - max(10, 20)<br>
-   &emsp;  double get_area(int radius) - get_area(10)<br>
-   &emsp;  print print_ch(char ch) - print_ch('a')
+  <li>전역변수: 자동으로 0으로 초기화  <br>
+   &emsp;  int globla_x; void sub() { }<br>  
+   &emsp; - 우선순위: 전역 변수 < 지역변수  <br>
+  </li>
+   <li>생존기간:임시(블록내), 영구(실행동안계속) <br>
+     &emsp;-static(정적)변수: 영구생존, 지역/전역 가능
+     &emsp;&emsp;<b>static</b> int count = 0; 
   </li>
 </ul>
 
 
-### [반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_return.c)
+### [배열](https://github.com/baek-study/C-Language/blob/main/source/week12_array.c)
 <ul>
-  <li>반환값:함수 수행 결과로 돌려주는 값  <br>
-   &emsp;  (함수정의) return x 
+  <li>배열: 같은 자료형을 여러개 저장, 연속된 공간 
   </li>
-  <li>결과대입변수:함수 호출후 결과 대입   <br>
-    &emsp;  (함수호출)  <b>value</b> = max(10, 20)
+  <li>배열선언: int scores[5]; // 대괄호안에 갯수
+    &emsp; 인덱스: 각원소 구분하는 일련번호, 0부터 시작
   </li>
-  <li>반환 자료형, 반환값, 결과대입변수가 일치 <br> 
-    &emsp;<b>int</b> max() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = max();<br>
-    &emsp;<b>double</b> get_area() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = get_area(); <br>
-    &emsp;<b>char</b> get_ch() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = get_ch();<br>
+  <li>원소접근: scores[3]; //배열이름[인덱스]
+  </li>
+  <li>값저장: scores[3] = 20; //배열이름[인덱스] = 값
+  </li>
+  <li>초기화: int scores[5]={10,20,30,40,50};
   </li>
 </ul>
 
-### [함수정의&호출연습=매개변수&인수+반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_all.c)
-&emsp;-[함수정의(헤더)연습](https://github.com/baek-study/C-Language/blob/main/source/week11_function_parameterExam.c)<br>
-&emsp;-[함수호출연습](https://github.com/baek-study/C-Language/blob/main/source/week11_function_callExam.c)<br>
-
-
-### [함수원형](https://github.com/baek-study/C-Language/blob/main/source/week11_function_prototyping.c)
-<ul>
-  <li>컴파일러에게 함수를 미리 알리는 것
-  </li>
-  <li>함수헤더 + 세미콜론 <br>
-   &emsp; int max(int x, int y);
-  </li>
-</ul>
-
-### [라이브러리](https://github.com/baek-study/C-Language/blob/main/source/week11_library.c)
-<ul>
-  <li> 컴파일러에서 제공하는 함수<br>
- &emsp; 표준입출력(stdio.h), 표준유틸리티(stdlib.h), 수학(math.h), 시간(time.h), 문자열(string.h)등</li> 
-  <li>난수발생: rand(), srand(time(NULL))<br>
-   &emsp; - rand() : 난수 생성, rand()%6 + 1<br>
-   &emsp; - srand(정수) : 기준점변경, srand(100) <br>   
-   &emsp; - tme(NULL) : 현재시간 초 단위 반환(90/1/1 이후)<br>  
-   &emsp; - (unsigned)tme(NULL) : 시간은 0 이상<br> 
-  </li>
-
-  <li>수학함수:math.h를 사용 </li>
-  &emsp; - floor(실수)/ceil(실수) : 내림/올림 함수 <br>
-  &emsp; - sqrt(실수)/pow(실수, 실수 : 제곱근/지수승 함수 <br>
-  &emsp; - sin(실수) : 사인 함수 - 라디안 값이 입력 <br>
-  </li>
-</ul>
+### [함수연습](https://github.com/baek-study/C-Language/blob/main/source/week12_functionExam.c)
 
 <br>
 
@@ -317,6 +292,48 @@ int main() <br>
   &emsp; - sin(실수) : 사인 함수 - 라디안 값이 입력 <br>
   </li>
 </ul>
+
+<br>
+
+## 12주차 실습 -  변수범위&배열
+
+### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
+<ul>
+  <li>변수범위:지역변수, 전역변수   <br>
+    &emsp; -선언: 지역(블록/함수 안), 전역(함수 외)<br>
+    &emsp; -사용: 지역(해당 블록 내), 전역(프로그램 전체)
+  </li>
+  <li>지역변수: 자동으로 초기화 되지 않음   <br>
+   &emsp;  void sub() {int local_x; }<br>
+   &emsp; - 함수 매개변수도 지역변수  
+  </li>
+  <li>전역변수: 자동으로 0으로 초기화  <br>
+   &emsp;  int globla_x; void sub() { }<br>  
+   &emsp; - 우선순위: 전역 변수 < 지역변수  <br>
+  </li>
+   <li>생존기간:임시(블록내), 영구(실행동안계속) <br>
+     &emsp;-static(정적)변수: 영구생존, 지역/전역 가능
+     &emsp;&emsp;<b>static</b> int count = 0; 
+  </li>
+</ul>
+
+
+### [배열](https://github.com/baek-study/C-Language/blob/main/source/week12_array.c)
+<ul>
+  <li>배열: 같은 자료형을 여러개 저장, 연속된 공간 
+  </li>
+  <li>배열선언: int scores[5]; // 대괄호안에 갯수
+    &emsp; 인덱스: 각원소 구분하는 일련번호, 0부터 시작
+  </li>
+  <li>원소접근: scores[3]; //배열이름[인덱스]
+  </li>
+  <li>값저장: scores[3] = 20; //배열이름[인덱스] = 값
+  </li>
+  <li>초기화: int scores[5]={10,20,30,40,50};
+  </li>
+</ul>
+
+### [함수연습](https://github.com/baek-study/C-Language/blob/main/source/week12_functionExam.c)
 
 <br>
 
