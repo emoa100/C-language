@@ -7,9 +7,13 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
-  <li>변수범위:지역변수, 전역변수   <br>
+  <li>변수범위:지역변수, 전역변수<br>
     &emsp; - 선언: 지역(블록/함수 안), 전역(함수 외)<br>
     &emsp; - 사용: 지역(해당 블록 내), 전역(프로그램 전체)
+  </li>
+  <li>변수생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
+    &emsp; - 변수선언위치: 지역(임시), 전역(영구) <br>
+    &emsp; - 저장유형지정자: auto(임시), static(영구)
   </li>
   <li>지역변수: 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
    &emsp;  void sub() {int local_x; }<br>
@@ -18,10 +22,10 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
    &emsp;  int globla_x; void sub() { }<br>  
    &emsp;  int temp=5; void sub() {int temp=3; printf("%d",temp}//3 }<br>  
   </li>
-   <li>생존기간:임시(블록내), 영구(실행동안계속) <br>
-     &emsp;-static(정적)변수: 영구생존, 지역/전역 가능<br>
-     &emsp;&emsp;<b>static</b> int count = 0; 
+   <li>static(정적)변수: 프로그램 실행 동안 계속 유지  <br>
+     &emsp;<b>static</b> int count = 0; 
   </li>
+
 </ul>
 
 
