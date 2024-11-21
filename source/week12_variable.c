@@ -1,7 +1,7 @@
 /*
-	ÆÄÀÏ¸í : week12_variable.c
-	¼³  ¸í : Áö¿ªº¯¼ö, Àü¿ªº¯¼ö, Á¤Àû(static) º¯¼ö ¿¬½À  
-	ÀÛ¼ºÀÚ : mju 
+	íŒŒì¼ëª… : week12_variable.c
+	ì„¤  ëª… : ì§€ì—­ë³€ìˆ˜, ì „ì—­ë³€ìˆ˜, ì •ì (static) ë³€ìˆ˜ ì—°ìŠµ  
+	ìž‘ì„±ìž : mju 
 */
 #include <stdio.h>
 
@@ -11,129 +11,129 @@ int main()
 } 
  
 
-// ¿¹Á¦1. Áö¿ªº¯¼ö ¿¹Á¦
-// Áö¿ªº¯¼ö´Â ºí·Ï ¾È¿¡ ¼±¾ðµÇ´Â º¯¼ö, ÇØ´ç ÇÔ¼ö³ª ºí·Ï ¾È¿¡¼­¸¸ »ç¿ë °¡´É  
+// ì˜ˆì œ1. ì§€ì—­ë³€ìˆ˜ ì˜ˆì œ
+// ì§€ì—­ë³€ìˆ˜ëŠ” ë¸”ë¡ ì•ˆì— ì„ ì–¸ë˜ëŠ” ë³€ìˆ˜, í•´ë‹¹ í•¨ìˆ˜ë‚˜ ë¸”ë¡ ì•ˆì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥  
 void doExam1()
 {
- 	//1. º¯¼ö¼±¾ð - Á¤¼ö i
+ 	//1. ë³€ìˆ˜ì„ ì–¸ - ì •ìˆ˜ i
 	int i; 
 	
-    //2. ¹Ýº¹¹® - i - 0~4±îÁö
+    	//2. ë°˜ë³µë¬¸ - i - 0~4ê¹Œì§€
 	for(i=0; i<5; i++)
 	{
-       	//3.ºí·Ï³» º¯¼ö ¼±¾ð - Á¤¼ö temp ÃÊ±âÈ­ 1 
+       		//3.ë¸”ë¡ë‚´ ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ temp ì´ˆê¸°í™” 1 
 		int temp=1; 
-		printf("temp = %d \n", temp);   // [°á°ú] temp = 1 
+		printf("temp = %d \n", temp);   // [ê²°ê³¼] temp = 1 
 		temp++;
-		//ºí·Ï ³ª°¡¸é º¯¼ö°¡ ¾ø¾îÁü  
+		//ë¸”ë¡ ë‚˜ê°€ë©´ ë³€ìˆ˜ê°€ ì—†ì–´ì§  
 	}
 }
  
 
-//¿¹Á¦2. Àü¿ª º¯¼ö - Á¤¼ö º¯¼ö ¹üÀ§ (ÇÁ·Î±×·¥ ½ÃÀÛ ~ ÇÁ·Î±×·¥ ³¡)
-// Àü¿ª º¯¼ö ¼±¾ð - Á¤¼ö global_x ¼±¾ð - ÃÊ±â°ª 123
+//ì˜ˆì œ2. ì „ì—­ ë³€ìˆ˜ - ì •ìˆ˜ ë³€ìˆ˜ ë²”ìœ„ (í”„ë¡œê·¸ëž¨ ì‹œìž‘ ~ í”„ë¡œê·¸ëž¨ ë)
+// ì „ì—­ ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ global_x ì„ ì–¸ - ì´ˆê¸°ê°’ 123
 int global_x = 123;
 
-//2.1 ¸Å°³º¯¼ö/¸®ÅÏ ¾ø´Â sub1 ÇÔ¼ö
+//2.1 ë§¤ê°œë³€ìˆ˜/ë¦¬í„´ ì—†ëŠ” sub1 í•¨ìˆ˜
 void sub1()
 {
-	// Àü¿ª º¯¼ö global_x ¸¦ 456 À¸·Î ¼öÁ¤
+	// ì „ì—­ ë³€ìˆ˜ global_x ë¥¼ 456 ìœ¼ë¡œ ìˆ˜ì •
 	global_x = 456;
 }
 
 
-//2.2 ¸Å°³º¯¼ö/¸®ÅÏ ¾ø´Â sub2 ÇÔ¼ö 
+//2.2 ë§¤ê°œë³€ìˆ˜/ë¦¬í„´ ì—†ëŠ” sub2 í•¨ìˆ˜ 
 void sub2()
 {
-	//// Àü¿ª º¯¼ö global_x ¸¦ 789 À¸·Î ¼öÁ¤
+	//// ì „ì—­ ë³€ìˆ˜ global_x ë¥¼ 789 ìœ¼ë¡œ ìˆ˜ì •
 	global_x = 789;
 }
 
 
-//2.3 ÇÔ¼ö È£Ãâ
+//2.3 í•¨ìˆ˜ í˜¸ì¶œ
 void doExam2()
 {
-	//1.  Ãâ·Â - Àü¿ªº¯¼ö 
-	printf("%d \n", global_x); // [°á°ú] 123
+	//1.  ì¶œë ¥ - ì „ì—­ë³€ìˆ˜ 
+	printf("%d \n", global_x); // [ê²°ê³¼] 123
 	
-	//2. ÇÔ¼ö È£Ãâ - sub1
+	//2. í•¨ìˆ˜ í˜¸ì¶œ - sub1
 	sub1();
-	//3. Ãâ·Â - Àü¿ªº¯¼ö
-	printf("sub1 È£Ãâ ÈÄ %d \n", global_x); // [°á°ú] sub1 È£Ãâ ÈÄ 456
+	//3. ì¶œë ¥ - ì „ì—­ë³€ìˆ˜
+	printf("sub1 í˜¸ì¶œ í›„ %d \n", global_x); // [ê²°ê³¼] sub1 í˜¸ì¶œ í›„ 456
 	
-	//4. ÇÔ¼ö È£Ãâ - sub2
+	//4. í•¨ìˆ˜ í˜¸ì¶œ - sub2
 	sub2();
-	//5. Ãâ·Â - Àü¿ª º¯¼ö
-	printf("sub2 È£Ãâ ÈÄ%d \n", global_x); // [°á°ú] sub1 È£Ãâ ÈÄ 789
+	//5. ì¶œë ¥ - ì „ì—­ ë³€ìˆ˜
+	printf("sub2 í˜¸ì¶œ í›„%d \n", global_x); // [ê²°ê³¼] sub1 í˜¸ì¶œ í›„ 789
 }
 
-//¿¹Á¦3. Àü¿ªº¯¼ö - # Àº ¸î¹ø Ãâ·Â µÇ³ª?
-// Àü¿ªº¯¼ö ¼±¾ð - Á¤¼ö gi
+//ì˜ˆì œ3. ì „ì—­ë³€ìˆ˜ - # ì€ ëª‡ë²ˆ ì¶œë ¥ ë˜ë‚˜?
+// ì „ì—­ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ gi
 int gi;
 
-//3.1 ÇÔ¼ö Á¤ÀÇ - # À» 10 ¹ø Ãâ·Â ÇÏ´Â ÇÔ¼ö 
-//ÇÔ¼ö ÀÌ¸§ printSharp ¸Å°³º¯¼ö ¾øÀ½, ¸®ÅÏ ¾øÀ½
+//3.1 í•¨ìˆ˜ ì •ì˜ - # ì„ 10 ë²ˆ ì¶œë ¥ í•˜ëŠ” í•¨ìˆ˜ 
+//í•¨ìˆ˜ ì´ë¦„ printSharp ë§¤ê°œë³€ìˆ˜ ì—†ìŒ, ë¦¬í„´ ì—†ìŒ
 void printSharp()
 {
-	// 1. ÇÔ¼ö³» ¹Ýº¹¹® gi - 0~9±îÁö
+	// 1. í•¨ìˆ˜ë‚´ ë°˜ë³µë¬¸ gi - 0~9ê¹Œì§€
 	for(gi = 0; gi<10; gi++)
 		printf("#");
 		
 	printf("\n");
 }
 
-//3.2 ÇÔ¼ö È£Ãâ
+//3.2 í•¨ìˆ˜ í˜¸ì¶œ
 void doExam3()
 {
-	//1. ¹Ýº¹¹® gi - 0~4 ±îÁö
+	//1. ë°˜ë³µë¬¸ gi - 0~4 ê¹Œì§€
 	for(gi=0; gi<5; gi++)              
 	{
-		//2. ÇÔ¼ö È£Ãâ
+		//2. í•¨ìˆ˜ í˜¸ì¶œ
 		printSharp();
 	}
 }
 
-//¿¹Á¦4. Àü¿ªº¯¼ö - ÃÊ±ê°ª ÀÚµ¿À¸·Î 0 ¼³Á¤µÊ
-//Àü¿ª º¯¼ö ¼±¾ð - Á¤¼ö global_counter
+//ì˜ˆì œ4. ì „ì—­ë³€ìˆ˜ - ì´ˆê¹ƒê°’ ìžë™ìœ¼ë¡œ 0 ì„¤ì •ë¨
+//ì „ì—­ ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ global_counter
 int global_counter; 
 void doExam4()
 {
-	//1. Ãâ·Â - Àü¿ª º¯¼ö global_counter
-	printf("%d \n", global_counter); // [°á°ú] 0
+	//1. ì¶œë ¥ - ì „ì—­ ë³€ìˆ˜ global_counter
+	printf("%d \n", global_counter); // [ê²°ê³¼] 0
 }
 
-//¿¹Á¦5. static(Á¤Àû) º¯¼ö - º¯¼öÀÇ »ýÁ¸(¸Þ¸ð¸® »ýÁ¸) ±â°£: ¿µ±¸(ÇÁ·Î±×·¥ ½ÇÇàµ¿¾È ÀüÃ¼) 
-//5.1 ÇÔ¼ö Á¤ÀÇ 
+//ì˜ˆì œ5. static(ì •ì ) ë³€ìˆ˜ - ë³€ìˆ˜ì˜ ìƒì¡´(ë©”ëª¨ë¦¬ ìƒì¡´) ê¸°ê°„: ì˜êµ¬(í”„ë¡œê·¸ëž¨ ì‹¤í–‰ë™ì•ˆ ì „ì²´) 
+//5.1 í•¨ìˆ˜ ì •ì˜ 
 void sub3()
 {
-	//1. ÀÚµ¿ º¯¼ö ¼±¾ð - Á¤¼ö auto_counter & ÃÊ±âÈ­ 0
+	//1. ìžë™ ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ auto_counter & ì´ˆê¸°í™” 0
 	int auto_counter =0;
-	//2. Á¤Àû º¯¼ö ¼±¾ð - Á¤¼ö static_counter & ÃÊ±âÈ­ 0
+	//2. ì •ì  ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ static_counter & ì´ˆê¸°í™” 0
 	static int static_counter = 0;
 	
-	//3. auto_counter Áõ°¡
+	//3. auto_counter ì¦ê°€
 	auto_counter++;
-	//4. static_counter Áõ°¡
+	//4. static_counter ì¦ê°€
 	static_counter++;
 	
-	//5. Ãâ·Â - auto_counter
+	//5. ì¶œë ¥ - auto_counter
 	printf("auto_counter = %d \n", auto_counter);     
-	//6. Ãâ·Â - static_counter
+	//6. ì¶œë ¥ - static_counter
 	printf("static_counter = %d \n", static_counter);
 }
 
-//5.2 ÇÔ¼ö È£Ãâ
+//5.2 í•¨ìˆ˜ í˜¸ì¶œ
 void doExam5()
 {
-	//1. º¯¼ö ¼±¾ð - Á¤¼ö i	
+	//1. ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ i	
 	int i;
 
-	//2. ¹Ýº¹¹® - i - 0~2 ±îÁö
+	//2. ë°˜ë³µë¬¸ - i - 0~2 ê¹Œì§€
 	for(i=0; i<3; i++)
-		//3. ÇÔ¼ö È£Ãâ - sub3
-		sub3();					 //[°á°ú] auto_counter = 0, static_counter = 0
-								 //[°á°ú] auto_counter = 0, static_counter = 1
-								 //[°á°ú] auto_counter = 0, static_counter = 2
+		//3. í•¨ìˆ˜ í˜¸ì¶œ - sub3
+		sub3();		//[ê²°ê³¼] auto_counter = 0, static_counter = 0
+				//[ê²°ê³¼] auto_counter = 0, static_counter = 1
+				//[ê²°ê³¼] auto_counter = 0, static_counter = 2
 }
 
 
