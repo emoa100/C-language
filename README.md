@@ -297,6 +297,8 @@ int main() <br>
 <br>
 
 ## 12주차 실습 -  변수범위&배열
+
+### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
   <li>변수속성: 이름, 자료형, 값 + 범위, 생존기간 <br>
     &emsp; - 변수범위:지역(블록/함수 안), 전역(함수 외)<br>
