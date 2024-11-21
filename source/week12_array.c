@@ -1,94 +1,94 @@
 /* 
-	ÆÄÀÏ¸í : week12_array.c
-	¼³  ¸í : ¹è¿­ ¼±¾ð, ¹è¿­ ¿ø¼Ò Á¢±Ù(ÀÎµ¦½º), ¹è¿­ °ª ÀúÀå, ¹è¿­ ÃÊ±âÈ­ ¿¬½À 
-	ÀÛ¼ºÀÚ : mju
+	íŒŒì¼ëª… : week12_array.c
+	ì„¤  ëª… : ë°°ì—´ ì„ ì–¸, ë°°ì—´ ì›ì†Œ ì ‘ê·¼(ì¸ë±ìŠ¤), ë°°ì—´ ê°’ ì €ìž¥, ë°°ì—´ ì´ˆê¸°í™” ì—°ìŠµ 
+	ìž‘ì„±ìž : mju
 */
 
-// ÀüÃ³¸®±â
+// ì „ì²˜ë¦¬ê¸°
 #include <stdio.h>
-// main ÇÔ¼ö
+// main í•¨ìˆ˜
 int main()
 {
 	return 0;
 }
 
-//1. ¹è¿­ ¼±¾ð ¿¹Á¦
+//ì˜ˆì œ1. ë°°ì—´ ì„ ì–¸ 
 void doExam1()
 {
-	//1. Á¤¼öÇü ¹è¿­ score - 60°³ °ø°£ 
+	//1. ì •ìˆ˜í˜• ë°°ì—´ score - 60ê°œ ê³µê°„ 
 	int score[60];
-	//2. ½Ç¼öÇü ¹è¿­ cost - 12°³ °ø°£
+	//2. ì‹¤ìˆ˜í˜• ë°°ì—´ cost - 12ê°œ ê³µê°„
 	double cost[12];
-	//3. ¹®ÀÚÇü ¹è¿­ name - 50°³ °ø°£
+	//3. ë¬¸ìží˜• ë°°ì—´ name - 50ê°œ ê³µê°„
 	char name[50];
 }
 
-//2. ¹è¿­¿¡ ¿ä¼Ò Á¢±Ù ¹× ÀúÀå ¿¹Á¦
+//ì˜ˆì œ2. ë°°ì—´ì— ìš”ì†Œ ì ‘ê·¼ ë° ì €ìž¥
 void doExam2()
 {
-	//1. Á¤¼öÇü ¹è¿­ score - 60°³ °ø°£ 
+	//1. ì •ìˆ˜í˜• ë°°ì—´ score - 60ê°œ ê³µê°„ 
 	int score[60];
-	//2. °ª ÀúÀå score 0, 1, 2, ¿¡ 10, 20, 30 °ª ³Ö±â
+	//2. ê°’ ì €ìž¥ score 0, 1, 2, ì— 10, 20, 30 ê°’ ë„£ê¸°
 	score[0] = 10;
 	score[1] = 20;
 	score[2] = 30;
 	score[59] = 100;
-	//3. °ª Ãâ·Â score 0, 1, 2	
+	//3. ê°’ ì¶œë ¥ score 0, 1, 2	
 	printf("%d, %d, %d, %d\n", score[0], score[1], score[2], score[59]);
 	
 	
-	//4. ½Ç¼öÇü ¹è¿­ cost - 12°³ °ø°£	
+	//4. ì‹¤ìˆ˜í˜• ë°°ì—´ cost - 12ê°œ ê³µê°„	
 	double cost[12];
-	//5. °ª ÀúÀå cost 0, 1, 2¿¡ 0.2, 1.3, 5.6 °ª ³Ö±â
+	//5. ê°’ ì €ìž¥ cost 0, 1, 2ì— 0.2, 1.3, 5.6 ê°’ ë„£ê¸°
 	cost[0] = 0.2;
 	cost[1] = 1.3;
 	cost[2] = 5.6;
 	cost[11] = 9.9;
-	//6. °ª Ãâ·Â cost 0, 1, 2
+	//6. ê°’ ì¶œë ¥ cost 0, 1, 2
 	printf("%f, %f, %f, %f\n", cost[0], cost[1], cost[2], cost[11]);
 	
 		
-	//7. ¹®ÀÚÇü ¹è¿­ name - 50°³ °ø°£
+	//7. ë¬¸ìží˜• ë°°ì—´ name - 50ê°œ ê³µê°„
 	char name[50];
-	//8 °ª ÀúÀå name 0, 1, 2¿¡ 'a', 'b', 'c' °ª ³Ö±â
+	//8 ê°’ ì €ìž¥ name 0, 1, 2ì— 'a', 'b', 'c' ê°’ ë„£ê¸°
 	name[0] = 'a';
 	name[1] = 'b';
 	name[2] = 'c';
 	name[49] = 'z';
-	//9 °ª Ãâ·Â name 0, 1, 2
+	//9 ê°’ ì¶œë ¥ name 0, 1, 2
 	printf("%c, %c, %c, %c\n", name[0], name[1], name[2], name[49]);
 } 
 
-//¿¹Á¦3. ¹è¿­ÀÇ ÃÊ±âÈ­  + ¹è¿­°ú ¹Ýº¹
+//ì˜ˆì œ3. ë°°ì—´ì˜ ì´ˆê¸°í™”  + ë°°ì—´ê³¼ ë°˜ë³µ
 void doExam3()
 {
-	//1. Á¤¼öÇü ¹è¿­ score1- 5 °ø°£ - 10, 20, 30, 40, 50 À¸·Î ÃÊ±âÈ­
+	//1. ì •ìˆ˜í˜• ë°°ì—´ score1- 5 ê³µê°„ - 10, 20, 30, 40, 50 ìœ¼ë¡œ ì´ˆê¸°í™”
 	int score1[5] ={10,20,30,40,50};
-	//2. Á¤¼öÇü ¹è¿­ score2- 5 °ø°£ - 10, 20, 30 À¸·Î ÃÊ±âÈ­
+	//2. ì •ìˆ˜í˜• ë°°ì—´ score2- 5 ê³µê°„ - 10, 20, 30 ìœ¼ë¡œ ì´ˆê¸°í™”
 	int score2[5] ={10,20,30};
-	//3. Á¤¼öÇü ¹è¿­ score3- °ø°£Ç¥½Ã¾øÀ½ - 10, 20, 30, 40, 50 À¸·Î ÃÊ±âÈ­
+	//3. ì •ìˆ˜í˜• ë°°ì—´ score3- ê³µê°„í‘œì‹œì—†ìŒ - 10, 20, 30, 40, 50 ìœ¼ë¡œ ì´ˆê¸°í™”
 	int score3[] ={10,20,30,40,50};
 	
-	//4. Ãâ·Â - score1 Ãâ·Â   [°á°ú] 10, 20, 30, 40, 50 
+	//4. ì¶œë ¥ - score1 ì¶œë ¥   [ê²°ê³¼] 10, 20, 30, 40, 50 
 	printf("%d, %d, %d, %d, %d\n", score1[0], score1[1], score1[2], score1[3], score1[4]);
-	//5. Ãâ·Â - score2 Ãâ·Â   [°á°ú] 10, 20, 30, 0, 0
+	//5. ì¶œë ¥ - score2 ì¶œë ¥   [ê²°ê³¼] 10, 20, 30, 0, 0
 	printf("%d, %d, %d, %d, %d\n", score2[0], score2[1], score2[2], score2[3], score2[4]);
-	//6. Ãâ·Â - score3 Ãâ·Â   [°á°ú] 10, 20, 30, 40, 50 
+	//6. ì¶œë ¥ - score3 ì¶œë ¥   [ê²°ê³¼] 10, 20, 30, 40, 50 
 	printf("%d, %d, %d, %d, %d\n", score3[0], score3[1], score3[2], score3[3], score3[4]);
 	
-	//¹Ýº¹ ¿¬½À
-	//7. º¯¼ö ¼±¾ð - Á¤¼ö i
+	//ë°˜ë³µ ì—°ìŠµ
+	//7. ë³€ìˆ˜ ì„ ì–¸ - ì •ìˆ˜ i
 	int i; 
 	
-	//8. ¹Ýº¹¹® - i - 0~4±îÁö score1 °ª Ãâ·Â
+	//8. ë°˜ë³µë¬¸ - i - 0~4ê¹Œì§€ score1 ê°’ ì¶œë ¥
 	for(i=0; i<5; i++)
 		printf("%d ", score1[i]);
 		
-	//9. ¹Ýº¹¹® - i - 0~4±îÁö score2 °ª Ãâ·Â
+	//9. ë°˜ë³µë¬¸ - i - 0~4ê¹Œì§€ score2 ê°’ ì¶œë ¥
 	for(i=0; i<5; i++)
 		printf("%d ", score2[i]);
 		
-	//10. ¹Ýº¹¹® - i - 0~4±îÁö score3 °ª Ãâ·Â
+	//10. ë°˜ë³µë¬¸ - i - 0~4ê¹Œì§€ score3 ê°’ ì¶œë ¥
 	for(i=0; i<5; i++)
 		printf("%d ", score3[i]);
 }
