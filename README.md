@@ -42,7 +42,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   </li>
 </ul>
 
-### [함수연습다시해보기](https://github.com/baek-study/C-Language/blob/main/source/week12_functionExam.c)
+### [함수연습다시해보기](https://github.com/baek-study/C-Language/blob/main/source/week12_function.c)
 
 <br>
 
@@ -332,6 +332,6 @@ int main() <br>
   </li>
 </ul>
 
-### [함수연습](https://github.com/baek-study/C-Language/blob/main/source/week12_functionExam.c)
+### [함수연습](https://github.com/baek-study/C-Language/blob/main/source/week12_function.c)
 
 <br>
