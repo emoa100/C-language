@@ -243,7 +243,7 @@ int main() <br>
   <li>매개변수와 인수 개수 일치/타입일치 <br>
    &emsp;  int max(int x, int y) - max(10, 20)<br>
    &emsp;  double get_area(int radius) - get_area(10)<br>
-   &emsp;  print print_ch(char ch) - print_ch('a')
+   &emsp;  void print_ch(char ch) - print_ch('a')
   </li>
 </ul>
 
@@ -284,7 +284,7 @@ int main() <br>
    &emsp; - rand() : 난수 생성, rand()%6 + 1<br>
    &emsp; - srand(정수) : 기준점변경, srand(100) <br>   
    &emsp; - tme(NULL) : 현재시간 초 단위 반환(90/1/1 이후)<br>  
-   &emsp; - (unsigned)tme(NULL) : 시간은 0 이상<br> 
+   &emsp; - (unsigned)tme(NULL) : 시간은 0 이상 보장<br> 
   </li>
 
   <li>수학함수:math.h를 사용 </li>
