@@ -35,8 +35,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
   <li>선언: int * p; // 정수 포인터<br>
     char *pc; float *pf; double *pd;
   </li>
-  <li> 값 저장 : 기존 변수의 주소 <br> 
-    int *p = &i; // int i = 10; <br>
+  <li> 값 저장 : int *p = &i;  <br> 
+    //int i = 10일때, i 변수 주소 <br>
     printf("%d, %p, %p",i, &i, p);
   </li>
 </ul>
@@ -343,17 +343,18 @@ int main() <br>
 
 <br>
 
+## 13주차 실습 -  배열2 & 포인터
+
 ### [배열과반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
 <ul>
   <li>for구문으로 배열 원소 접근 <br>
     for(i=0; i<5; i++) <br>
     &emsp;printf("%d \n", scores[i]);
   </li>
-  <li>배열 복사 : 각 원소를 복사 <br>
+  <li>배열 복사/비교 : 각 원소를 처리 <br>
     for(i=0; i<5; i++) <br>
-    &emsp; t[i] = scores[i];
+    &emsp; t[i] = scores[i]; //복사
   </li>
-  <li>배열 비교 : 각 원소를 비교 </li>
 </ul>
 
 
@@ -374,11 +375,12 @@ int main() <br>
   <li>선언: int * p; // 정수 포인터<br>
     char *pc; float *pf; double *pd;
   </li>
-  <li> 값 저장 : 기존 변수의 주소 <br> 
-    int *p = &i; // int i = 10; <br>
+  <li> 값 저장 : int *p = &i;  <br> 
+    //int i = 10일때, i 변수 주소 <br>
     printf("%d, %p, %p",i, &i, p);
   </li>
 </ul>
+<br>
 <br>
 
 
