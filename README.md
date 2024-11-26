@@ -11,11 +11,10 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     for(i=0; i<5; i++) <br>
     &emsp;printf("%d \n", scores[i]);
   </li>
-  <li>배열 복사 : 각 원소를 복사 <br>
+  <li>배열 복사/비교 : 각 원소를 처리 <br>
     for(i=0; i<5; i++) <br>
-    &emsp; t[i] = scores[i];
+    &emsp; t[i] = scores[i]; //복사
   </li>
-  <li>배열 비교 : 각 원소를 비교 </li>
 </ul>
 
 
