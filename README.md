@@ -9,13 +9,12 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <ul>
   <li>for구문으로 배열 원소 접근 <br>
     int ss[5] = {1,2,3,4,5}; <br>
-    &emsp; for(i=0; i<5; i++) <br>
-    &emsp;&emsp; printf("%d \n", ss[i]);
+    for(i=0; i<5; i++) <br>
+    &emsp;printf("%d \n", ss[i]);
   </li>
   <li>배열 복사 : 각 원소를 복사 <br>
-    int tt[5]; <br>
-    &emsp; for(i=0; i<5; i++) <br>
-    &emsp;&emsp; tt[i] = ss[i];
+    for(i=0; i<5; i++) <br>
+    &emsp; tt[i] = ss[i];
   </li>
   <li>배열 비교 : 각 원소를 비교 </li>
 </ul>
@@ -24,24 +23,23 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ### [배열과함수](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFunction.c)
 <ul>
   <li>함수정의 : 배열(위치), 배열크기 <br>
-    &emsp; - void getArr(int array[], int size) { } 
+    void getArr(int array[], int size) { } 
   </li>
   <li>함수호출 : 배열이름, 배열크기 <br>
-    &emsp; -getArr(ss, 5);   
+    getArr(ss, 5);   
   </li>
 </ul>
 
 ### [포인터](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
 <ul>
-  <li>개념: 기존 변수의 주소를 가짐 <<br>
-    &emsp; - 기존 변수를 가르킴
+  <li>개념: 기존 변수의 주소를 가짐 <br>
   </li>
-  <li>선언: int * p; // 정수 포인터 변수<br>
-    &emsp; char *pc; float *pf;
+  <li>선언: int * p; // 정수 포인터<br>
+    char *pc; float *pf; double *pd;
   </li>
-  <li> 값 저장 : 기존 변수의 주소 
-    &emsp; - int i = 10; <br>
-    &emsp;int *p = &i; 
+  <li> 값 저장 : 기존 변수의 주소 <br> 
+    int i = 10; <br>
+    int *p = &i; 
   </li>
 </ul>
 <br>
