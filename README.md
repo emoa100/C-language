@@ -8,13 +8,12 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ### [배열과반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
 <ul>
   <li>for구문으로 배열 원소 접근 <br>
-    int ss[5] = {1,2,3,4,5}; <br>
     for(i=0; i<5; i++) <br>
-    &emsp;printf("%d \n", ss[i]);
+    &emsp;printf("%d \n", scores[i]);
   </li>
   <li>배열 복사 : 각 원소를 복사 <br>
     for(i=0; i<5; i++) <br>
-    &emsp; tt[i] = ss[i];
+    &emsp; t[i] = scores[i];
   </li>
   <li>배열 비교 : 각 원소를 비교 </li>
 </ul>
@@ -26,7 +25,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     void getArr(int arr[], int size) { } 
   </li>
   <li>함수호출 : 배열이름, 배열크기 <br>
-    getArr(ss, 5);   
+    getArr(scores, 5);   
   </li>
 </ul>
 
@@ -38,7 +37,8 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     char *pc; float *pf; double *pd;
   </li>
   <li> 값 저장 : 기존 변수의 주소 <br> 
-    int *p = &i; // int i = 10; 
+    int *p = &i; // int i = 10; <br>
+    printf("%d, %p, %p",i, &i, p);
   </li>
 </ul>
 <br>
@@ -297,18 +297,19 @@ int main() <br>
 
 ### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
-  <li>변수속성: 이름, 자료형, 값 + 범위, 생존기간 <br>
-    - 범위:지역(블록/함수 안), 전역(함수 외)<br>
+  <li>변수속성: 변수 범위, 생존기간 <br>
+    - 범위:지역(함수 안), 전역(함수 외)<br>
     - 생존(메모리존재)기간:임시, 영구<br>
   </li>
-  <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
+  <li>지역변수: 블록(함수)내 선언<br> 
     void sub() {int <b>local_x;</b>}<br>
-    - 자동으로 초기화 x, 매개변수도 지역변수 <br>
+    - 해당 블록내 사용, 자동 초기화 x <br>
+    - 매개변수도 지역변수(인수로 초기화) <br>
   </li>
-  <li>전역변수: 함수외 선언, 전체 사용 <br>
+  <li>전역변수: 함수외 선언<br>
     <b>int globla_x</b>; void sub() { }<br>  
-    - 자동으로 초기화(0) <br>
-    - 같은 이름 시 지역변수가 우선순위 높음 
+    - 프로그램 전체 사용, 자동 초기화(0) <br>
+    - (같은이름) 지역변수 우선순위 높음 
   </li>
   <li>static(정적)변수: 영구 생존<br>
      <b>static</b> int count = 0;<br>
@@ -327,7 +328,7 @@ int main() <br>
   </li>
   <li>원소접근: scores[3]; //배열[idx]
   </li>
-  <li>값저장: scores[3] = 20; //배열[idx] = 값
+  <li>값저장: scores[3] = 20; <br>> //배열[idx] = 값
   </li>
   <li>초기화: int scores[5]={10,20,30,40,50};
   </li>
@@ -337,18 +338,15 @@ int main() <br>
 
 <br>
 
-## 13주차 실습 -  배열2 & 포인터
-
 ### [배열과반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
 <ul>
   <li>for구문으로 배열 원소 접근 <br>
-    int ss[5] = {1,2,3,4,5}; <br>
     for(i=0; i<5; i++) <br>
-    &emsp;printf("%d \n", ss[i]);
+    &emsp;printf("%d \n", scores[i]);
   </li>
   <li>배열 복사 : 각 원소를 복사 <br>
     for(i=0; i<5; i++) <br>
-    &emsp; tt[i] = ss[i];
+    &emsp; t[i] = scores[i];
   </li>
   <li>배열 비교 : 각 원소를 비교 </li>
 </ul>
@@ -360,7 +358,7 @@ int main() <br>
     void getArr(int arr[], int size) { } 
   </li>
   <li>함수호출 : 배열이름, 배열크기 <br>
-    getArr(ss, 5);   
+    getArr(scores, 5);   
   </li>
 </ul>
 
@@ -372,8 +370,11 @@ int main() <br>
     char *pc; float *pf; double *pd;
   </li>
   <li> 값 저장 : 기존 변수의 주소 <br> 
-    int *p = &i; // int i = 10; 
+    int *p = &i; // int i = 10; <br>
+    printf("%d, %p, %p",i, &i, p);
   </li>
 </ul>
+<br>
+
 
 <br>
