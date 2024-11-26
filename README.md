@@ -23,7 +23,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 ### [배열과함수](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFunction.c)
 <ul>
   <li>함수정의 : 배열(위치), 배열크기 <br>
-    void getArr(int array[], int size) { } 
+    void getArr(int arr[], int size) { } 
   </li>
   <li>함수호출 : 배열이름, 배열크기 <br>
     getArr(ss, 5);   
@@ -38,8 +38,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     char *pc; float *pf; double *pd;
   </li>
   <li> 값 저장 : 기존 변수의 주소 <br> 
-    int i = 10; <br>
-    int *p = &i; 
+    int *p = &i; // int i = 10; 
   </li>
 </ul>
 <br>
@@ -299,39 +298,82 @@ int main() <br>
 ### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
 <ul>
   <li>변수속성: 이름, 자료형, 값 + 범위, 생존기간 <br>
-    &emsp; - 변수범위:지역(블록/함수 안), 전역(함수 외)<br>
-    &emsp; - 생존(메모리존재)기간:임시(블록내), 영구(실행동안)<br>
+    - 범위:지역(블록/함수 안), 전역(함수 외)<br>
+    - 생존(메모리존재)기간:임시, 영구<br>
   </li>
   <li>지역변수: 블록(함수)내 선언, 해당 블록내 사용 <br>
-    &emsp;  void sub() {int <b>local_x;</b>}<br>
-    &emsp; - 자동으로 초기화 x, 함수 매개변수도 지역변수 <br>
+    void sub() {int <b>local_x;</b>}<br>
+    - 자동으로 초기화 x, 매개변수도 지역변수 <br>
   </li>
-  <li>전역변수: 함수외 선언, 프로그램 전체에 사용 <br>
-    &emsp; <b>int globla_x</b>; void sub() { }<br>  
-    &emsp; - 자동으로 초기화(0), 같은 이름 시 지역변수가 우선순위 높음  <br>
+  <li>전역변수: 함수외 선언, 전체 사용 <br>
+    <b>int globla_x</b>; void sub() { }<br>  
+    - 자동으로 초기화(0) <br>
+    - 같은 이름 시 지역변수가 우선순위 높음 
   </li>
   <li>static(정적)변수: 영구 생존<br>
-     &emsp;<b>static</b> int count = 0;<br>
-     &emsp;-저장유형지정자: static(영구), auto(임시, 기존 지역변수) 
+     <b>static</b> int count = 0;<br>
+     -저장유형지정자: static(영구), auto(임시, 기존 지역변수) 
   </li>
 </ul>
 
 
 ### [배열](https://github.com/baek-study/C-Language/blob/main/source/week12_array.c)
 <ul>
-  <li>개념: 같은 자료형을 여러개를 연속된 공간에 저장 
+  <li>개념: 같은 자료형을 여러개 <br>
+    메모리의 연속된 공간에 저장 
   </li>
-  <li>배열선언: int scores[5]; // 대괄호안에 갯수<br>
-    &emsp; - 인덱스: 각원소 구분하는 일련번호, 0부터 시작
+  <li>배열선언: int scores[5]; // 대괄호 <br>
+    - 인덱스 idx: 일련번호, 0부터 시작
   </li>
-  <li>원소접근: scores[3]; //배열이름[인덱스]
+  <li>원소접근: scores[3]; //배열[idx]
   </li>
-  <li>값저장: scores[3] = 20; //배열이름[인덱스] = 값
+  <li>값저장: scores[3] = 20; //배열[idx] = 값
   </li>
   <li>초기화: int scores[5]={10,20,30,40,50};
   </li>
 </ul>
 
 ### [함수연습](https://github.com/baek-study/C-Language/blob/main/source/week12_function.c)
+
+<br>
+
+## 13주차 실습 -  배열2 & 포인터
+
+### [배열과반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
+<ul>
+  <li>for구문으로 배열 원소 접근 <br>
+    int ss[5] = {1,2,3,4,5}; <br>
+    for(i=0; i<5; i++) <br>
+    &emsp;printf("%d \n", ss[i]);
+  </li>
+  <li>배열 복사 : 각 원소를 복사 <br>
+    for(i=0; i<5; i++) <br>
+    &emsp; tt[i] = ss[i];
+  </li>
+  <li>배열 비교 : 각 원소를 비교 </li>
+</ul>
+
+
+### [배열과함수](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFunction.c)
+<ul>
+  <li>함수정의 : 배열(위치), 배열크기 <br>
+    void getArr(int arr[], int size) { } 
+  </li>
+  <li>함수호출 : 배열이름, 배열크기 <br>
+    getArr(ss, 5);   
+  </li>
+</ul>
+
+### [포인터](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
+<ul>
+  <li>개념: 기존 변수의 주소를 가짐 <br>
+  </li>
+  <li>선언: int * p; // 정수 포인터<br>
+    char *pc; float *pf; double *pd;
+  </li>
+  <li> 값 저장 : 기존 변수의 주소 <br> 
+    int *p = &i; // int i = 10; 
+  </li>
+</ul>
 
 <br>
