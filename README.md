@@ -11,10 +11,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     for(i=0; i<5; i++) <br>
     &emsp;printf("%d \n", scores[i]);
   </li>
-  <li>배열 복사/비교 : 각 원소를 처리 <br>
-    for(i=0; i<5; i++) <br>
-    &emsp; t[i] = scores[i]; //복사
-  </li>
+  <li>배열 복사/비교 : 각각 원소를 처리</li>
 </ul>
 
 
@@ -343,6 +340,7 @@ int main() <br>
 
 <br>
 
+
 ## 13주차 실습 -  배열2 & 포인터
 
 ### [배열과반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
@@ -351,10 +349,7 @@ int main() <br>
     for(i=0; i<5; i++) <br>
     &emsp;printf("%d \n", scores[i]);
   </li>
-  <li>배열 복사/비교 : 각 원소를 처리 <br>
-    for(i=0; i<5; i++) <br>
-    &emsp; t[i] = scores[i]; //복사
-  </li>
+  <li>배열 복사/비교 : 각각 원소를 처리</li>
 </ul>
 
 
@@ -380,7 +375,6 @@ int main() <br>
     printf("%d, %p, %p",i, &i, p);
   </li>
 </ul>
-<br>
 <br>
 
 
