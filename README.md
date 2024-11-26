@@ -90,8 +90,8 @@ int main() <br>
 <ul>
  <li>형식지정자 :  %d(정수), %c(문자), %lf(double), %f(float) </li>
  <li> scanf("%d %c %lf", &num, &ch &pi) ;<br>
-  &ensp; =>변수 앞에 주소연산자 & 필수!!<br>
-  &ensp; =>double 변수에 형식지정자는 %lf 사용</li>
+  - 변수 앞에 주소연산자 & 필수!!<br>
+  - double 변수에 형식지정자는 %lf 사용</li>
 </ul>
 
 <br>
@@ -99,7 +99,7 @@ int main() <br>
 ## 4주차 실습 - 연산자
 ### [기호상수- define/const](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
-  <li>기호상수선언 : #define 전처리기 이용 <br>&ensp; ex) #define MAX 100   </li>
+  <li>기호상수선언 : #define 이용 <br>&ensp; ex) #define MAX 100   </li>
   <li>기호상수선언 :  const 키워드<br> &ensp; ex) const int MAX = 100;  </li>
 </ul>
 
@@ -119,8 +119,8 @@ int main() <br>
 ## 5주차 실습 - 조건문 1
 ### [연산자-관계/논리](https://github.com/baek-study/C-Language/blob/main/source/week5_operator2.c)
 <ul>
-  <li>관계연산자 : ==, !=, >=, <=, >, <  </li>
-  <li>논리연산자 : &&(and), ||(or), !(not) </li>
+  <li>관계 : ==, !=, >=, <=, >, <  </li>
+  <li>논리 : &&(and), ||(or), !(not) </li>
 </ul>
 
 ### [조건문-if/if~else](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
@@ -136,13 +136,13 @@ int main() <br>
 ### [조건문-다중if](https://github.com/baek-study/C-Language/blob/main/source/week6_multiIf.c)
 <ul>
   <li>중첩 if : if 안에 if <br>
-   &emsp; &emsp; <b>if</b>(조건) {  if(조건) { } else { }  } <br>
-    &emsp; &emsp; <b>else</b> {  if(조건) { } else { }  } 
+   &emsp; <b>if</b>(조건) {  if(조건) { } else { }  } <br>
+   &emsp; <b>else</b> {  if(조건) { } else { }  } 
   </li>
   <li>연속 if : if ~ else if ~ else <br>
-   &emsp; &emsp; <b>if</b>(조건) { &emsp;  } <br>
-   &emsp; &emsp; <b>else if</b>(조건) { &emsp;  } <br>
-   &emsp; &emsp; <b> else</b> { &emsp;  } 
+   &emsp; <b>if</b>(조건) { &emsp;  } <br>
+   &emsp; <b>else if</b>(조건) { &emsp;  } <br>
+   &emsp; <b> else</b> { &emsp;  } 
   </li>
 </ul>
 
@@ -151,27 +151,27 @@ int main() <br>
 ## 7주차 실습 - 조건문 & 반복문 
 ### [조건문-switch](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
 <ul>
-  <li>switch~case 문 : 여러 조건에서 선택 <br>
-   &emsp; &emsp; <b>switch</b>(변수) { <br>
-   &emsp; &emsp; &emsp; <b>case 0 :</b>문장들; break; <br>
-   &emsp; &emsp; &emsp; <b>default:</b>문장들; break;  } 
+  <li>switch~case 문 : 여러조건 선택 <br>
+   &emsp; <b>switch</b>(변수) { <br>
+   &emsp; &emsp; <b>case 0 :</b>문장들; break; <br>
+   &emsp; &emsp; <b>default:</b>문장들; break;  } 
   </li>
 </ul>
 
 ### [조건연산자&형변환](https://github.com/baek-study/C-Language/blob/main/source/week7_condOperator.c)
 <ul>
-  <li>조건연산자 : 조건?참문자:거짓문장<br>
+  <li>조건연산자 : 조건?참문장:거짓문<br>
    ex) absValue = a>0 ? a : -a ; </li>
-   <li>형변환 : 캐스트 연산자 (int), (float) <br>
+   <li>형변환 : 캐스트/(int), (float) <br>
    ex) int i = (int)1.12;  </li>
 
 </ul>
 
 ### [반복문-while](https://github.com/baek-study/C-Language/blob/main/source/week7_while.c)
 <ul>
-  <li>while : 조건반복(ex. 비밀번호맞을때까지) <br>
-   &emsp; &emsp;- 초기값, 반복조건(끝), 증감 <br>
-   &emsp; &emsp; int i=0; <b>while</b>(i<5) {  문장들; i++;  } <br>
+  <li>while : 조건반복 <br>
+   초기값, 반복조건(끝), 증감 <br>
+   int i=0; <b>while</b>(i<5) {  문장들; i++;  } <br>
   </li>
 </ul>
 
@@ -181,15 +181,15 @@ int main() <br>
 ### [반복문-for](https://github.com/baek-study/C-Language/blob/main/source/week9_for.c)
 <ul>
   <li>for 문 : 횟수반복(ex.10번) <br>
-   &emsp; &emsp;- 초기값, 반복조건(끝), 증감 <br>
-   &emsp; &emsp; <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
+   - 초기값, 반복조건(끝), 증감 <br>
+   <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
   </li>
 </ul>
 
 <ul>
   <li>중첩 for 문 : for 안에 for 문 <br>
-   &emsp; &emsp; <b>for</b>(i=2 ; i<9 ; i++) {  <br>
-   &emsp; &emsp; &emsp; &emsp;  <b>for</b>(j=1 ; j<10 ; j++) {  문장들; } } <br>
+   <b>for</b>(i=2 ; i<9 ; i++) {  <br>
+   &emsp; &emsp;  <b>for</b>(j=1 ; j<10 ; j++) {  문장들; } } <br>
   </li>
 </ul>
 
@@ -199,17 +199,17 @@ int main() <br>
 
 ### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_dowhile.c)
 <ul>
-  <li>do~while : 명령문 무조건 한번 실행 <br>
-   &emsp;  <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
+  <li>do~while : 명령문 한번이상 실행 <br>
+   <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
 ### [보조제어문](https://github.com/baek-study/C-Language/blob/main/source/week10_subControl.c)
 <ul>
   <li>무한루프 & 보조 제어문 <br>
-   &emsp;  <b>while</b>(1) { // 무한루프  <br>
-   &emsp; &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
-   &emsp; &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
+   <b>while</b>(1) { // 무한루프  <br>
+   &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
+   &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
   </li>
 
 </ul>
@@ -217,9 +217,9 @@ int main() <br>
 ### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
 <ul>
   <li>함수 정의  <br>
-   &emsp;  <b>int max(int x, int y)</b> {   <br>
-   &emsp; &emsp;  if(x>y) return x;  <br>
-   &emsp; &emsp;  else return y; }  <br>  
+   <b>int max(int x, int y)</b> {   <br>
+   &emsp;  if(x>y) return x;  <br>
+   &emsp;  else return y; }  <br>  
   </li>
   <li>함수 호출 <br>
     int value = max(10, 20); </li>
@@ -227,36 +227,42 @@ int main() <br>
 
 <br>
 
-## 11주차 실습 -  함수2 
+ 11주차 실습 -  함수2 
 
 ### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function_parameter.c)
 <ul>
-  <li>매개변수:함수에서 값을 전달받는 변수 <br>
-    &emsp; (함수정의) max(<b>int x, int y</b>)  
+  <li>매개변수: 값을 전달받는 변수 <br>
+    (함수정의) max(<b>int x, int y</b>)  
   </li>
   <li>인수:함수에 실제로 전달되는 값   <br>
-    &emsp; (함수호출)  max(<b>10, 20</b>)
+    (함수호출)  max(<b>10, 20</b>)
   </li>
-  <li>매개변수와 인수 개수 일치/타입일치 <br>
-   &emsp;  int max(int x, int y) - max(10, 20)<br>
-   &emsp;  double get_area(int radius) - get_area(10)<br>
-   &emsp;  void print_ch(char ch) - print_ch('a')
+  <li>매개변수&인수 개수일치/타입일치 <br>
+   int max(int x, int y)<br>
+    &emsp; - max(10, 20)<br>
+   double get_area(int radius)<br>
+    &emsp; - get_area(10)<br>
+    void print_ch(char ch)<br>
+     &emsp; - print_ch('a')
   </li>
 </ul>
 
 
 ### [반환값&결과대입](https://github.com/baek-study/C-Language/blob/main/source/week11_function_return.c)
 <ul>
-  <li>반환값:함수 수행 결과로 돌려주는 값  <br>
-   &emsp;  (함수정의) return x 
+  <li>반환값:함수 결과로 돌려주는 값  <br>
+   (함수정의) return x 
   </li>
-  <li>결과대입변수:함수 호출후 결과 대입   <br>
-    &emsp;  (함수호출)  <b>value</b> = max(10, 20)
+  <li>결과대입변수:함수호출후 결과대입   <br>
+    (함수호출)  <b>value</b> = max(10, 20)
   </li>
-  <li>반환 자료형, 반환값, 결과대입변수가 일치 <br> 
-    &emsp;<b>int</b> max() { <b>int</b> result; 문장들; return <b>result</b>;} - <b>int</b> value1 = max();<br>
-    &emsp;<b>double</b> get_area() { <b>double</b> result; 문장들; return <b>result</b>;} - <b>double</b> value3 = get_area(); <br>
-    &emsp;<b>char</b> get_ch() { <b>char</b> result; 문장들; return <b>result</b>;} - <b>char</b> value2 = get_ch();<br>
+  <li>반환형&반환값&결과대입변수 일치 <br> 
+    <b>int</b> max() { <b>int</b> ret; 문장들; return <b>ret</b>;} <br>
+    - <b>int</b> value1 = max();<br>
+    <b>double</b> area() { <b>double</b> ret; 문장들; return <b>ret</b>;}<br>
+    - <b>double</b> value3 = area(); <br>
+    <b>char</b> get() { <b>char</b> ret; 문장들; return <b>ret</b>;} <br>
+    - <b>char</b> value2 = get();<br>
   </li>
 </ul>
 
@@ -266,7 +272,7 @@ int main() <br>
 
 ### [함수원형](https://github.com/baek-study/C-Language/blob/main/source/week11_function_prototyping.c)
 <ul>
-  <li>컴파일러에게 함수를 미리 알리는 것
+  <li>컴파일러에게 함수를 미리 알림
   </li>
   <li>함수헤더 + 세미콜론 <br>
    &emsp; int max(int x, int y);
@@ -276,18 +282,18 @@ int main() <br>
 ### [라이브러리](https://github.com/baek-study/C-Language/blob/main/source/week11_library.c)
 <ul>
   <li> 컴파일러에서 제공하는 함수<br>
- &emsp; 표준입출력(stdio.h), 표준유틸리티(stdlib.h), 수학(math.h), 시간(time.h), 문자열(string.h)등</li> 
+ 표준입출력(stdio.h), 표준유틸리티(stdlib.h), 수학(math.h), 시간(time.h), 문자열(string.h)등</li> 
   <li>난수발생: rand(), srand(time(NULL))<br>
-   &emsp; - rand() : 난수 생성, rand()%6 + 1<br>
-   &emsp; - srand(정수) : 기준점변경, srand(100) <br>   
-   &emsp; - tme(NULL) : 현재시간 초 단위 반환(90/1/1 이후)<br>  
-   &emsp; - (unsigned)tme(NULL) : 시간은 0 이상 보장<br> 
+   - rand() : 난수 생성, rand()%6 + 1<br>
+   - srand(정수) : 기준점변경, srand(10) <br>   
+   - tme(NULL) : 현재시간 초 반환<br>  
+   - (unsigned)tme(NULL) : 0 이상<br> 
   </li>
 
   <li>수학함수:math.h를 사용 </li>
-  &emsp; - floor(실수)/ceil(실수) : 내림/올림 함수 <br>
-  &emsp; - sqrt(실수)/pow(실수, 실수 : 제곱근/지수승 함수 <br>
-  &emsp; - sin(실수) : 사인 함수 - 라디안 값이 입력 <br>
+  - floor(실수)/ceil(실수) : 내림/올림<br>
+  - sqrt(실수)/pow(실,실) : 제곱근/지수승 <br>
+  - sin(실수) : 사인 함수 - 라디안 값 입력 <br>
   </li>
 </ul>
 
@@ -304,12 +310,12 @@ int main() <br>
   <li>지역변수: 블록(함수)내 선언<br> 
     void sub() {int <b>local_x;</b>}<br>
     - 해당 블록내 사용, 자동 초기화 x <br>
-    - 매개변수도 지역변수(인수로 초기화) <br>
+    - 매개변수-지역변수(인수로초기화) <br>
   </li>
   <li>전역변수: 함수외 선언<br>
     <b>int globla_x</b>; void sub() { }<br>  
     - 프로그램 전체 사용, 자동 초기화(0) <br>
-    - (같은이름) 지역변수 우선순위 높음 
+    - 같은 이름시 지역변수가 우선  
   </li>
   <li>static(정적)변수: 영구 생존<br>
      <b>static</b> int count = 0;<br>
@@ -328,7 +334,7 @@ int main() <br>
   </li>
   <li>원소접근: scores[3]; //배열[idx]
   </li>
-  <li>값저장: scores[3] = 20; <br>> //배열[idx] = 값
+  <li>값저장: scores[3] = 20; <br> //배열[idx] = 값
   </li>
   <li>초기화: int scores[5]={10,20,30,40,50};
   </li>
