@@ -33,7 +33,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     char *pc; float *pf; double *pd;
   </li>
   <li> 값 저장 : int *p = &i;  <br> 
-    //int i = 10일때, i 변수 주소 <br>
+    //int i=10일때, i의 변수 주소 <br>
     printf("%d, %p, %p",i, &i, p);
   </li>
 </ul>
@@ -371,7 +371,7 @@ int main() <br>
     char *pc; float *pf; double *pd;
   </li>
   <li> 값 저장 : int *p = &i;  <br> 
-    //int i = 10일때, i 변수 주소 <br>
+    //int i=10일때, i의 변수 주소 <br>
     printf("%d, %p, %p",i, &i, p);
   </li>
 </ul>
