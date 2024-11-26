@@ -12,6 +12,7 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     &emsp;printf("%d \n", scores[i]);
   </li>
   <li>배열 복사/비교 : 각각 원소를 처리</li>
+  <li> 2차원: int data[3][5]; //[행][열] </li>
 </ul>
 
 
@@ -350,6 +351,7 @@ int main() <br>
     &emsp;printf("%d \n", scores[i]);
   </li>
   <li>배열 복사/비교 : 각각 원소를 처리</li>
+  <li> 2차원: int data[3][5]; //[행][열] </li>
 </ul>
 
 
