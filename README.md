@@ -3,17 +3,17 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 핵심 : 변수 - 연산자 - 조건문(if, switch) - 반복문(while, for) - 함수 - 배열 - 포인터
 <br>
 
-## 13주차 실습 -  배열2&포인터
+## 13주차 실습 -  배열2 & 포인터
 
 ### [배열과반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
 <ul>
   <li>for구문으로 배열 원소 접근 <br>
-    int ss[5] = {1,2,3,4,5};
+    int ss[5] = {1,2,3,4,5}; <br>
     &emsp; for(i=0; i<5; i++) <br>
-    &emsp;&emsp; printf("ss[%d] = %d \n", i, ss[i]);
+    &emsp;&emsp; printf("%d \n", ss[i]);
   </li>
   <li>배열 복사 : 각 원소를 복사 <br>
-    int tt[5];
+    int tt[5]; <br>
     &emsp; for(i=0; i<5; i++) <br>
     &emsp;&emsp; tt[i] = ss[i];
   </li>
@@ -27,7 +27,6 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     &emsp; - void getArr(int array[], int size) { } 
   </li>
   <li>함수호출 : 배열이름, 배열크기 <br>
-    &emsp; int ss[5] = {1,2,3,4,5};
     &emsp; -getArr(ss, 5);   
   </li>
 </ul>
@@ -38,10 +37,11 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
     &emsp; - 기존 변수를 가르킴
   </li>
   <li>선언: int * p; // 정수 포인터 변수<br>
-    &emsp; - char *pc; float *pf;
+    &emsp; char *pc; float *pf;
   </li>
-  <li> 포인터 변수 값 저장 : 기존 변수의 주소 
-    &emsp; - int i = 10; int *p = &i; 
+  <li> 값 저장 : 기존 변수의 주소 
+    &emsp; - int i = 10; <br>
+    &emsp;int *p = &i; 
   </li>
 </ul>
 <br>
