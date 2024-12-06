@@ -7,13 +7,13 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 
 ### [포인터2](https://github.com/baek-study/C-Language/blob/main/source/week14_pointer.c)
 <ul>
-  <li>간점참조 * : 포인터가 가리키는 값 반환 <br>
+  <li> 간접참조 * : 포인터가 가리키는 값 <br>
     int* p = &i; printf("%d", <b>*p</b>); 
   </li>
   <li>포인터연산: 데이터 크기 만큼 증감 <br>
     char(1byte), int(4byte) 등 
   </li>
-  <li> 포인터와배열: 포인터가 배열 가리킴 <br>
+  <li> 포인터와 배열: 배열을 가리킬 때 <br>
     int a[2]={10,20}; //a는 배열 주소 <br>
     int *p = a;
   </li>
@@ -385,13 +385,13 @@ int main() <br>
 
 ### [포인터2](https://github.com/baek-study/C-Language/blob/main/source/week14_pointer.c)
 <ul>
-  <li>간점참조 * : 포인터가 가리키는 값 반환 <br>
+  <li> 간접참조 * : 포인터가 가리키는 값 <br>
     int* p = &i; printf("%d", <b>*p</b>); 
   </li>
   <li>포인터연산: 데이터 크기 만큼 증감 <br>
     char(1byte), int(4byte) 등 
   </li>
-  <li> 포인터와배열: 포인터가 배열 가리킴 <br>
+  <li> 포인터와 배열: 배열을 가리킬 때 <br>
     int a[2]={10,20}; //a는 배열 주소 <br>
     int *p = a;
   </li>
