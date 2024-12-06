@@ -3,41 +3,41 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 핵심 : 변수 - 연산자 - 조건문(if, switch) - 반복문(while, for) - 함수 - 배열 - 포인터
 <br>
 
-## 13주차 실습 -  배열2 & 포인터
+## 14주차 실습 -  포인터2 & 문자열
 
-### [배열과반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
+### [포인터2](https://github.com/baek-study/C-Language/blob/main/source/week14_pointer.c)
 <ul>
-  <li>for구문으로 배열 원소 접근 <br>
-    for(i=0; i<5; i++) <br>
-    &emsp;printf("%d \n", scores[i]);
+  <li>간점참조 연산자 * : 포인터가 가리키는 값을 반환 <br>
+    int* p = &i; printf("%d", <b>*p</b>); 
   </li>
-  <li>배열 복사/비교 : 각각 원소를 처리</li>
-  <li> 2차원: int data[3][5]; //[행][열] </li>
+  <li>포인터연산: 데이터 크기 만큼 증감 <br>
+    char(1byte), int(4byte) 등 
+  </li>
+  <li> 포인터와 배열: 포인터가 배열을 가리킴 <br>
+    int a[2]={10,20}; int *p = a; //a는 배열주소
+  </li>
+  <li> 포인터와 함수: 매개변수가 포인터 <br>
+    void printX(int *){..}, printX(&a);//인수는 주소
+  </li>
 </ul>
 
 
-### [배열과함수](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFunction.c)
+### [문자열](https://github.com/baek-study/C-Language/blob/main/source/week14_string.c)
 <ul>
-  <li>함수정의 : 배열(위치), 배열크기 <br>
-    void getArr(int arr[], int size) { } 
+  <li>문자열: char 배열, NULL(\0) 문자추가 <br>
+    char str[4]="hi", char str[] = "hi"
   </li>
-  <li>함수호출 : 배열이름, 배열크기 <br>
-    getArr(scores, 5);   
+  <li>문자열 입출력 : %s 사용 <br>
+     printf("%s", str); scanf("%s", str);   
   </li>
+  <li>문자열 복사 : 배열 복사(for 이용) <br>
+     + strcpy(target, source);   
+  </li>  
+  <li>문자열 선언: 포인터 이용 가능 <br>
+     char *p = "HelloWorld";  
+  </li>    
 </ul>
 
-### [포인터](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
-<ul>
-  <li>개념: 기존 변수의 주소를 가짐 <br>
-  </li>
-  <li>선언: int * p; // 정수 포인터<br>
-    char *pc; float *pf; double *pd;
-  </li>
-  <li> 값 저장 : int *p = &i;  <br> 
-    //int i=10일때, i의 변수 주소 <br>
-    printf("%d, %p, %p",i, &i, p);
-  </li>
-</ul>
 <br>
 
 
@@ -379,5 +379,39 @@ int main() <br>
 </ul>
 <br>
 
+## 14주차 실습 -  포인터2 & 문자열
+
+### [포인터2](https://github.com/baek-study/C-Language/blob/main/source/week14_pointer.c)
+<ul>
+  <li>간점참조 연산자 * : 포인터가 가리키는 값을 반환 <br>
+    int* p = &i; printf("%d", <b>*p</b>); 
+  </li>
+  <li>포인터연산: 데이터 크기 만큼 증감 <br>
+    char(1byte), int(4byte) 등 
+  </li>
+  <li> 포인터와 배열: 포인터가 배열을 가리킴 <br>
+    int a[2]={10,20}; int *p = a; //a는 배열주소
+  </li>
+  <li> 포인터와 함수: 매개변수가 포인터 <br>
+    void printX(int *){..}, printX(&a);//인수는 주소
+  </li>
+</ul>
+
+
+### [문자열](https://github.com/baek-study/C-Language/blob/main/source/week14_string.c)
+<ul>
+  <li>문자열: char 배열, NULL(\0) 문자추가 <br>
+    char str[4]="hi", char str[] = "hi"
+  </li>
+  <li>문자열 입출력 : %s 사용 <br>
+     printf("%s", str); scanf("%s", str);   
+  </li>
+  <li>문자열 복사 : 배열 복사(for 이용) <br>
+     + strcpy(target, source);   
+  </li>  
+  <li>문자열 선언: 포인터 이용 가능 <br>
+     char *p = "HelloWorld";  
+  </li>    
+</ul>
 
 <br>
