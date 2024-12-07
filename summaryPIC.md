@@ -13,3 +13,4 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 <img src="/summary/lec11.PNG" style="max-width:100%; height:auto">
 <img src="/summary/lec12.PNG" style="max-width:100%; height:auto">
 <img src="/summary/lec13.PNG" style="max-width:100%; height:auto">
+<img src="/summary/lec14.png" style="max-width:100%; height:auto">
