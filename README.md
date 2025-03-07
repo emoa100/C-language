@@ -45,7 +45,7 @@ int main() <br>
 ### [표준출력함수 printf()](https://github.com/baek-study/C-Language/blob/main/source/week3_printf.c)
 <ul>
   <li>형식지정자:  %d(정수), %c(문자), %f(실수)  </li>
-  <li> printf("%d, %c, %f \n", num, ch, pi);<br>
+  <li> printf("%d, %c, %f", num, ch, pi);<br>
   &ensp;=> 형식지정자와 변수 갯수/자료형 일치</li>
 </ul>
 
