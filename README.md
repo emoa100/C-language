@@ -3,45 +3,6 @@ C 언어 수강학생들이 핵심 프로그램을 보고 학습하는 페이지
 핵심 : 변수 - 연산자 - 조건문(if, switch) - 반복문(while, for) - 함수 - 배열 - 포인터
 <br>
 
-## 14주차 실습 -  포인터2 & 문자열
-
-### [포인터2](https://github.com/baek-study/C-Language/blob/main/source/week14_pointer.c)
-<ul>
-  <li> 간접참조 * : 포인터가 가리키는 값 <br>
-    int* p = &i; printf("%d", <b>*p</b>); 
-  </li>
-  <li>포인터연산: 데이터 크기 만큼 증감 <br>
-    char(1byte), int(4byte) 등 
-  </li>
-  <li> 포인터와 배열: 배열을 가리킬 때 <br>
-    int a[2]={10,20}; //a는 배열 주소 <br>
-    int *p = a;
-  </li>
-  <li> 포인터와 함수: 매개변수가 포인터 <br>
-    void printX(int *){..}, printX(&a);//인수는 주소
-  </li>
-</ul>
-
-
-### [문자열](https://github.com/baek-study/C-Language/blob/main/source/week14_string.c)
-<ul>
-  <li>문자열: char 배열, NULL(\0) 추가 <br>
-    char str[4]="hi", char str[] = "hi"
-  </li>
-  <li>문자열 입출력 : %s 사용 <br>
-    printf("%s", str); <br>
-    scanf("%s", str);   
-  </li>
-  <li>문자열 복사 : 배열 복사(for 이용) <br>
-     strcpy(target, source);   
-  </li>  
-  <li>문자열 선언: 포인터 이용 가능 <br>
-     char *p = "HelloWorld";  
-  </li>    
-</ul>
-
-<br>
-
 
 
 ## 1주차 실습
@@ -67,11 +28,16 @@ int main() <br>
 <br>
 
 ## 3주차 실습 - 변수
-### [변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
+### 변수와 자료형
 <ul>
-  <li>변수 선언 :  int num;&ensp; char ch;&ensp; double pi;&ensp; <br>
-   &emsp;=>  int(정수), char(문자), double(실수) 
-  </li>
+  <li>변수 : 데이터를 저장하는 공간 </li>
+  <li>이름 규칙 : 알파벳문자, 숫자, _(밑줄)로 구성, 시작은 숫자는 안됨  </li>
+  <li>자료형 : 정수형(int), 실수형(float/double), 문자형(char) </li>
+</ul>
+
+### [C 프로그램에서 변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
+<ul>
+  <li>변수 선언 :  int num;&ensp; char ch;&ensp; double pi;&ensp; </li>
   <li>변수 값 저장 : num=10;&ensp; ch='a'; &ensp;pi=3.14; </li>
   <li>변수 초기화 : int num=10;&ensp; char ch='a';&ensp; double pi=3.14;</li>
 </ul>
@@ -81,14 +47,12 @@ int main() <br>
   <li>형식지정자:  %d(정수), %c(문자), %f(실수)  </li>
   <li> printf("%d, %c, %f \n", num,ch,pi);<br>
   &ensp;=> 형식지정자와 변수 갯수/자료형 일치</li>
-  <li>필드폭(자릿수): %10d (10칸차지) </li>
-  <li>정밀도: %.3f (소수점 3자리까지) </li>
 </ul>
 
 ### [표준입력함수 scanf()](https://github.com/baek-study/C-Language/blob/main/source/week3_scanf.c)
 <ul>
  <li>형식지정자 :  %d(정수), %c(문자), %lf(double), %f(float) </li>
- <li> scanf("%d %c %lf", &num, &ch &pi) ;<br>
+ <li> scanf("%d %c %lf", &num, &ch, &pi) ;<br>
   - 변수 앞에 주소연산자 & 필수!!<br>
   - double 변수에 형식지정자는 %lf 사용</li>
 </ul>
