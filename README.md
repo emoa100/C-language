@@ -32,7 +32,7 @@ int main() <br>
 <ul>
   <li>변수 : 데이터를 저장하는 공간 </li>
   <li>이름 규칙 : 알파벳문자, 숫자, _(밑줄)로 구성, 시작은 숫자는 안됨  </li>
-  <li>자료형 : 정수형(int), 실수형(float/double), 문자형(char) </li>
+  <li>자료형 : 정수형(int), 실수형(double/float), 문자형(char) </li>
 </ul>
 
 ### [C 프로그램에서 변수](https://github.com/baek-study/C-Language/blob/main/source/week3_variable.c)
