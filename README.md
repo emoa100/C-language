@@ -86,7 +86,7 @@ int main() <br>
 <ul>
   <li>단순 if : <b>if</b>(num>0) { printf("양수");  } </li>
   <li>if~else : <b>if</b>(num>0) {printf("양수");  } <br>
-   &emsp; &emsp; &emsp;  <b>else</b> {printf("양수아님");   } </li>
+   &emsp; &emsp; &emsp;  <b>else</b> &emsp;{printf("양수아님");   } </li>
 </ul>
 
 <br>
