@@ -23,7 +23,7 @@ int main() <br>
   <li>전처리기: #로 시작 하는 코드를 처리 <br>
   &emsp; 헤더파일 - stdio.h </li>
   <li>함수: 주 함수&emsp; int main(){&emsp;} <br>
-  &emsp; 출력함수&emsp; printf("hello")<br>
+  &emsp; 출력 함수&emsp; printf("hello")<br>
   &emsp; 출력제어문자&emsp; \n(다음줄), \t(탭) </li>
 </ul>
 
