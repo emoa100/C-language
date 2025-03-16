@@ -66,8 +66,8 @@ int main() <br>
 ## 4주차 실습 - 연산자
 ### [기호상수- define/const](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
-  <li>기호상수선언 : #define 이용 <br>&ensp; ex) #define MAX 100   </li>
-  <li>기호상수선언 :  const 키워드<br> &ensp; ex) const int MAX = 100;  </li>
+  <li>전처리기 : #define MAX 100   </li>
+  <li><b>const</b> :  const int MAX = 100;  </li>
 </ul>
 
 ### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
@@ -79,6 +79,14 @@ int main() <br>
   <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
  &emsp;=>   x += 3;   // x = x+3; 를 축약한 표현
   </li>
+  <li>관계 : ==, !=, >=, <=, >, <  </li>
+</ul>
+
+### [조건문-단순 if](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
+<ul>
+  <li>단순 if : <b>if</b>(num>0) { printf("양수");  } </li>
+  <li>if~else : <b>if</b>(num>0) {printf("양수");  } <br>
+   &emsp; &emsp; &emsp;  <b>else</b> {printf("양수아님");   } </li>
 </ul>
 
 <br>
