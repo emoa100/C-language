@@ -20,9 +20,10 @@ int main() <br>
 ### [프로그램 기본 구조](https://github.com/baek-study/C-Language/blob/main/source/week2_basic.c)
 <ul>
   <li>주석: 한줄(//), 여러줄(/* */)</li>
-  <li>전처리기: include 헤더 파일</li>
-  <li>함수: 시작합수 main() <br>
-  &emsp; &emsp;출력함수 printf()- \n, \t </li>
+  <li>전처리기: #로 시작 하는 코드를 처리 </li>
+  <li>함수: 시작합수&emsp; main() <br>
+  &emsp; &emsp;출력함수&emsp; printf("hello")<br>
+  &emsp; &emsp;출력제어문자&emsp; - \n, \t </li>
 </ul>
 
 <br>
