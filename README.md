@@ -82,7 +82,8 @@ int main() <br>
 
 ### [조건문-단순 if](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
-  <li>단순 if : <b>if</b>(num>0) { printf("양수");  } </li>
+  <li>단순 if : <b>if</b>(num>0)<br>
+   &ensp;&ensp; { printf("양수");  } </li>
 </ul>
 <br>
 
