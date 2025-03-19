@@ -64,13 +64,13 @@ int main() <br>
 <br>
 
 ## 4주차 실습 - 연산자&조건문 1
-### [기호상수- define/const](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
+### [기호상수](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
   <li> <b>#define</b> EXCHAGE_RATE 1120   </li>
   <li><b>const</b> int MAX = 100;  </li>
 </ul>
 
-### [연산자-산술/관계/논리](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
+### [연산자](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
   <li>수식 : 피연산자와 연산자로 구분</li> 
   <li>산술 연산자 : +, -, *, /, % (나머지) &ensp;<br>
@@ -80,7 +80,7 @@ int main() <br>
   <li>우선순위: 산술>관계>논리>대입</li>
 </ul>
 
-### [조건문-단순 if](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
+### [조건문](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
   <li>단순 if : <b>if</b>(num>0)<br>
    &ensp;&ensp; { printf("양수");  } </li>
