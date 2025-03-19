@@ -66,8 +66,8 @@ int main() <br>
 ## 4주차 실습 - 연산자&조건문 1
 ### [기호상수- define/const](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
-  <li>전처리기 : #define MAX 100   </li>
-  <li><b>const</b> :  const int MAX = 100;  </li>
+  <li> <b>#define</b> MAX 100   </li>
+  <li><b>const</b> int MAX = 100;  </li>
 </ul>
 
 ### [연산자-산술/관계/논리](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
