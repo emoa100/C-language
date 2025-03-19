@@ -77,7 +77,7 @@ int main() <br>
   <li>관계/비교 : ==, !=, >=, <=, >, <  </li>
   &ensp;=>같다(<b>==</b>), 같지않다(<b>!=</b>)
   <li>논리 : &&(and), ||(or), !(not) </li>
-  <li>우선순위: 산술>관계>논리>대입</li>
+  <li>우선순위: 산술>관계>논리</li>
 </ul>
 
 ### [조건문](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
