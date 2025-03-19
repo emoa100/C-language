@@ -73,7 +73,7 @@ int main() <br>
 ### [연산자-산술/관계/논리](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
   <li>산술 연산자 : +, -, *, /, % (나머지) &ensp;<br>
-  &ensp; => 정수/정수=정수, &ensp; 5/3 = 1 </li>
+  &ensp; => 정수/정수=정수, &ensp; 5/3 = 1&ensp;5%3=2 </li>
   <li>관계 : ==, !=, >=, <=, >, <  </li>
   <li>논리 : &&(and), ||(or), !(not) </li>
 </ul>
