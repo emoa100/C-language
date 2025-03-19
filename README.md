@@ -63,31 +63,29 @@ int main() <br>
 
 <br>
 
-## 4주차 실습 - 연산자
+## 4주차 실습 - 연산자&조건문 1
 ### [기호상수- define/const](https://github.com/baek-study/C-Language/blob/main/source/week4_constant.c)
 <ul>
   <li>전처리기 : #define MAX 100   </li>
   <li><b>const</b> :  const int MAX = 100;  </li>
 </ul>
 
-### [연산자-산술/증감/복합](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
+### [연산자1-산술/관계/논리](https://github.com/baek-study/C-Language/blob/main/source/week4_operator.c)
 <ul>
   <li>산술 연산자 : +, -, *, /, % (나머지) &ensp;<br>
   &ensp; => 정수/정수=정수, &ensp; 5/3 = 1 </li>
-  <li>증감 연산자: x++, ++x( x 값 1 증가) <br>
-  &ensp; x--, --x (x값 1 감소)</li>
-  <li>복합 대입 연산자: 산술+대입 <br>
- &emsp;=>   x += 3;   // x = x+3; 를 축약한 표현
-  </li>
   <li>관계 : ==, !=, >=, <=, >, <  </li>
+  <li>논리 : &&(and), ||(or), !(not) </li>
 </ul>
 
 ### [조건문-단순 if](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
   <li>단순 if : <b>if</b>(num>0) { printf("양수");  } </li>
 </ul>
-
 <br>
+
+
+
 ### [조건문-단순 if](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
   <li>단순 if : <b>if</b>(num>0) { printf("양수");  } </li>
@@ -97,8 +95,8 @@ int main() <br>
 
 <br>
 
-## 5주차 실습 - 조건문 1
-### [연산자-관계/논리](https://github.com/baek-study/C-Language/blob/main/source/week5_operator2.c)
+## 5주차 실습 - 연산자&조건문2
+### [연산자2-증감/복합대입](https://github.com/baek-study/C-Language/blob/main/source/week5_operator2.c)
 <ul>
   <li>관계 : ==, !=, >=, <=, >, <  </li>
   <li>논리 : &&(and), ||(or), !(not) </li>
