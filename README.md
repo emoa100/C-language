@@ -85,6 +85,12 @@ int main() <br>
 ### [조건문-단순 if](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
   <li>단순 if : <b>if</b>(num>0) { printf("양수");  } </li>
+</ul>
+
+<br>
+### [조건문-단순 if](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
+<ul>
+  <li>단순 if : <b>if</b>(num>0) { printf("양수");  } </li>
   <li>if~else : <b>if</b>(num>0) {printf("양수");  } <br>
    &emsp; &emsp; &emsp;  <b>else</b> &emsp;{printf("양수아님");   } </li>
 </ul>
@@ -122,6 +128,8 @@ int main() <br>
 </ul>
 
 <br>
+
+
 
 ## 7주차 실습 - 조건문 & 반복문 
 ### [조건문-switch](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
