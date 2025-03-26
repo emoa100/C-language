@@ -99,17 +99,25 @@ int main() <br>
 <br>
 
 ## 5주차 실습 - 연산자&조건문2
-### [연산자2-증감/복합대입](https://github.com/baek-study/C-Language/blob/main/source/week5_operator2.c)
+### [연산자](https://github.com/baek-study/C-Language/blob/main/source/week5_operator2.c)
 <ul>
-  <li>관계 : ==, !=, >=, <=, >, <  </li>
-  <li>논리 : &&(and), ||(or), !(not) </li>
+  <li>산술/관계/논리 연산자
+  <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
+ &emsp;=>   x += 3;   // x = x+3; 를 축약한 표현
+  <li>증감 연산자: x++, ++x( x 값 1 증가) <br>
+  &ensp; x--, --x (x값 1 감소)</li>
+  </li>
 </ul>
 
-### [조건문-if/if~else](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
+### [조건문](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
-  <li>단순 if : <b>if</b>(조건) { &emsp;  } </li>
-  <li>if~else : <b>if</b>(조건) { &emsp;  } <br>
-   &emsp; &emsp; &emsp;  <b>else</b> {&emsp;   } </li>
+  <li>단순 if 문, if~else 문 </li>
+  <li>중첩 if 문 : if 안에 if 문 </li>
+   <li>연속 if : if ~ else if ~ else <br>
+   &emsp; <b>if</b>(조건) { &emsp;  } <br>
+   &emsp; <b>else if</b>(조건) { &emsp;  } <br>
+   &emsp; <b> else</b> { &emsp;  } 
+  </li>
 </ul>
 
 <br>
