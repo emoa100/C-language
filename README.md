@@ -102,9 +102,9 @@ int main() <br>
 ### [연산자](https://github.com/baek-study/C-Language/blob/main/source/week5_operator2.c)
 <ul>
   <li>산술/관계/논리 연산자
-  <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
- &emsp;x += 3;   // x = x+3; 를 축약한 표현
-  <li>증감 연산자: ++, -- <br>
+  <li>복합 : x += 3;   // x = x+3; <br>
+ &emsp;산술과 대입 연산자 결합 
+  <li>증감: ++, -- <br>
   &ensp; x++, ++x( x값 1 증가) <br>
   &ensp; x--, --x (x값 1 감소)</li>
   </li>
