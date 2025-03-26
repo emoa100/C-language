@@ -103,7 +103,7 @@ int main() <br>
 <ul>
   <li>산술/관계/논리 연산자
   <li>복합 대입 연산자: +=, -=, *=, /=, %= 등 <br>
- &emsp;=>   x += 3;   // x = x+3; 를 축약한 표현
+ &emsp;x += 3;   // x = x+3; 를 축약한 표현
   <li>증감 연산자: ++, -- <br>
   &ensp; x++, ++x( x값 1 증가) <br>
   &ensp; x--, --x (x값 1 감소)</li>
@@ -124,7 +124,7 @@ int main() <br>
    &emsp; &emsp; {printf("A");  } <br>
    &emsp; <b>else if</b>(score>90)<br> 
    &emsp; &emsp; {printf("B");  } <br>
-   &emsp; <b> else</b> 
+   &emsp; <b> else</b><br> 
    &emsp; &emsp; {printf("C");  } 
   </li>
 </ul>
