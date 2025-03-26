@@ -115,16 +115,26 @@ int main() <br>
   <li>단순 if 문 : 조건 1개 </li>
   <li>if~else 문 : 조건 2개 <br>
    &emsp;<b>if</b>(num>0) <br>
-   &emsp; &emsp;{printf("양수");  } <br>
+   &emsp; {<br>
+   &emsp; &emsp; printf("양수"); <br>
+   &emsp; } <br>
    &emsp; <b>else</b> <br>
-   &emsp; &emsp;{printf("양수아님");   } </li>
+   &emsp; {<br>
+   &emsp; &emsp;printf("양수아님");   <br>
+   &emsp; } <br> </li>
   <li>if ~ else if ~ else 문:조건 3개이상 <br>
    &emsp; <b>if</b>(score>90)<br> 
-   &emsp; &emsp; {printf("A");  } <br>
+   &emsp; {<br>
+   &emsp; &emsp;printf("A");  <br>
+   &emsp; } <br> <br>
    &emsp; <b>else if</b>(score>90)<br> 
-   &emsp; &emsp; {printf("B");  } <br>
+   &emsp; {<br>
+   &emsp; &emsp;printf("B");  <br>
+   &emsp; } <br> <br>
    &emsp; <b> else</b><br> 
-   &emsp; &emsp; {printf("C");  } 
+   &emsp; {<br>
+   &emsp; &emsp;printf("C");  <br>
+   &emsp; } <br>
   </li>
 </ul>
 
