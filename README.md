@@ -112,14 +112,13 @@ int main() <br>
 
 ### [조건문](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
-  <li>단순 if 문 </li>
-  <li>if~else문 <br>
+  <li>단순 if 문 : 조건 1개 </li>
+  <li>if~else 문 : 조건 2개 <br>
    &emsp;<b>if</b>(num>0) <br>
    &emsp; &emsp;{printf("양수");  } <br>
    &emsp; <b>else</b> <br>
    &emsp; &emsp;{printf("양수아님");   } </li>
-  <li>중첩 if 문 : if 안에 if 문 </li>
-  <li>연속 if : if ~ else if ~ else <br>
+  <li>if ~ else if ~ else 문:조건 3개이상 <br>
    &emsp; <b>if</b>(score>90)<br> 
    &emsp; &emsp; {printf("A");  } <br>
    &emsp; <b>else if</b>(score>90)<br> 
