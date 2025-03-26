@@ -111,7 +111,11 @@ int main() <br>
 
 ### [조건문](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
-  <li>단순 if 문, if~else 문 </li>
+  <li>단순 if 문 </li>
+  <li>if~else : <b>if</b>(num>0) <br>
+   &emsp; &emsp;&emsp; &emsp; {printf("양수");  } <br>
+   &emsp; &emsp; &emsp;  <b>else</b> <br>
+   &emsp; &emsp;&emsp; &emsp; {printf("양수아님");   } </li>
   <li>중첩 if 문 : if 안에 if 문 </li>
    <li>연속 if : if ~ else if ~ else <br>
    &emsp; <b>if</b>(조건) { &emsp;  } <br>
