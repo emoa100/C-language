@@ -126,11 +126,11 @@ int main() <br>
    &emsp; <b>if</b>(score>90)<br> 
    &emsp; {<br>
    &emsp; &emsp;printf("A");  <br>
-   &emsp; } <br> <br>
+   &emsp; } <br>
    &emsp; <b>else if</b>(score>90)<br> 
    &emsp; {<br>
    &emsp; &emsp;printf("B");  <br>
-   &emsp; } <br> <br>
+   &emsp; } <br>
    &emsp; <b> else</b><br> 
    &emsp; {<br>
    &emsp; &emsp;printf("C");  <br>
