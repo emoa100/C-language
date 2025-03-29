@@ -140,20 +140,30 @@ int main() <br>
 
 <br>
 
-## 6주차 실습 - 조건문 2
-### [조건문-다중if](https://github.com/baek-study/C-Language/blob/main/source/week6_multiIf.c)
+## 6주차 실습 - 다중 조건문
+### [다중if](https://github.com/baek-study/C-Language/blob/main/source/week6_multiIf.c)
 <ul>
-  <li>중첩 if : if 안에 if <br>
-   &emsp; <b>if</b>(조건) {  if(조건) { } else { }  } <br>
-   &emsp; <b>else</b> {  if(조건) { } else { }  } 
-  </li>
-  <li>연속 if : if ~ else if ~ else <br>
-   &emsp; <b>if</b>(조건) { &emsp;  } <br>
-   &emsp; <b>else if</b>(조건) { &emsp;  } <br>
-   &emsp; <b> else</b> { &emsp;  } 
-  </li>
+  <li>중첩 if : if 안에 if  </li>
+  <li>연속 if : if ~ else if ~ else  </li>
 </ul>
 
+### [조건문-switch](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
+<ul>
+ <li>switch~case 문 : 여러조건 선택 <br>
+   &emsp; <b>switch</b>(number)<br> 
+   &emsp; {<br>
+   &emsp; &emsp;<b>case 0:</b>  <br>
+   &emsp; &emsp;&emsp;printf("없음\n"); <br>
+   &emsp; &emsp;&emsp;<b>break</b>;  <br>
+   &emsp; &emsp;<b>case 1:</b>  <br>
+   &emsp; &emsp;&emsp;printf("없음\n"); <br>
+   &emsp; &emsp;&emsp;<b>break;</b>  <br>   
+   &emsp; &emsp;<b>default:</b>  <br>
+   &emsp; &emsp;&emsp;printf("없음\n"); <br>
+   &emsp; &emsp;&emsp;<b>break;</b>  <br> 
+   &emsp; } <br>
+  </li>
+</ul>
 <br>
 
 
@@ -162,9 +172,21 @@ int main() <br>
 ### [조건문-switch](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
 <ul>
   <li>switch~case 문 : 여러조건 선택 <br>
-   &emsp; <b>switch</b>(변수) { <br>
-   &emsp; &emsp; <b>case 0 :</b>문장들; break; <br>
-   &emsp; &emsp; <b>default:</b>문장들; break;  } 
+   &emsp; <b>switch</b>(number)<br> 
+   &emsp; {<br>
+   &emsp; &emsp;case 0:  <br>
+   &emsp; &emsp;&emsp;printf("없음\n"); <br>
+   &emsp; &emsp;&emsp;break;  <br>
+   &emsp; } <br>
+   &emsp; <b>else if</b>(score>90)<br> 
+   &emsp; {<br>
+   &emsp; &emsp;printf("B");  <br>
+   &emsp; } <br>
+   &emsp; <b> else</b><br> 
+   &emsp; {<br>
+   &emsp; &emsp;printf("C");  <br>
+   &emsp; } <br>
+  </li>
   </li>
 </ul>
 
