@@ -156,10 +156,10 @@ int main() <br>
    &emsp; &emsp;&emsp;printf("없음\n"); <br>
    &emsp; &emsp;&emsp;<b>break</b>;  <br>
    &emsp; &emsp;<b>case 1:</b>  <br>
-   &emsp; &emsp;&emsp;printf("없음\n"); <br>
+   &emsp; &emsp;&emsp;printf("하나\n"); <br>
    &emsp; &emsp;&emsp;<b>break;</b>  <br>   
    &emsp; &emsp;<b>default:</b>  <br>
-   &emsp; &emsp;&emsp;printf("없음\n"); <br>
+   &emsp; &emsp;&emsp;printf("둘이상\n"); <br>
    &emsp; &emsp;&emsp;<b>break;</b>  <br> 
    &emsp; } <br>
   </li>
