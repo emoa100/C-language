@@ -180,7 +180,10 @@ int main() <br>
 ### [반복문-for](https://github.com/baek-study/C-Language/blob/main/source/week9_for.c)
 <ul>
   <li> 횟수반복 : 초기값, 반복조건(끝), 증감 <br>
-   <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
+   <b>for</b>(i=0 ; i<5 ; i++) <br> 
+   &emsp; {<br>   
+   &emsp; &emsp;&emsp;printf("없음\n");
+   &emsp; } <br>
   </li>
 </ul>
 
