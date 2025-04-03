@@ -158,7 +158,7 @@ int main() <br>
 ## 7주차 실습 - 조건문 & 반복문 
 ### [조건문-switch~case문](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
 <ul>
-  <li>여러조건 선택 <br>
+  <li>제어식 값은 항상 정수(+문자) <br>
    &emsp; <b>switch</b>(number)<br> 
    &emsp; {<br>
    &emsp; &emsp;case 0:  <br>
