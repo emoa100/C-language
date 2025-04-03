@@ -110,6 +110,11 @@ int main() <br>
   </li>
 </ul>
 
+
+
+<br>
+
+## 6주차 실습 - 조건문
 ### [조건문](https://github.com/baek-study/C-Language/blob/main/source/week5_if.c)
 <ul>
   <li>단순 if 문 : 조건 1개 </li>
@@ -138,40 +143,22 @@ int main() <br>
   </li>
 </ul>
 
-<br>
-
-## 6주차 실습 - 다중 조건문
-### [다중if](https://github.com/baek-study/C-Language/blob/main/source/week6_multiIf.c)
+### [조건연산자&형변환](https://github.com/baek-study/C-Language/blob/main/source/week7_condOperator.c)
 <ul>
-  <li>중첩 if : if 안에 if  </li>
-  <li>연속 if : if ~ else if ~ else  </li>
+  <li>조건연산자 : 조건?참문장:거짓문<br>
+   ex) absValue = a>0 ? a : -a ; </li>
+   <li>형변환 : 캐스트/(int), (float) <br>
+   ex) int i = (int)1.12;  </li>
+
 </ul>
 
-### [조건문-switch](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
-<ul>
- <li>switch~case 문 : 여러조건 선택 <br>
-   &emsp; <b>switch</b>(number)<br> 
-   &emsp; {<br>
-   &emsp; &emsp;<b>case 0:</b>  <br>
-   &emsp; &emsp;&emsp;printf("없음\n"); <br>
-   &emsp; &emsp;&emsp;<b>break</b>;  <br>
-   &emsp; &emsp;<b>case 1:</b>  <br>
-   &emsp; &emsp;&emsp;printf("하나\n"); <br>
-   &emsp; &emsp;&emsp;<b>break;</b>  <br>   
-   &emsp; &emsp;<b>default:</b>  <br>
-   &emsp; &emsp;&emsp;printf("둘이상\n"); <br>
-   &emsp; &emsp;&emsp;<b>break;</b>  <br> 
-   &emsp; } <br>
-  </li>
-</ul>
-<br>
 
 
 
 ## 7주차 실습 - 조건문 & 반복문 
-### [조건문-switch](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
+### [조건문-switch~case문](https://github.com/baek-study/C-Language/blob/main/source/week7_switch.c)
 <ul>
-  <li>switch~case 문 : 여러조건 선택 <br>
+  <li>여러조건 선택 <br>
    &emsp; <b>switch</b>(number)<br> 
    &emsp; {<br>
    &emsp; &emsp;case 0:  <br>
@@ -190,14 +177,16 @@ int main() <br>
   </li>
 </ul>
 
-### [조건연산자&형변환](https://github.com/baek-study/C-Language/blob/main/source/week7_condOperator.c)
+### [반복문-for](https://github.com/baek-study/C-Language/blob/main/source/week9_for.c)
 <ul>
-  <li>조건연산자 : 조건?참문장:거짓문<br>
-   ex) absValue = a>0 ? a : -a ; </li>
-   <li>형변환 : 캐스트/(int), (float) <br>
-   ex) int i = (int)1.12;  </li>
-
+  <li> 횟수반복 : 초기값, 반복조건(끝), 증감 <br>
+   <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
+  </li>
 </ul>
+
+
+
+
 
 ### [반복문-while](https://github.com/baek-study/C-Language/blob/main/source/week7_while.c)
 <ul>
@@ -210,13 +199,6 @@ int main() <br>
 <br>
 
 ## 9주차 실습 - 반복문 
-### [반복문-for](https://github.com/baek-study/C-Language/blob/main/source/week9_for.c)
-<ul>
-  <li>for 문 : 횟수반복(ex.10번) <br>
-   - 초기값, 반복조건(끝), 증감 <br>
-   <b>for</b>(i=0 ; i<5 ; i++) {  문장들; } <br>
-  </li>
-</ul>
 
 <ul>
   <li>중첩 for 문 : for 안에 for 문 <br>
