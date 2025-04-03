@@ -182,7 +182,7 @@ int main() <br>
   <li> 횟수반복 : 초기값, 반복조건(끝), 증감 <br>
    <b>for</b>(i=0 ; i<5 ; i++) <br> 
    &emsp; {<br>   
-   &emsp; &emsp;&emsp;printf("없음\n");
+   &emsp; &emsp;&emsp;printf("없음\n");<br> 
    &emsp; } <br>
   </li>
 </ul>
