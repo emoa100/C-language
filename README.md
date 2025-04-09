@@ -168,7 +168,7 @@ int main() <br>
    &emsp; &emsp;&emsp;printf("하나\n"); <br>
    &emsp; &emsp;&emsp;break;  <br>    
    &emsp; &emsp;<b>default:</b>  <br>
-   &emsp; &emsp;&emsp;printf("둘이상\n"); <br>
+   &emsp; &emsp;&emsp;printf("많음\n"); <br>
    &emsp; &emsp;&emsp;break;  <br>    
    &emsp; } <br>
 
