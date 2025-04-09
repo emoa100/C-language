@@ -161,13 +161,13 @@ int main() <br>
   <li>제어식 값은 항상 정수(+문자) <br>
    &emsp; <b>switch</b>(number)<br> 
    &emsp; {<br>
-   &emsp; &emsp;case 0:  <br>
+   &emsp; &emsp;<b>case 0:</b>  <br>
    &emsp; &emsp;&emsp;printf("없음\n"); <br>
    &emsp; &emsp;&emsp;break;  <br>
-   &emsp; &emsp;case 1:  <br>
+   &emsp; &emsp;<b>case 1:</b>  <br>
    &emsp; &emsp;&emsp;printf("하나\n"); <br>
    &emsp; &emsp;&emsp;break;  <br>    
-   &emsp; &emsp;default:  <br>
+   &emsp; &emsp;<b>default:</b>  <br>
    &emsp; &emsp;&emsp;printf("둘이상\n"); <br>
    &emsp; &emsp;&emsp;break;  <br>    
    &emsp; } <br>
