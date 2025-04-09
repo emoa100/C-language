@@ -164,15 +164,14 @@ int main() <br>
    &emsp; &emsp;case 0:  <br>
    &emsp; &emsp;&emsp;printf("없음\n"); <br>
    &emsp; &emsp;&emsp;break;  <br>
+   &emsp; &emsp;case 1:  <br>
+   &emsp; &emsp;&emsp;printf("하나\n"); <br>
+   &emsp; &emsp;&emsp;break;  <br>    
+   &emsp; &emsp;default:  <br>
+   &emsp; &emsp;&emsp;printf("둘이상\n"); <br>
+   &emsp; &emsp;&emsp;break;  <br>    
    &emsp; } <br>
-   &emsp; <b>else if</b>(score>90)<br> 
-   &emsp; {<br>
-   &emsp; &emsp;printf("B");  <br>
-   &emsp; } <br>
-   &emsp; <b> else</b><br> 
-   &emsp; {<br>
-   &emsp; &emsp;printf("C");  <br>
-   &emsp; } <br>
+
   </li>
   </li>
 </ul>
