@@ -264,8 +264,6 @@ int main() <br>
     int maxValue = <b>max(10, 20); </b></li>
 </ul>
 
-<br>
-
 ### [매개변수&반환값]()
 <ul>
   <li><b>매개변수:</b> 함수 정의시 값을 전달받는 변수  <br>
