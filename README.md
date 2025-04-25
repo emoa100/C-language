@@ -199,9 +199,9 @@ int main() <br>
 ### [다중 for]()
 <ul>
   <li> for 안에 for 문 <br>
-   <b>for</b>(dan=1 ; i<10 ; i++)
+   <b>for</b>(dan=1 ; dan<10 ; dan++)
     <br>{  <br>
-   &emsp; <b>for</b>(i=1 ; i<10 ; j++) <br>
+   &emsp; <b>for</b>(i=1 ; i<10 ; i++) <br>
    &emsp; {  <br>
    &emsp;&emsp;  printf(“%d * %d = %d”, dan, i, dan*i);  <br>
     &emsp; } <br>
