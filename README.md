@@ -270,7 +270,7 @@ int main() <br>
     } <br>  
   </li>
   <li>함수 호출 <br>
-    int maxValue = max(10, 20); </li>
+    int maxValue = <b>max(10, 20); </b></li>
 </ul>
 
 <br>
