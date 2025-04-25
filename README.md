@@ -224,19 +224,18 @@ int main() <br>
 ### [보조제어문]()
 <ul>
   <li>break : 제어를 벗어남 <br>
-    int i=0; <br>
     <b>while</b>(i<5)<br>
     {<br>
       &emsp; printf("hello \n");<br>
       &emsp; i++; <br>
       &emsp;if(i == 3)<br>
-     &emsp;&emsp;break;
+     &emsp;&emsp;break;<br>
      } <br>
   </li>
 
   <li>continue : 현재 반복을 중단하고 다음 반복을 시작 <br>
-   <b>for</b>(i=0 ; i<5 ; i++) <br> 
-   {<br>  
+    <b>while</b>(i<5)<br>
+    {<br> 
      &emsp; if(i%2 == 0)<br> 
     &emsp;&emsp; continue;<br> 
      &emsp; sum += i<br> 
