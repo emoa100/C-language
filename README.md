@@ -228,19 +228,18 @@ int main() <br>
     {<br>
       &emsp;if(i == 3)<br>
       &emsp;&emsp;break;<br>
-      &emsp;printf("%d \t",i); <br>
+      &emsp; printf("%d \t",i);<br> 
       &emsp; i++; <br>
-
-     } <br>
+   } <br>
   </li>
 
   <li>continue : 현재 반복을 중단하고 다음 반복을 시작 <br>
     <b>while</b>(i<5)<br>
     {<br> 
      &emsp; if(i%2 == 0)<br> 
-    &emsp;&emsp; continue;<br> 
+     &emsp;&emsp; continue;<br> 
      &emsp; printf("%d \t",i);<br> 
-      &emsp; i++; <br>
+     &emsp; i++; <br>
    } <br>
   </li>
 
