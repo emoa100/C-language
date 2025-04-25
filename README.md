@@ -215,7 +215,7 @@ int main() <br>
     int i=0; <br>
     <b>while</b>(i<5)<br>
     {<br>
-      &emsp; printf("hello \n");<br>
+      &emsp; printf("%d \t",i);<br>
       &emsp; i++; <br>
      } <br>
   </li>
@@ -228,7 +228,7 @@ int main() <br>
     {<br>
       &emsp;if(i == 3)<br>
       &emsp;&emsp;break;<br>
-      &emsp; printf("hello \n");<br>
+      &emsp;printf("%d \t",i); <br>
       &emsp; i++; <br>
 
      } <br>
@@ -239,7 +239,7 @@ int main() <br>
     {<br> 
      &emsp; if(i%2 == 0)<br> 
     &emsp;&emsp; continue;<br> 
-     &emsp; sum += i<br> 
+     &emsp; printf("%d \t",i);<br> 
       &emsp; i++; <br>
    } <br>
   </li>
