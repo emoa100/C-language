@@ -226,10 +226,11 @@ int main() <br>
   <li>break : 제어를 벗어남 <br>
     <b>while</b>(i<5)<br>
     {<br>
+      &emsp;if(i == 3)<br>
+      &emsp;&emsp;break;<br>
       &emsp; printf("hello \n");<br>
       &emsp; i++; <br>
-      &emsp;if(i == 3)<br>
-     &emsp;&emsp;break;<br>
+
      } <br>
   </li>
 
@@ -239,6 +240,7 @@ int main() <br>
      &emsp; if(i%2 == 0)<br> 
     &emsp;&emsp; continue;<br> 
      &emsp; sum += i<br> 
+      &emsp; i++; <br>
    } <br>
   </li>
 
