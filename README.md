@@ -190,13 +190,7 @@ int main() <br>
 
 
 
-### [반복문-while](https://github.com/baek-study/C-Language/blob/main/source/week7_while.c)
-<ul>
-  <li>while : 조건반복 <br>
-   초기값, 반복조건(끝), 증감 <br>
-   int i=0; <b>while</b>(i<5) {  문장들; i++;  } <br>
-  </li>
-</ul>
+
 
 <br>
 
@@ -204,12 +198,40 @@ int main() <br>
 
 ### [다중 for]()
 <ul>
-  <li>중첩 for 문 : for 안에 for 문 <br>
+  <li> for 안에 for 문 <br>
    <b>for</b>(dan=1 ; i<10 ; i++) {  <br>
    &emsp; <b>for</b>(i=1 ; i<10 ; j++) {  <br>
    &emsp;&emsp;  printf(“%d * %d = %d”, dan, i, dan*i);  <br>
     &emsp; } <br>
     } <br>
+  </li>
+</ul>
+
+### [반복문-while]()
+<ul>
+  <li>조건반복: 초기값, 반복조건(끝), 증감  <br>
+    int i=0; <br>
+    <b>while</b>(i<5) {<br>
+      &emsp; printf("hello \n");<br>
+      &emsp; i++; <br>
+      } <br>
+  </li>
+</ul>
+
+### [보조제어문]()
+<ul>
+  <li>무한루프 & 보조 제어문 <br>
+   <b>while</b>(1) { // 무한루프  <br>
+   &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
+   &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
+  </li>
+
+</ul>
+
+### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_dowhile.c)
+<ul>
+  <li>do~while : 명령문 한번이상 실행 <br>
+   <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
   </li>
 </ul>
 
