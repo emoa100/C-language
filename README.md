@@ -284,7 +284,7 @@ int main() <br>
 </ul>
 
 
- 11주차 실습 -  함수2 
+##  11주차 실습 -  함수2 
 
 ### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function_parameter.c)
 <ul>
