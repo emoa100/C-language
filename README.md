@@ -227,7 +227,7 @@ int main() <br>
     <b>while</b>(i<5)<br>
     {<br>
       &emsp;if(i == 3)<br>
-      &emsp;&emsp;break;<br>
+      &emsp;&emsp;<b>break;</b><br>
       &emsp; printf("%d \t",i);<br> 
       &emsp; i++; <br>
    } <br>
@@ -237,7 +237,7 @@ int main() <br>
     <b>while</b>(i<5)<br>
     {<br> 
      &emsp; if(i%2 == 0)<br> 
-     &emsp;&emsp; continue;<br> 
+     &emsp;&emsp; <b>continue;</b><br> 
      &emsp; printf("%d \t",i);<br> 
      &emsp; i++; <br>
    } <br>
@@ -245,46 +245,44 @@ int main() <br>
 
 </ul>
 
-### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_dowhile.c)
-<ul>
-  <li>do~while : 명령문 한번이상 실행 <br>
-   <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
-  </li>
-</ul>
-
-<br>
-
 ## 10주차 실습 -  함수 
 
-### [반복문-do~while](https://github.com/baek-study/C-Language/blob/main/source/week10_dowhile.c)
-<ul>
-  <li>do~while : 명령문 한번이상 실행 <br>
-   <b>do</b> { 문장들; }<b>while(조건);</b>  <br>    
-  </li>
-</ul>
-
-### [보조제어문](https://github.com/baek-study/C-Language/blob/main/source/week10_subControl.c)
-<ul>
-  <li>무한루프 & 보조 제어문 <br>
-   <b>while</b>(1) { // 무한루프  <br>
-   &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
-   &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
-  </li>
-
-</ul>
-
-### [함수](https://github.com/baek-study/C-Language/blob/main/source/week10_function.c)
+### [함수정의 & 함수 호출 - 매개변수/반환값 없음]()
 <ul>
   <li>함수 정의  <br>
-   <b>int max(int x, int y)</b> {   <br>
+    <b>void doExam()</b><br>
+    {<br>
+      printf("함수 doExam() 실행 \n");<br>
+    }<br>
+  <li>함수 호출 <br>
+    doExam(); </li>
+</ul>
+
+### [함수정의 & 함수 호출-매개변수/반환값 있음]()
+<ul>
+  <li>함수 정의  <br>
+   <b>int max(int x, int y)</b><br>
+    {<br>
    &emsp;  if(x>y) return x;  <br>
-   &emsp;  else return y; }  <br>  
+   &emsp;  else return y; <br>
+    } <br>  
   </li>
   <li>함수 호출 <br>
     int value = max(10, 20); </li>
 </ul>
 
 <br>
+
+### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function_parameter.c)
+<ul>
+  <li>매개변수: 값을 전달받는 변수 <br>
+    (함수정의) max(<b>int x, int y</b>)  
+  </li>
+  <li>인수:함수에 실제로 전달되는 값   <br>
+    (함수호출)  max(<b>10, 20</b>)
+  </li>
+</ul>
+
 
  11주차 실습 -  함수2 
 
