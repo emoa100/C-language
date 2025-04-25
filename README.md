@@ -199,8 +199,10 @@ int main() <br>
 ### [다중 for]()
 <ul>
   <li> for 안에 for 문 <br>
-   <b>for</b>(dan=1 ; i<10 ; i++) {  <br>
-   &emsp; <b>for</b>(i=1 ; i<10 ; j++) {  <br>
+   <b>for</b>(dan=1 ; i<10 ; i++)
+    <br>{  <br>
+   &emsp; <b>for</b>(i=1 ; i<10 ; j++) <br>
+   &emsp; {  <br>
    &emsp;&emsp;  printf(“%d * %d = %d”, dan, i, dan*i);  <br>
     &emsp; } <br>
     } <br>
@@ -211,19 +213,34 @@ int main() <br>
 <ul>
   <li>조건반복: 초기값, 반복조건(끝), 증감  <br>
     int i=0; <br>
-    <b>while</b>(i<5) {<br>
+    <b>while</b>(i<5)<br>
+    {<br>
       &emsp; printf("hello \n");<br>
       &emsp; i++; <br>
-      } <br>
+     } <br>
   </li>
 </ul>
 
 ### [보조제어문]()
 <ul>
-  <li>무한루프 & 보조 제어문 <br>
-   <b>while</b>(1) { // 무한루프  <br>
-   &emsp;  if(조건) break; // 제어를 벗어나기 위해 사용  <br>
-   &emsp;  if(조건) continue; //  현재 반복을 중간하고 다음 반복을 시작 }  <br>
+  <li>break : 제어를 벗어남 <br>
+    int i=0; <br>
+    <b>while</b>(i<5)<br>
+    {<br>
+      &emsp; printf("hello \n");<br>
+      &emsp; i++; <br>
+      &emsp;if(i == 3)<br>
+     &emsp;&emsp;break;
+     } <br>
+  </li>
+
+  <li>continue : 현재 반복을 중단하고 다음 반복을 시작 <br>
+   <b>for</b>(i=0 ; i<5 ; i++) <br> 
+   {<br>  
+     &emsp; if(i%2 == 0)<br> 
+    &emsp;&emsp; continue;<br> 
+     &emsp; sum += i<br> 
+   } <br>
   </li>
 
 </ul>
