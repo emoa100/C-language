@@ -200,12 +200,16 @@ int main() <br>
 
 <br>
 
-## 9주차 실습 - 반복문 
+## 9주차 실습 - 반복문 2
 
+### [다중 for]()
 <ul>
   <li>중첩 for 문 : for 안에 for 문 <br>
-   <b>for</b>(i=2 ; i<9 ; i++) {  <br>
-   &emsp; &emsp;  <b>for</b>(j=1 ; j<10 ; j++) {  문장들; } } <br>
+   <b>for</b>(dan=1 ; i<10 ; i++) {  <br>
+   &emsp; <b>for</b>(i=1 ; i<10 ; j++) {  <br>
+   &emsp;&emsp;  printf(“%d * %d = %d”, dan, i, dan*i);  <br>
+    &emsp; } <br>
+    } <br>
   </li>
 </ul>
 
