@@ -234,15 +234,6 @@ int main() <br>
    } <br>
   </li>
 
-
-    <b>while</b>(i<5)<br>
-    {<br> 
-
-     &emsp; printf("%d \t",i);<br> 
-     &emsp; i++; <br>
-   } <br>
-  </li>
-
 </ul>
 
 ## 10주차 실습 -  함수 
