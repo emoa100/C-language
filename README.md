@@ -252,10 +252,10 @@ int main() <br>
   <li>함수 정의  <br>
     <b>void doExam()</b><br>
     {<br>
-      printf("함수 doExam() 실행 \n");<br>
+    &emsp;  printf("함수 doExam() 실행 \n");<br>
     }<br>
   <li>함수 호출 <br>
-    doExam(); </li>
+    <b>doExam();</b> </li>
 </ul>
 
 ### [함수정의 & 함수 호출-매개변수/반환값 있음]()
@@ -263,8 +263,10 @@ int main() <br>
   <li>함수 정의  <br>
    <b>int max(int x, int y)</b><br>
     {<br>
-   &emsp;  if(x>y) return x;  <br>
-   &emsp;  else return y; <br>
+     &emsp;  if(x>y)<br>
+     &emsp; &emsp; return x;  <br>
+     &emsp;  else  <br>
+     &emsp; &emsp;  return y; <br>
     } <br>  
   </li>
   <li>함수 호출 <br>
@@ -273,14 +275,12 @@ int main() <br>
 
 <br>
 
-### [매개변수&인수](https://github.com/baek-study/C-Language/blob/main/source/week11_function_parameter.c)
+### [매개변수&반환값]()
 <ul>
-  <li>매개변수: 값을 전달받는 변수 <br>
-    (함수정의) max(<b>int x, int y</b>)  
-  </li>
-  <li>인수:함수에 실제로 전달되는 값   <br>
-    (함수호출)  max(<b>10, 20</b>)
-  </li>
+  <li>매개변수: 함수 정의시 값을 전달받는 변수  <br>
+  인수:함수 호출시 실제로 전달되는 값    </li>
+  <li>반환값:(함수 정의) 함수 결과로 돌려주는 값 <br> 
+  <li>결과대입변수:함수호출 후 결과대입   </li>
 </ul>
 
 
