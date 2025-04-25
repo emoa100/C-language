@@ -221,23 +221,23 @@ int main() <br>
   </li>
 </ul>
 
-### [보조제어문]()
+### [보조제어문-break/continue]()
 <ul>
-  <li>break : 제어를 벗어남 <br>
-    <b>while</b>(i<5)<br>
+  <li>  <b>while</b>(i<5)<br>
     {<br>
       &emsp;if(i == 3)<br>
-      &emsp;&emsp;<b>break;</b><br>
+      &emsp;&emsp;<b>break;</b>&emsp; // 제어를 벗어남<br>
+      &emsp; if(i%2 == 0)<br> 
+      &emsp;&emsp; <b>continue;&emsp;//현재 반복을 중단하고 다음 반복을 시작</b><br> 
       &emsp; printf("%d \t",i);<br> 
       &emsp; i++; <br>
    } <br>
   </li>
 
-  <li>continue : 현재 반복을 중단하고 다음 반복을 시작 <br>
+
     <b>while</b>(i<5)<br>
     {<br> 
-     &emsp; if(i%2 == 0)<br> 
-     &emsp;&emsp; <b>continue;</b><br> 
+
      &emsp; printf("%d \t",i);<br> 
      &emsp; i++; <br>
    } <br>
