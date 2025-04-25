@@ -228,7 +228,7 @@ int main() <br>
       &emsp;if(i == 3)<br>
       &emsp;&emsp;<b>break;</b>&emsp;&emsp; // 제어를 벗어남<br>
       &emsp; if(i%2 == 0)<br> 
-      &emsp;&emsp; <b>continue;</b>&emsp;//현재 반복을 중단하고 다음 반복을 시작<br> 
+      &emsp;&emsp; <b>continue;</b>&emsp;// 현재 반복을 중단하고 다음 반복을 시작<br> 
       &emsp; printf("%d \t",i);<br> 
       &emsp; i++; <br>
    } <br>
@@ -271,7 +271,7 @@ int main() <br>
   <li><b>매개변수:</b> 함수 정의시 값을 전달받는 변수  <br>
   <b>인수:</b> 함수 호출시 실제로 전달되는 값    </li>
   <li><b>반환값:</b>(함수 정의) 함수 결과로 돌려주는 값 <br> 
-  <b>결과대입변수:</b> 함수호출 후 결과대입   </li>
+  <b>결과변수:</b> 함수호출 후 결과대입   </li>
 </ul>
 
 
