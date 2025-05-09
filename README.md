@@ -351,7 +351,7 @@ int main() <br>
 <ul>
   <li>지역변수: 블록(함수)내 선언<br> 
     - 해당 블록내 사용, 자동 초기화 x <br>
-    - 매개변수-지역변수(인수로초기화) <br>
+    - 매개변수(인수로 초기화) <br>
   </li>
   <li>전역변수: 함수외 선언<br>
     - 프로그램 전체 사용, 자동 초기화(0) <br>
@@ -359,8 +359,7 @@ int main() <br>
   </li>
   <li>static(정적)변수: 영구 생존<br>
     - 프로그램 실행동안 계속 유지<br>
-     - <b>static</b> int count = 0;<br>
-
+    - <b>static</b> int count = 0;<br>
   </li>
 </ul>
 
