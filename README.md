@@ -349,15 +349,15 @@ int main() <br>
 
 ### [지역변수vs전역변수]()
 <ul>
-  <li>지역변수: 블록(함수)내 선언<br> 
+  <li><b>지역변수</b>: 블록(함수)내 선언<br> 
     - 해당 블록내 사용, 자동 초기화 x <br>
     - 매개변수(인수로 초기화) <br>
   </li>
-  <li>전역변수: 함수외 선언<br>
+  <li><b>전역변수</b>: 함수외 선언<br>
     - 프로그램 전체 사용, 자동 초기화(0) <br>
     - 같은 이름시 지역변수가 우선  
   </li>
-  <li>static(정적)변수: 영구 생존<br>
+  <li><b>static(정적)변수</b>: 영구 생존<br>
     - 프로그램 실행동안 계속 유지<br>
     - <b>static</b> int count = 0;<br>
   </li>
@@ -367,9 +367,9 @@ int main() <br>
 <ul>
   <li>컴파일러에서 제공하는 함수 : stdio.h 등 <br>
   <li>난수발생함수: stdlib.h, time.h 사용<br>
-   - rand() : 난수 생성, rand()%6 + 1<br>
-   - srand(정수) : 기준점변경, srand(10) <br>   
-   - (unsigned)tme(NULL) : 현재시간 초 반환  <br>  
+   - <b>rand()</b> : 난수 생성, rand()%6 + 1<br>
+   - <b>srand(정수)</b> : 기준점변경, srand(10) <br>   
+   - <b>(unsigned)tme(NULL)</b> : 현재시간 초 반환  <br>  
   </li>
   <li>수학함수: math.h를 사용 </li>
   - sqrt(실수)/pow(실수,실수) : 제곱근/지수승 <br>
