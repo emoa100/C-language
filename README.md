@@ -347,6 +347,22 @@ int main() <br>
 
 ## 11주차 실습 -  라이브러리 함수 & 함수와 변수
 
+
+
+### [라이브러리]()
+<ul>
+  <li>컴파일러에서 제공하는 함수 : stdio.h 등 <br>
+  <li>난수발생함수: stdlib.h, time.h 사용<br>
+   - <b>rand()</b> : 난수 생성, rand()%6 + 1<br>
+   - <b>srand(정수)</b> : 기준점변경, srand(10) <br>   
+   - <b>(unsigned)tme(NULL)</b> : 현재시간 초 반환  <br>  
+  </li>
+  <li>수학함수: math.h를 사용 </li>
+  - sqrt(실수)/pow(실수,실수) : 제곱근/지수승 <br>
+  - sin(실수) : 사인 함수 - 라디안 값 입력 <br>
+  </li>
+</ul>
+
 ### [지역변수vs전역변수]()
 <ul>
   <li><b>지역변수</b>: 블록(함수)내 선언<br> 
@@ -360,20 +376,6 @@ int main() <br>
   <li><b>static(정적)변수</b>: 영구 생존<br>
     - 프로그램 실행동안 계속 유지<br>
     - <b>static</b> int count = 0;<br>
-  </li>
-</ul>
-
-### [라이브러리]()
-<ul>
-  <li>컴파일러에서 제공하는 함수 : stdio.h 등 <br>
-  <li>난수발생함수: stdlib.h, time.h 사용<br>
-   - <b>rand()</b> : 난수 생성, rand()%6 + 1<br>
-   - <b>srand(정수)</b> : 기준점변경, srand(10) <br>   
-   - <b>(unsigned)tme(NULL)</b> : 현재시간 초 반환  <br>  
-  </li>
-  <li>수학함수: math.h를 사용 </li>
-  - sqrt(실수)/pow(실수,실수) : 제곱근/지수승 <br>
-  - sin(실수) : 사인 함수 - 라디안 값 입력 <br>
   </li>
 </ul>
 
