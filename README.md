@@ -359,7 +359,7 @@ int main() <br>
   </li>
   <li>static(정적)변수: 영구 생존<br>
     - 프로그램 실행동안 계속 유지<br>
-     - b>static</b> int count = 0;<br>
+     - <b>static</b> int count = 0;<br>
 
   </li>
 </ul>
