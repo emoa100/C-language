@@ -359,7 +359,6 @@ int main() <br>
   </li>
   <li>수학함수: math.h를 사용 </li>
   - sqrt(실수)/pow(실수,실수) : 제곱근/지수승 <br>
-  - sin(실수) : 사인 함수 - 라디안 값 입력 <br>
   </li>
 </ul>
 
