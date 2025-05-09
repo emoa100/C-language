@@ -345,27 +345,36 @@ int main() <br>
 
 <br>
 
-## 12주차 실습 -  변수범위&배열
+## 11주차 실습 -  라이브러리 함수 & 함수와 변수
 
-### [변수범위&생존기간](https://github.com/baek-study/C-Language/blob/main/source/week12_variable.c)
+### [지역변수vs전역변수]()
 <ul>
-  <li>변수속성: 변수 범위, 생존기간 <br>
-    - 범위:지역(함수 안), 전역(함수 외)<br>
-    - 생존(메모리존재)기간:임시, 영구<br>
-  </li>
   <li>지역변수: 블록(함수)내 선언<br> 
-    void sub() {int <b>local_x;</b>}<br>
     - 해당 블록내 사용, 자동 초기화 x <br>
     - 매개변수-지역변수(인수로초기화) <br>
   </li>
   <li>전역변수: 함수외 선언<br>
-    <b>int globla_x</b>; void sub() { }<br>  
     - 프로그램 전체 사용, 자동 초기화(0) <br>
     - 같은 이름시 지역변수가 우선  
   </li>
   <li>static(정적)변수: 영구 생존<br>
-     <b>static</b> int count = 0;<br>
-     -저장유형지정자: static(영구), auto(임시, 기존 지역변수) 
+    - 프로그램 실행동안 계속 유지<br>
+     - b>static</b> int count = 0;<br>
+
+  </li>
+</ul>
+
+### [라이브러리]()
+<ul>
+  <li>컴파일러에서 제공하는 함수 : stdio.h 등 <br>
+  <li>난수발생함수: stdlib.h, time.h 사용<br>
+   - rand() : 난수 생성, rand()%6 + 1<br>
+   - srand(정수) : 기준점변경, srand(10) <br>   
+   - (unsigned)tme(NULL) : 현재시간 초 반환  <br>  
+  </li>
+  <li>수학함수: math.h를 사용 </li>
+  - sqrt(실수)/pow(실수,실수) : 제곱근/지수승 <br>
+  - sin(실수) : 사인 함수 - 라디안 값 입력 <br>
   </li>
 </ul>
 
