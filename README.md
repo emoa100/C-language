@@ -395,6 +395,55 @@ int main() <br>
   </li>
 </ul>
 
+## 12주차 실습 -  배열(Array)
+
+### [배열선언 & 접근](https://github.com/baek-study/C-Language/blob/main/source/week12_array.c)
+<ul>
+  <li>개 념 : 같은 자료형을 여러개, 연속된 공간 </li>
+  <li>선 언 : int scores[5]; &ensp; // 5개 정수<br>
+  <li>원소접근: scores[3]; &ensp; // 인덱스는 0부터</li>
+  <li>값저장: scores[3] = 20; </li>
+  <li>초기화: int scores[5]={10,20,30,40,50};</li>
+</ul>
+
+### [배열과 반복](https://github.com/baek-study/C-Language/blob/main/source/week13_arrayFor.c)
+<ul>
+  <li>for(i=0; i<5; i++) <br>
+    &emsp;printf("%d \n", scores[i]);
+  </li>
+</ul>
+
+## 13주차 실습 - 포인터(Pointer)  
+
+### [포인터 선언 & 간접참조](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
+<ul>
+  <li>개 념 : 다른 변수를 가리킴, 주소를 가짐 </li>
+  <li>선 언 : int * p; &ensp;// 정수 포인터</li>
+  <li>값저장 : p = &i; &ensp;// 변수 i의 주소 </li>
+  <li>간접참조: *p  //포인터가 가리키는 값 <br>
+    - printf("%d", *p); </li>
+</ul>
+<br>
+
+### [포인터와 배열](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
+<ul>
+  <li> int *p = scores ; &ensp;// 포인터가 배열 가리킴</li>
+  <li>포인터연산: p ++ ;&ensp;//  <br>
+  <li> for(i=0; i<5; i++) { <br>
+    &emsp;printf("%d \n", *p);
+    &emsp;p++;
+    }
+  </li>
+</ul>
+
+    
+<br>
+
+
+
+
+
+
 ### [함수연습](https://github.com/baek-study/C-Language/blob/main/source/week12_function.c)
 
 <br>
@@ -423,19 +472,7 @@ int main() <br>
   </li>
 </ul>
 
-### [포인터](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
-<ul>
-  <li>개념: 기존 변수의 주소를 가짐 <br>
-  </li>
-  <li>선언: int * p; // 정수 포인터<br>
-    char *pc; float *pf; double *pd;
-  </li>
-  <li> 값 저장 : int *p = &i;  <br> 
-    //int i=10일때, i의 변수 주소 <br>
-    printf("%d, %p, %p",i, &i, p);
-  </li>
-</ul>
-<br>
+
 
 ## 14주차 실습 -  포인터2 & 문자열
 
