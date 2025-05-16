@@ -413,6 +413,9 @@ int main() <br>
   </li>
 </ul>
 
+
+
+
 ## 13주차 실습 - 포인터(Pointer)  
 
 ### [포인터 선언 & 간접참조](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
@@ -428,7 +431,7 @@ int main() <br>
 ### [포인터와 배열](https://github.com/baek-study/C-Language/blob/main/source/week13_pointer.c)
 <ul>
   <li> int *p = scores ; &ensp;// 포인터가 배열 가리킴</li>
-  <li>포인터연산: p ++ ;&ensp;//  <br>
+  <li>포인터연산: p ++ ;&ensp;//포인터가 증가  <br>
   <li> for(i=0; i<5; i++) { <br>
     &emsp;printf("%d \n", *p);
     &emsp;p++;
@@ -436,6 +439,16 @@ int main() <br>
   </li>
 </ul>
 
+### [문자열 ](https://github.com/baek-study/C-Language/blob/main/source/week14_string.c)
+<ul>
+  <li>개 념 : char 배열, NULL(\0) 추가 </li>
+  <li>초기화 :  char str[4]="hi"  <br>
+    - char *p = "hi"; //포인터 이용 </li>
+  <li>문자열 입출력 : %s 사용 <br>
+    printf("%s", str); scanf("%s", str); <br>  
+  </li>
+  <li>복 사 : strcpy(target, source);   </li>      
+</ul>
     
 <br>
 
